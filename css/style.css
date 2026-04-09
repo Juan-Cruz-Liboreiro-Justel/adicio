@@ -1154,6 +1154,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* --- BOTONES --- */
 .btn-blog-profesionales {
     display: inline-flex;
+    justify-content: center; /* <--- Fuerza el texto al centro horizontal */
+    align-items: center;     /* <--- Fuerza el texto al centro vertical */
+    text-align: center;
     background-color: #ffffff;
     color: #0f172a; /* Texto oscuro para que contraste en el botón blanco */
     padding: 0.8rem 2rem;
@@ -1169,6 +1172,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .btn-blog-familias {
     display: inline-flex;
+    justify-content: center; /* <--- Fuerza el texto al centro horizontal */
+    align-items: center;     /* <--- Fuerza el texto al centro vertical */
+    text-align: center;
     background-color: #005ab6; /* Un azul apenas más claro que el fondo para que destaque */
     color: #ffffff;
     padding: 0.8rem 2rem;
