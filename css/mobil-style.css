@@ -267,7 +267,8 @@
     /* BLOG */
     .blog-snippet-header {
         flex-direction: column;
-        align-items: flex-start; /* Pasa el botón de "ver todos" para abajo */
+        align-items: center; /* Centra el bloque de texto y el botón horizontalmente */
+        text-align: center;  /* Centra el texto dentro de su contenedor */
     }
 
     .blog-cards-grid {
