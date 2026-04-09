@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidado Integral</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobil-style.css">
+</head>
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <div class="nav-container">
+            
+            <div class="mobile-spacer"></div>
+
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="img/logo azul horizontal reducido.png" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">INICIO</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link dropdown-toggle">
+                            SERVICIOS <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="plan-basico.html">Plan Básico</a></li>
+                            <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                            <li><a href="plan-premium.html">Plan Premium</a></li>
+                            <li class="separator"></li>
+                            <li><a href="plan-duo-basico.html">Plan Dúo Básico</a></li>
+                            <li><a href="plan-duo-intermedio.html">Plan Dúo Intermedio</a></li>
+                            <li><a href="plan-duo-premium.html">Plan Dúo Premium</a></li>
+                            <li class="separator"></li>
+                            <li><a href="cuidadora-fija.html">Cuidadora Fija por Hora</a></li>
+                            <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                            <li><a href="adaptacion.html">Adaptación de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html" class="nav-link">BLOG</a></li>
+                    <li><a href="quienes.html" class="nav-link">QUIÉNES SOMOS</a></li>
+                    <li><a href="faq.html" class="nav-link">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="app.html" class="nav-link">APP</a></li>
+                </ul>
+            </nav>
+
+            <a href="contacto.html" class="btn-contacto desktop-btn">
+                <p><i class="fa-brands fa-whatsapp"></i> CONTACTO</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+            
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="img/logo azul horizontal reducido.png" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>SERVICIOS</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="plan-basico.html">Plan Básico</a></li>
+                        <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                        <li><a href="plan-premium.html">Plan Premium</a></li>
+                        <li class="separator"></li>
+                        <li><a href="plan-duo-basico.html">Plan Dúo Básico</a></li>
+                        <li><a href="plan-duo-intermedio.html">Plan Dúo Intermedio</a></li>
+                        <li><a href="plan-duo-premium.html">Plan Dúo Premium</a></li>
+                        <li class="separator"></li>
+                        <li><a href="cuidadora-fija.html">Cuidadora Fija por Hora</a></li>
+                        <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                        <li><a href="adaptacion.html">Adaptación de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+                <li><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="app.html">APP</a></li>
+                
+                <li class="mobile-btn-container">
+                    <a href="contacto.html" class="btn-contacto">
+                        <p><i class="fa-brands fa-whatsapp"></i> CONTACTO</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main">
+    <!-- BANNER-->
+     <section class="hero-carousel">
+        
+        <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=2000&auto=format&fit=crop" alt="Cuidado de adultos mayores" class="slide-img">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <span class="slide-subtitle">CUIDADO CON PROPÓSITO</span>
+                <h1 class="slide-title">Atención profesional respetando la autonomía adulta</h1>
+                <div class="slide-buttons">
+                    <a href="contacto.html" class="btn-primary">
+                        <span class="material-symbols-outlined">chat</span> Contáctanos
+                    </a>
+                    <a href="servicios.html" class="btn-outline">Conocer Servicios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000&auto=format&fit=crop" alt="Tecnología y monitoreo" class="slide-img">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <span class="slide-subtitle">TRANQUILIDAD FAMILIAR</span>
+                <h1 class="slide-title">Monitoreo inteligente las 24 horas del día</h1>
+                <div class="slide-buttons">
+                    <a href="contacto.html" class="btn-primary">
+                        <span class="material-symbols-outlined">chat</span> Contáctanos
+                    </a>
+                    <a href="servicios.html" class="btn-outline">Conocer Servicios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=2000&auto=format&fit=crop" alt="Enfermera sonriendo con paciente" class="slide-img">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <span class="slide-subtitle">EXPERIENCIA Y CALIDEZ</span>
+                <h1 class="slide-title">Más de 20 años cuidando lo que más querés</h1>
+                <div class="slide-buttons">
+                    <a href="contacto.html" class="btn-primary">
+                        <span class="material-symbols-outlined">chat</span> Contáctanos
+                    </a>
+                    <a href="servicios.html" class="btn-outline">Conocer Servicios</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-btn prev-btn" aria-label="Anterior slide">
+            <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <button class="carousel-btn next-btn" aria-label="Siguiente slide">
+            <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+
+        <div class="carousel-dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+        </div>
+
+    </section>
+
+    <!-- BIENESTAR-->
+     <section class="value-section">
+        <div class="value-container">
+            
+            <div class="value-grid">
+                <div class="value-card">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Monitoreo 24/7</h3>
+                    <p>Smartwatches y sensores de caída avanzados.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fa-solid fa-capsules"></i>
+                    <h3>Asistencia</h3>
+                    <p>Gestión de turnos y recordatorio de medicación.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fa-solid fa-person-walking-with-cane"></i>
+                    <h3>Adaptación</h3>
+                    <p>Modificamos el hogar para máxima seguridad.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>App Exclusiva</h3>
+                    <p>Seguimiento en tiempo real para la familia.</p>
+                </div>
+            </div>
+
+            <div class="value-content">
+                <h2>El complemento inteligente para su Obra Social</h2>
+                <p>No reemplazamos su cobertura médica, la potenciamos. ADICIO se encarga de la logística diaria, el monitoreo constante y el bienestar emocional, permitiendo que la familia recupere la tranquilidad.</p>
+                
+                <div class="highlight-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Más de 20 años de experiencia en enfermería y gerontología.</span>
+                </div>
+
+                <a href="servicios.html" class="btn-primary" style="display: inline-flex; width: fit-content;">
+                    View Services
+                </a>
+            </div>
+
+        </div>
+    </section>
+        
+    <!-- PLANES-->
+    <section class="planes-section">
+        <div class="planes-header">
+            <h2>Planes Diseñados a Medida</h2>
+            <p>Soluciones escalables que se adaptan a las necesidades cambiantes de cada adulto mayor.</p>
+        </div>
+
+        <div class="planes-grid">
+            
+            <div class="plan-card">
+                <div class="plan-content">
+                    <span class="plan-tag text-blue">ESENCIAL</span>
+                    <h3 class="plan-title">Plan Básico</h3>
+                    <p class="plan-desc">Ideal para adultos independientes que buscan seguridad adicional.</p>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> App de Seguimiento Familiar</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Botón de Pánico Digital</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Recordatorios de Medicación</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <a href="plan-basico.html" class="btn-plan-outline">Ver detalles</a>
+                    <a href="contacto.html" class="btn-plan-text">Contactar / Saber más</a>
+                </div>
+            </div>
+
+            <div class="plan-card plan-highlight">
+                <div class="plan-badge">MÁS ELEGIDO</div>
+                <div class="plan-content">
+                    <span class="plan-tag text-blue">PROTECCIÓN TOTAL</span>
+                    <h3 class="plan-title">Plan Intermedio</h3>
+                    <p class="plan-desc">Monitoreo activo y asistencia técnica presencial periódica.</p>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Smartwatch con sensor de caída</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Visita mensual de auditoría</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Gestión de turnos médicos</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <a href="plan-intermedio.html" class="btn-plan-solid">Ver detalles</a>
+                    <a href="contacto.html" class="btn-plan-text">Contactar / Saber más</a>
+                </div>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-content">
+                    <span class="plan-tag text-blue">PREMIUM</span>
+                    <h3 class="plan-title">Plan Premium</h3>
+                    <p class="plan-desc">Cuidado integral 360° con acompañamiento personalizado.</p>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Enfermería a domicilio 24/7</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Adaptación física del hogar</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Concierge de bienestar</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <a href="plan-premium.html" class="btn-plan-outline">Ver detalles</a>
+                    <a href="contacto.html" class="btn-plan-text">Contactar / Saber más</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- STORYTELLING-->
+     <section class="experience-section">
+        <div class="experience-container">
+            
+            <div class="experience-content">
+                <h2>Más de 20 años cuidando lo que más querés.</h2>
+                <p class="experience-desc">Nuestro equipo está liderado por profesionales de la salud con vasta experiencia en cuidados intensivos y geriátricos. No solo enviamos personal; diseñamos entornos seguros.</p>
+                
+                <div class="experience-features">
+                    <div class="exp-feature-item">
+                        <div class="exp-icon-box">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div class="exp-text-box">
+                            <h4>Adaptaciones de Seguridad</h4>
+                            <p>Instalación de barrales, pisos antideslizantes y rampas con estándares hospitalarios.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exp-feature-item">
+                        <div class="exp-icon-box">
+                            <i class="fa-solid fa-suitcase-medical"></i>
+                        </div>
+                        <div class="exp-text-box">
+                            <h4>Enfermería Calificada</h4>
+                            <p>Personal capacitado en patologías complejas y soporte vital básico.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="quienes.html" class="btn-secondary">
+                    Conócenos
+                </a>
+            </div>
+
+            <div class="experience-image">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2000&auto=format&fit=crop" alt="Profesional de la salud cuidando a un adulto mayor" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMPARACION-->
+    <section class="comparativa-section">
+        <div class="comparativa-header">
+            <h2>¿Por qué elegir ADICIO?</h2>
+            <p>Comparamos nuestra propuesta integral frente a modelos tradicionales.</p>
+        </div>
+
+        <div class="table-container">
+            <table class="comparativa-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Cuidado Tradicional</th>
+                        <th class="highlight-col-header">Modelo ADICIO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-caracteristica">Monitoreo</td>
+                        <td class="col-tradicional">Solo presencia humana</td>
+                        <td class="col-adicio">Digital 24/7 + Alertas Real-time</td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">Transparencia</td>
+                        <td class="col-tradicional">Informes verbales</td>
+                        <td class="col-adicio">Acceso App con historial médico</td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">Costos Indirectos</td>
+                        <td class="col-tradicional">Altos (Gestión familiar)</td>
+                        <td class="col-adicio">Bajos (Delegación completa)</td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">Seguridad Hogar</td>
+                        <td class="col-tradicional">No contemplada</td>
+                        <td class="col-adicio">Auditoría y adaptaciones físicas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- APP-->
+     <section class="app-section">
+        <div class="app-container">
+            
+            <div class="app-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1000&auto=format&fit=crop" alt="App ADICIO en smartphone" class="app-mockup">
+            </div>
+
+            <div class="app-content">
+                <h2>La salud de tus padres, en la palma de tu mano.</h2>
+                <p>Nuestra App conecta a la familia con el equipo médico. Consulta reportes de actividad, estadísticas de evolución a lo largo del tiempo, signos vitales y el cronograma de medicación en tiempo real. Respetamos la privacidad del adulto mayor, monitoreando solo lo esencial para su seguridad.</p>
+
+                <div class="app-features">
+                    <div class="app-feature-item">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="app-feature-text">
+                            <h4>Privacidad Total</h4>
+                            <p>Acceso encriptado y selectivo.</p>
+                        </div>
+                    </div>
+                    <div class="app-feature-item">
+                        <i class="fa-regular fa-bell"></i>
+                        <div class="app-feature-text">
+                            <h4>Alertas Push</h4>
+                            <p>Aviso inmediato ante irregularidades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-buttons">
+                    <a href="app.html" class="btn-dark">
+                        <i class="fa-solid fa-mobile-screen"></i> Conocer más
+                    </a>
+                    
+                    <a href="ruta/a/tu/adicio.apk" download="AdicioApp.apk" class="btn-dark">
+                        <i class="fa-solid fa-download"></i> Descargar APK
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INSTITUCIONES-->
+     <section class="partners-section">
+        <div class="partners-header">
+            Instituciones que confían en nosotros
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-track">
+                
+                <div class="partner-logo" style="font-weight: 900; font-style: italic;">MÉDICA SUR</div>
+                <div class="partner-logo" style="font-weight: 900;">OSDE</div>
+                <div class="partner-logo" style="font-weight: 900;">Swiss Medical</div>
+                <div class="partner-logo" style="font-weight: 900; letter-spacing: -0.05em;">RED DE ENFERMERÍA</div>
+                <div class="partner-logo" style="font-family: serif; font-weight: 700;">S.A.G.</div>
+
+                <div class="partner-logo" style="font-weight: 900; font-style: italic;">MÉDICA SUR</div>
+                <div class="partner-logo" style="font-weight: 900;">OSDE</div>
+                <div class="partner-logo" style="font-weight: 900;">Swiss Medical</div>
+                <div class="partner-logo" style="font-weight: 900; letter-spacing: -0.05em;">RED DE ENFERMERÍA</div>
+                <div class="partner-logo" style="font-family: serif; font-weight: 700;">S.A.G.</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG-->
+     <section class="blog-snippet-section">
+        <div class="blog-snippet-container">
+            
+            <div class="blog-snippet-header">
+                <div class="blog-title-area">
+                    <span class="blog-subtitle">NUESTRO HUB DE CONOCIMIENTO</span>
+                    <h2>Inspiración y guía para un cuidado de excelencia</h2>
+                </div>
+                <a href="blog.html" class="blog-view-all">Ver todos los artículos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="blog-cards-grid">
+                
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000&auto=format&fit=crop" alt="Familia compartiendo" class="blog-card-img">
+                    <div class="blog-overlay blog-overlay-familias"></div>
+                    
+                    <div class="blog-card-content">
+                        <span class="blog-tag">BLOG FAMILIAS</span>
+                        <h3>Inspiración y Consejos para el Cuidado Familiar</h3>
+                        <p>Artículos diseñados para brindar tranquilidad, herramientas prácticas y apoyo emocional a quienes cuidan de sus seres queridos.</p>
+                        <a href="blog.html" class="btn-blog-familias">Explorar Blog Familias</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000&auto=format&fit=crop" alt="Profesionales de la salud" class="blog-card-img">
+                    <div class="blog-overlay blog-overlay-profesionales"></div>
+                    
+                    <div class="blog-card-content">
+                        <span class="blog-tag">BLOG PROFESIONALES</span>
+                        <h3>Excelencia y Capacitación para Profesionales</h3>
+                        <p>Últimas tendencias en gerontología, protocolos de enfermería y tecnología aplicada al cuidado de la salud.</p>
+                        <a href="blog.html" class="btn-blog-profesionales">Explorar Blog Profesionales</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO-->
+     <section class="contacto-zonas-section">
+        <div class="contacto-zonas-container">
+
+            <div class="contacto-info">
+                <h2>Contacto y Redes</h2>
+                <p class="contacto-desc">Estamos disponibles para brindarte la atención personalizada que tu familia merece.</p>
+
+                <div class="contacto-lista">
+                    <div class="contacto-item">
+                        <div class="contacto-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contacto-text">
+                            <span class="contacto-label">TELÉFONO</span>
+                            <span class="contacto-valor">+54 11 1234-5678</span>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <div class="contacto-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contacto-text">
+                            <span class="contacto-label">EMAIL</span>
+                            <span class="contacto-valor">contacto@adicio.com.ar</span>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <div class="contacto-icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contacto-text">
+                            <span class="contacto-label">OFICINA CENTRAL</span>
+                            <span class="contacto-valor">Av. Juan Domingo Perón 123,<br>Presidente Derqui, Pilar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="redes-sociales-wrapper">
+                    <span class="redes-label">SEGUINOS EN REDES</span>
+                    <div class="redes-iconos">
+                        <a href="#" class="red-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="red-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="red-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="red-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="red-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zonas-card">
+                <h2 class="zonas-title">Zonas de Cobertura</h2>
+                <p class="zonas-desc">Expandimos nuestro compromiso de cuidado inteligente en áreas estratégicas para garantizar respuestas rápidas y visitas presenciales efectivas.</p>
+
+                <div class="zonas-lista">
+                    <div class="zona-item">
+                        <div class="zona-icon"><i class="fa-solid fa-city"></i></div>
+                        <div class="zona-text">
+                            <h4>CABA</h4>
+                            <p>Atención en todos los barrios de la Ciudad Autónoma.</p>
+                        </div>
+                    </div>
+                    <div class="zona-item">
+                        <div class="zona-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div class="zona-text">
+                            <h4>Corredor Norte del AMBA</h4>
+                            <p>Vicente López, San Isidro, Tigre, Pilar y Escobar.</p>
+                        </div>
+                    </div>
+                    <div class="zona-item">
+                        <div class="zona-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+                        <div class="zona-text">
+                            <h4>Costa Atlántica</h4>
+                            <p>Cobertura especial estacional y fija en puntos clave.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zonas-footer">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>¿Tu zona no aparece? Consultanos por planes regionales.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ-->
+     <section class="faq-snippet-section">
+        <div class="faq-snippet-container">
+            
+            <div class="faq-snippet-header">
+                <span class="faq-subtitle">RESOLVIENDO TUS DUDAS</span>
+                <h2>Preguntas Frecuentes</h2>
+                <p>Entendemos que el cuidado de un ser querido es una decisión importante.<br>Aquí respondemos las dudas más habituales sobre nuestro servicio.</p>
+            </div>
+
+            <div class="faq-accordion">
+                
+                <details class="faq-item">
+                    <summary>
+                        <span class="faq-question">¿Cómo funciona el monitoreo inteligente?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Utilizamos dispositivos no invasivos (como smartwatches) que registran signos vitales, actividad y detectan caídas en tiempo real. Esta información se envía directamente a la App familiar. Todo esto lo hacemos sin utilizar cámaras, preservando en un 100% la intimidad y dignidad del adulto mayor.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>
+                        <span class="faq-question">¿Los planes incluyen servicio médico de urgencia?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>ADICIO no es un reemplazo de su obra social, prepaga o médico de cabecera, sino un complemento proactivo. Nos enfocamos en la prevención y asistencia diaria. En caso de detectar una anomalía grave o emergencia, aplicamos primeros auxilios y coordinamos de inmediato con el servicio de urgencias médicas correspondiente.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span class="faq-question">¿Es compatible con coberturas de PAMI u Obras Sociales?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Nuestros planes son de contratación privada. Sin embargo, nuestro equipo se encarga de gestionar toda la logística administrativa con su obra social: solicitud de turnos, autorizaciones de recetas médicas y retiro de medicamentos en farmacia, ahorrándole todo ese tiempo a la familia.</p>
+                    </div>
+                </details>
+
+            </div>
+
+            <div class="faq-snippet-action">
+                <a href="faq.html" class="btn-outline-primary">
+                    Ver todas las preguntas <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER-->
+     <footer class="footer-section">
+        <div class="footer-container">
+            
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <!-- <i class="fa-solid fa-heart-pulse"></i> ADICIO -->
+                     <img src="img/logo horizontal blanco reduzido .png" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog-profesionales.html">Blog Profesionales</a></li>
+                    <li><a href="blog-familias.html">Blog Familias</a></li>
+                    <li><a href="app-descarga.html">Descargar App</a></li>
+                    <li><a href="quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="plan-basico.html">Plan Básico</a></li>
+                    <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                    <li><a href="plan-premium.html">Plan Premium</a></li>
+                    <li><a href="cuidadora-fija.html">Cuidadoras Fijas (24/7)</a></li>
+                    <li><a href="adaptacion.html">Adaptación Domiciliaria</a></li>
+                    <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Av. Juan Domingo Perón 123,<br>Presidente Derqui, Pilar</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+54 11 1234-5678</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contacto@adicio.com.ar</span>
+                    </li>
+                </ul>
+                <a href="contacto.html" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="#"><i class="fa-solid fa-shield-halved"></i> Políticas de Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="#">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> Derqui, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

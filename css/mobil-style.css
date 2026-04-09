@@ -1,0 +1,476 @@
+/* ========================================================
+   MEDIA QUERIES - MÓVIL (Pantalla Completa)
+   ======================================================== */
+@media (max-width: 1024px) {
+    .desktop-nav, .desktop-btn { display: none; }
+    
+    /* Centrar logo en header: spacer invisible a la izq y hamburguesa a la der */
+    .mobile-spacer { display: block; width: 32px; }
+    .hamburger-btn { display: block; width: 32px; color: var(--color-text-dark); font-size: 2rem; }
+
+    /* EL MENÚ MÓVIL - 100% Pantalla */
+    .mobile-menu-overlay {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh; /* dvh asegura que cubra bien en celulares con barra de navegación */
+        background-color: rgba(255, 255, 255, 0.98); /* Fondo casi blanco sólido */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 99999; /* Por encima de todo */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        overflow-y: auto; /* Permite scroll solo si la pantalla es muy pequeña */
+    }
+
+    .mobile-menu-overlay.active { 
+        opacity: 1; 
+        pointer-events: all; 
+    }
+
+    /* Contenedor del contenido del menú */
+    .mobile-menu-content {
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cabecera del menú móvil (Logo y X) */
+    .mobile-menu-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+
+    .mobile-logo { font-size: 2rem; }
+
+    .close-btn { 
+        position: absolute; 
+        right: 0; 
+        color: var(--color-text-dark); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .close-btn span { font-size: 2rem; }
+
+    /* Lista centrada */
+    .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+        width: 100%;
+    }
+    
+    .mobile-nav-list > li > a { 
+        font-size: 1.25rem; 
+        font-weight: 600; 
+        color: var(--color-text-dark); 
+    }
+
+    /* Acordeón Servicios Centrado */
+    .mobile-dropdown { width: 100%; }
+    
+    .mobile-dropdown-header { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 0.5rem; 
+        font-size: 1.25rem; 
+        font-weight: 600; 
+        cursor: pointer;
+    }
+    
+    .icon-transition { transition: transform 0.3s ease; }
+    
+    .mobile-dropdown-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center; 
+        gap: 1.2rem;
+        padding-top: 1.5rem;
+        margin-top: 1rem;
+        border-top: 1px solid #e2e8f0; 
+    }
+    
+    .mobile-dropdown-menu.active { display: flex; }
+    .mobile-dropdown-menu a { font-size: 1.1rem; color: var(--color-text-muted); }
+    .mobile-dropdown-menu .separator { height: 1px; background-color: #e2e8f0; width: 60%; margin: 0.2rem 0; }
+
+    .mobile-btn-container { margin-top: 2rem; }
+
+    .mobile-spacer { 
+        display: block; 
+        width: 40px; /* Ajusta esto si el botón hamburguesa cambia de tamaño */
+    }
+    
+    .hamburger-btn { 
+        display: flex; 
+        align-items: center;
+        justify-content: flex-end;
+        width: 40px; 
+        color: var(--color-text-dark); 
+    }
+
+    /* Logo dentro del menú desplegable móvil */
+    .mobile-logo .logo-img {
+        max-height: 50px; /* Puedes hacerlo un poco más grande en el menú abierto */
+        margin-bottom: 2rem;
+    }
+
+    .slide-title {
+        font-size: 2.2rem;
+    }
+    .carousel-btn {
+        display: none; /* Ocultamos las flechas en celular para limpiar la pantalla */
+    }
+    .slide-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-primary, .btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* BIENESTAR */
+    .value-container {
+        flex-direction: column-reverse; /* Texto arriba, tarjetas abajo */
+        gap: 3rem;
+    }
+    
+    /* Centrar todo el bloque de texto y el botón */
+    .value-content {
+        align-items: center; 
+        text-align: center;
+    }
+
+    .value-content h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Centrar el ícono y texto dentro de la cajita gris */
+    .highlight-box {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Centrar el contenido (íconos y textos) de las 4 tarjetas */
+    .value-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* PLANES */
+    .planes-grid {
+        grid-template-columns: 1fr; /* Pasa a 1 sola columna */
+        gap: 3rem; /* Más espacio vertical entre tarjetas */
+        max-width: 500px; /* Evita que las tarjetas se estiren demasiado */
+        margin: 0 auto; /* Asegura que el contenedor de tarjetas quede centrado */
+    }
+
+    .plan-highlight {
+        transform: scale(1); /* Quitamos el efecto de "agrandado" en móviles para que no se salga de la pantalla */
+    }
+
+    .plan-highlight:hover {
+        transform: scale(1) translateY(-5px);
+    }
+
+    /* --- CENTRADO TOTAL PARA MÓVILES --- */
+    .plan-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos hijos (títulos, textos) */
+    }
+
+    .plan-features {
+        align-items: center; /* Centra la lista de características (los tildes) en el medio de la tarjeta */
+    }
+    
+    .plan-features li {
+        text-align: left; /* Mantiene el texto alineado a su propio ícono para que no se deforme al saltar de línea */
+    }
+
+    /* STORYTELLING */
+    .experience-container {
+        flex-direction: column; /* Apila el texto arriba y la imagen abajo */
+        gap: 3rem;
+    }
+    
+    .experience-content {
+        align-items: center; /* Centra el contenido general */
+        text-align: center;
+    }
+
+    .experience-content h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Centrado de la lista de características para móvil */
+    .exp-feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* En móvil, la imagen puede ocupar todo el ancho disponible */
+    .experience-image {
+        width: 100%;
+    }
+
+    /* APP */
+    .app-container {
+        flex-direction: column; /* Apila el teléfono arriba y el texto abajo */
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .app-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .app-features {
+        grid-template-columns: 1fr; /* Una sola columna para las características en celular */
+        text-align: left;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .app-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .btn-dark {
+        justify-content: center; /* Centra el texto del botón si ocupa todo el ancho */
+        width: 100%;
+    }
+
+    /* BLOG */
+    .blog-snippet-header {
+        flex-direction: column;
+        align-items: flex-start; /* Pasa el botón de "ver todos" para abajo */
+    }
+
+    .blog-cards-grid {
+        grid-template-columns: 1fr; /* Una tarjeta debajo de la otra */
+    }
+
+    .blog-title-area h2 {
+        font-size: 2.5rem;
+    }
+
+    .blog-card {
+        min-height: 400px;
+        padding: 2.5rem 2rem;
+    }
+    
+    .blog-card-content h3 {
+        font-size: 1.8rem;
+    }
+
+    /* CONTACTO */
+
+    .contacto-zonas-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    /* Centrar textos de la columna izquierda */
+    .contacto-info {
+        padding-top: 0; /* Quitamos el relleno superior en celular porque ya no están lado a lado */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contacto-info h2, .zonas-title {
+        font-size: 2.2rem;
+    }
+
+    .contacto-desc, .zonas-desc {
+        max-width: 100%;
+    }
+
+    /* Apilar y centrar los ítems de contacto (Teléfono, email, etc.) */
+    .contacto-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .contacto-text {
+        align-items: center;
+    }
+
+    /* Centrar Redes Sociales */
+    .redes-sociales-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-iconos {
+        justify-content: center;
+    }
+
+    /* Centrar Tarjeta de Zonas */
+    .zonas-card {
+        padding: 2.5rem 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Apilar y centrar cada zona de cobertura */
+    .zona-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    /* Centrar el pie de la tarjeta (texto de zonas no cubiertas) */
+    .zonas-footer {
+        justify-content: center;
+        flex-direction: column; /* Apila el icono arriba del texto para que no se vea amontonado */
+        text-align: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: 1fr 1fr; /* 2 columnas en tablets */
+    }
+
+}
+
+@media (max-width: 600px) {
+    /* BIENESTAR */
+    .value-grid {
+        grid-template-columns: 1fr; /* 1 sola columna en celulares */
+    }
+
+    /* COMPARACION */
+
+     .comparativa-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* Indicador visual en móvil para saber que se puede hacer scroll */
+    .table-container {
+        box-shadow: inset -15px 0 15px -15px rgba(0,0,0,0.1);
+    }
+
+    /* INSTITUCIONES */
+     /* En celulares, hacemos que el difuminado sea más pequeño */
+    .marquee-container::before,
+    .marquee-container::after {
+        width: 40px;
+    }
+
+    /* REGLA MAGICA: 50vw significa "50% del ancho de la pantalla". 
+       Así nos aseguramos de que solo se vean 2 logos a la vez. */
+    .partner-logo {
+        width: 50vw; 
+        font-size: 1.2rem; /* Achicamos un poco la letra en móvil */
+    }
+
+    /*  FAQ */
+
+    .faq-snippet-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .faq-item summary {
+        padding: 1.2rem 1.5rem; /* Un poco menos de espacio a los costados en celular */
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+        padding-right: 1rem; /* Evita que el texto choque con la flechita */
+    }
+    
+    .faq-answer {
+        padding: 0 1.5rem 1.2rem 1.5rem;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr; /* 1 columna en celulares */
+        gap: 3rem;
+        text-align: center; /* Centra los párrafos generales */
+    }
+
+    /* Centrar Logo y Redes Sociales */
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-socials {
+        justify-content: center;
+    }
+
+    /* Centrar Títulos de columnas (Enlaces y Contacto) */
+    .footer-links-col h4,
+    .footer-contact-col h4 {
+        justify-content: center;
+    }
+
+    /* Centrar listas de enlaces */
+    .footer-links-col ul,
+    .footer-contact-col ul {
+        align-items: center;
+    }
+
+    /* Ajuste especial para los datos de contacto (Apilar ícono y texto) */
+    .footer-contact-col li {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    /* Centrar el botón de WhatsApp del footer */
+    .btn-footer-contact {
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    /* Centrar barra inferior de Copyright y Legales */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+        flex-direction: column; /* Apila los links legales en celular para que no queden apretados */
+        gap: 0.8rem;
+    }
+
+    .footer-legal .separator {
+        display: none; /* Ocultamos los puntitos separadores en celular */
+    }
+}
