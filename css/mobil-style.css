@@ -474,4 +474,13 @@
     .footer-legal .separator {
         display: none; /* Ocultamos los puntitos separadores en celular */
     }
+
+   /* WHATSAPP*/
+    .whatsapp-float {
+        bottom: 1.5rem; /* Un poco más pegado al borde en celular para no robar tanta pantalla */
+        right: 1.5rem;
+        width: 55px; /* Un poco más pequeño */
+        height: 55px;
+        font-size: 1.8rem;
+    }
 }
