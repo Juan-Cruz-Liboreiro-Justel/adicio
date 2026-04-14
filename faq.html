@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidado Integral</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobil-style.css">
+</head>
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <div class="nav-container">
+            
+            <div class="mobile-spacer"></div>
+
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="img/logo azul horizontal reducido.png" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">INICIO</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link dropdown-toggle">
+                            SERVICIOS <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="plan-basico.html">Plan Básico</a></li>
+                            <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                            <li><a href="plan-premium.html">Plan Premium</a></li>
+                            <li class="separator"></li>
+                            <li><a href="plan-duo-basico.html">Plan Dúo Básico</a></li>
+                            <li><a href="plan-duo-intermedio.html">Plan Dúo Intermedio</a></li>
+                            <li><a href="plan-duo-premium.html">Plan Dúo Premium</a></li>
+                            <li class="separator"></li>
+                            <li><a href="cuidadora-fija.html">Cuidadora Fija por Hora</a></li>
+                            <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                            <li><a href="adaptacion.html">Adaptación de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html" class="nav-link">BLOG</a></li>
+                    <li><a href="quienes.html" class="nav-link">QUIÉNES SOMOS</a></li>
+                    <li><a href="faq.html" class="nav-link">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="app.html" class="nav-link">APP</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="btn-contacto desktop-btn" target="_blank">
+                <p><i class="fa-brands fa-whatsapp"></i> CONTACTANOS</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+            
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="img/logo azul horizontal reducido.png" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>SERVICIOS</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="plan-basico.html">Plan Básico</a></li>
+                        <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                        <li><a href="plan-premium.html">Plan Premium</a></li>
+                        <li class="separator"></li>
+                        <li><a href="plan-duo-basico.html">Plan Dúo Básico</a></li>
+                        <li><a href="plan-duo-intermedio.html">Plan Dúo Intermedio</a></li>
+                        <li><a href="plan-duo-premium.html">Plan Dúo Premium</a></li>
+                        <li class="separator"></li>
+                        <li><a href="cuidadora-fija.html">Cuidadora Fija por Hora</a></li>
+                        <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                        <li><a href="adaptacion.html">Adaptación de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+                <li><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="app.html">APP</a></li>
+                
+                <li class="mobile-btn-container">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="btn-contacto" target="_blank">
+                        <p class="btn-contacto-mobile"><i class="fa-brands fa-whatsapp"></i> CONTACTANOS</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   <main class="faq-page-section">
+        <div class="faq-page-container">
+            
+            <div class="faq-page-header">
+                <h1>Preguntas Frecuentes</h1>
+                <p>Encuentra respuestas rápidas sobre nuestros servicios de cuidado, planes personalizados y el uso de nuestra plataforma tecnológica.</p>
+            </div>
+
+            <div class="faq-categories-wrapper">
+
+                <div class="faq-category-group">
+                    <div class="faq-category-title">
+                        <div class="cat-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
+                        <h2>Planes y Facturación</h2>
+                    </div>
+                    
+                    <div class="faq-accordion-list">
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cuáles son los métodos de pago aceptados?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Para tu comodidad, contamos con opciones de transferencia bancaria y hemos implementado un sistema de pagos recurrentes mediante débito automático con tarjeta de crédito, facilitando así la gestión mensual sin que tengas que preocuparte por las fechas de vencimiento.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Puedo cambiar mi plan en cualquier momento?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Sí, nuestros servicios son flexibles. Puedes solicitar un "upgrade" (mejora) o "downgrade" (reducción) de tu plan contactando a tu asesor asignado con 15 días de anticipación al próximo ciclo de facturación.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Existe algún cargo por cancelación?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>No existen cláusulas de permanencia abusivas. Solo solicitamos un preaviso de 30 días para organizar la desvinculación de los profesionales de enfermería y retirar el equipamiento tecnológico del domicilio.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Ofrecen descuentos por pagos anuales?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Sí, ofrecemos una bonificación especial del 10% de descuento sobre el valor total para aquellas familias que opten por abonar el semestre o el año por adelantado.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cómo recibo mis facturas?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Las facturas electrónicas (Tipo A o B) se envían automáticamente al correo electrónico registrado del titular del servicio dentro de los primeros 5 días hábiles de cada mes.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="faq-category-group">
+                    <div class="faq-category-title">
+                        <div class="cat-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                        <h2>Servicios de Cuidado</h2>
+                    </div>
+                    
+                    <div class="faq-accordion-list">
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Qué formación tiene el personal de ADICIO?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Nuestro equipo está conformado exclusivamente por enfermeros matriculados, asistentes gerontológicos certificados y acompañantes terapéuticos, todos con rigurosos chequeos de antecedentes y capacitación constante.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Realizan guardias nocturnas?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Sí, dentro de nuestro Plan Premium y los esquemas de Cuidadores Permanentes (24/7), cubrimos guardias nocturnas activas o pasivas según la patología y necesidad del adulto mayor.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿El servicio incluye acompañamiento médico?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>ADICIO brinda soporte de enfermería y asistencia diaria. Si bien no somos un servicio de emergencias médicas ni reemplazamos a su médico de cabecera, gestionamos los turnos y la logística integral de salud.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cómo se selecciona al cuidador para mi familiar?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Realizamos un "matching" empático. Analizamos no solo las necesidades clínicas, sino también los intereses, el carácter y las preferencias de tu familiar para asignar al profesional más compatible.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cubren emergencias imprevistas?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Nuestros planes incluyen un botón de pánico y monitoreo preventivo. Ante una emergencia, el profesional aplica primeros auxilios, dispara la alerta médica y se comunica inmediatamente con la familia.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="faq-category-group">
+                    <div class="faq-category-title">
+                        <div class="cat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h2>Uso de la App</h2>
+                    </div>
+                    
+                    <div class="faq-accordion-list">
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Dónde puedo descargar la aplicación?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>La aplicación oficial de ADICIO está disponible en Google Play Store para dispositivos Android, en la App Store para iOS, o puedes descargar el archivo APK directamente desde nuestra web.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Pueden varios familiares acceder a la misma cuenta?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Sí. Otorgamos un acceso "Administrador" al titular, quien puede invitar a otros miembros de la familia otorgándoles permisos de lectura para que todos estén tranquilos y al tanto de las novedades.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Qué tipo de alertas recibiré en mi teléfono?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Recibirás notificaciones push sobre la llegada/salida del profesional, reportes de la toma de medicación y, en caso de utilizar el monitoreo remoto, alertas de caídas o anomalías en signos vitales.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Mis datos de salud están protegidos?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Absolutamente. Cumplimos con los más altos estándares de cifrado de extremo a extremo. La información médica es estrictamente confidencial y solo accesible para la familia y el personal asignado.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿La App funciona sin conexión a internet?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>La aplicación requiere conexión a internet (Wi-Fi o datos móviles) para sincronizar la información en tiempo real. Si el domicilio se queda sin conexión temporalmente, el personal registra los datos offline y estos se sincronizan automáticamente al regresar la señal.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="faq-category-group">
+                    <div class="faq-category-title">
+                        <div class="cat-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h2>Contacto y Soporte</h2>
+                    </div>
+                    
+                    <div class="faq-accordion-list">
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cómo puedo contactar con soporte técnico?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Puedes comunicarte a través de nuestro WhatsApp oficial (disponible 24/7 mediante nuestro agente automatizado) o escribirnos a soporte@adicio.com.ar para consultas sobre la plataforma.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cuál es el horario de atención al cliente?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Nuestras oficinas administrativas operan de Lunes a Viernes de 8:00 a 12:00 y de 16:00 a 20:00 hs. Las urgencias y el monitoreo operan las 24 horas, todos los días del año.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Dónde se encuentran sus oficinas físicas?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Nuestra oficina central se encuentra en Av. Juan Domingo Perón 123, Presidente Derqui, Pilar, Buenos Aires. Sugerimos agendar una cita previa para asegurar la disponibilidad de nuestros asesores.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Cómo puedo dejar una sugerencia o queja?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Valoramos profundamente tu retroalimentación. Puedes enviar un correo a calidad@adicio.com.ar o utilizar la sección de "Feedback" directamente dentro de nuestra aplicación móvil.</p>
+                            </div>
+                        </details>
+                        <details class="faq-card">
+                            <summary>
+                                <span class="faq-q-text">¿Ofrecen asesoramiento legal para trámites de salud?</span>
+                                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                            </summary>
+                            <div class="faq-a-text">
+                                <p>Sí, contamos con un servicio jurídico asociado que asiste a las familias en la gestión de amparos de salud, trámites en Obras Sociales y obtención de Certificados Únicos de Discapacidad (CUD).</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="faq-cta-box">
+                <h2>¿No encontraste lo que buscabas?</h2>
+                <p>Nuestro equipo de expertos está listo para resolver todas tus inquietudes de forma personalizada.</p>
+                <a href="https://wa.me/5491148703219?text=Hola,%20quisiera%20asesoramiento%20para%20elegir%20el%20plan%20ideal." target="_blank" class="btn-primary-dark">HABLAR CON UN ASESOR</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- WP-->
+     <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER-->
+    <footer class="footer-section">
+        <div class="footer-container">
+            
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                     <img src="img/logo horizontal blanco reduzido .png" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog Profesionales</a></li>
+                    <li><a href="blog.html">Blog Familias</a></li>
+                    <li><a href="app.html">Descargar App</a></li>
+                    <li><a href="quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="servicios.html">Plan Básico</a></li>
+                    <li><a href="servicios.html">Plan Intermedio</a></li>
+                    <li><a href="servicios.html">Plan Premium</a></li>
+                    <li><a href="servicios.html">Cuidadoras Fijas (24/7)</a></li>
+                    <li><a href="servicios.html">Adaptación Domiciliaria</a></li>
+                    <li><a href="servicios.html">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Nicaragua 4817, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+541148703219">+54 11 4870-3219</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@adicio.com.ar" target="_blank">info@adicio.com.ar</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." target="_blank" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="legales.html" target="_blank"><i class="fa-solid fa-shield-halved"></i> Políticas de Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="legales.html" target="_blank">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> CABA, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

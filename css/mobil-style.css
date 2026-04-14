@@ -146,6 +146,10 @@
         justify-content: center;
     }
 
+    .btn-contacto-mobile{
+        color: #ffffff;
+    }
+
     /* BIENESTAR */
     .value-container {
         flex-direction: column-reverse; /* Texto arriba, tarjetas abajo */
@@ -362,12 +366,343 @@
         grid-template-columns: 1fr 1fr; /* 2 columnas en tablets */
     }
 
+
+    /* ========================================================
+        SERVICIOS
+   ======================================================== */
+
+   /* HERO SERVICIOS */
+
+    .hero-servicios-section {
+        padding: 8rem 1.5rem 4rem 1.5rem;
+    }
+
+    .hero-servicios-container {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .hero-servicios-content {
+        align-items: center;
+    }
+
+    .hero-servicios-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-servicios-content p {
+        max-width: 100%;
+    }
+
+    /* En celular, la tarjeta flotante no puede sobresalir hacia la izquierda
+       porque se saldría de la pantalla, así que la centramos abajo */
+    .floating-badge {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2rem; /* La dejamos apenas colgando sobre el borde inferior */
+        width: 90%;
+        max-width: 320px;
+    }
+
+
+    /* PLANES INDIVIDUALES */
+    /* Centramos la estructura del precio */
+    .plan-price {
+        justify-content: center;
+    }
+
+    /* Centramos los ítems de la lista (el tilde y el texto) */
+    .plan-features li {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Movemos la etiqueta "Más popular" al centro arriba para que quede simétrico */
+    .plan-badge-corner {
+        top: 0;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid var(--color-primary); /* Pequeño borde para que no se pierda si hay fondo blanco atrás */
+    }
+
+    /* PLANES DUO */
+
+    .planes-duo-header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .planes-duo-grid {
+        grid-template-columns: 1fr; /* Una columna */
+        max-width: 450px;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+
+    /* Centrar contenido de la tarjeta */
+    .duo-card {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Apilar el título y la pastilla de descuento */
+    .duo-card-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .duo-price {
+        justify-content: center;
+    }
+
+    .duo-action {
+        justify-content: center;
+    }
+
+    /* 24/7  */
+
+    .servicios-especializados-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    /* Centrar columna izquierda (Textos) */
+    .especializados-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .especializados-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .especializado-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .especializado-text p {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Ajustar el mosaico Bento para celulares */
+    .especializados-bento {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* En celulares o tablets chicas, anulamos el desfase (margin-top: 3rem)
+       para que quede un cuadrado perfecto y no se deforme */
+    .bento-col-2 {
+        margin-top: 0;
+    }
+
+    /* COMPARACION SERVICIOS */
+
+    .tabla-planes-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    /* Centramos el texto de las celdas en móvil para mantener tu estética, 
+       excepto la primera columna para que se lea bien la característica */
+    .tabla-servicios th:not(.col-caracteristica),
+    .tabla-servicios td:not(.col-caracteristica) {
+        text-align: center;
+    }
+
+    /* Sombra interior para indicar que se puede hacer scroll horizontal */
+    .tabla-container-wrapper {
+        box-shadow: inset -15px 0 15px -15px rgba(0,0,0,0.1), 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+
+    /* ========================================================
+                        BLOG
+   ======================================================== */
+
+   .blog-header-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .blog-header-text h1 { font-size: 2.8rem; }
+    
+    .blog-filters {
+        justify-content: center; /* Centra las pastillas de filtros */
+    }
+
+    .blog-hero-grid {
+        grid-template-columns: 1fr; /* Apila el destacado principal y la columna derecha */
+    }
+
+    .hero-post-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .post-meta, .post-info {
+        justify-content: center;
+    }
+
+    .sidebar-post-text {
+        text-align: center;
+    }
+
+    .promo-content {
+        text-align: center;
+    }
+
+    .blog-main-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+    }
+
+
+
+    /* ========================================================
+        QUIENES SOMOS
+   ======================================================== */
+
+    .hero-grid, .historia-grid, .mision-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .quienes-hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .historia-estadisticas {
+        /* Centramos la grilla de estadísticas */
+        justify-content: center;
+    }
+
+    .stat-box {
+        align-items: center;
+        border-left: none;
+        border-bottom: 3px solid var(--color-primary); /* Borde abajo en celular */
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+
+    .pilares-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .pilar-card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision-image {
+        grid-row: 2; /* Bajamos la imagen debajo del texto en móvil */
+    }
+
+    .quienes-compromiso-section h2 {
+        font-size: 3rem;
+    }
+
+    .cta-box-blue {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-botones-row {
+        flex-direction: column;
+    }
+
+    /* ========================================================
+        PAGINA APP
+   ======================================================== */
+
+   .app-hero-grid, .app-features-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .app-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .app-hero-actions {
+        justify-content: center;
+    }
+
+    .conexion-badge {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -1rem; /* Lo ponemos arriba centrado para que no se pierda */
+    }
+
+    .app-features-image-wrapper {
+        order: 2; /* Bajamos la imagen debajo del texto */
+    }
+
+    .app-feat-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-steps-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto 4rem auto;
+    }
+
+    .step-card {
+        text-align: center;
+    }
+
+    .step-icon {
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .support-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .support-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 600px) {
     /* BIENESTAR */
     .value-grid {
         grid-template-columns: 1fr; /* 1 sola columna en celulares */
+    }
+
+    .hero-botones-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-botones-row a {
+        width: 100%; /* Hacemos que el botón ocupe de lado a lado en el celular */
+        text-align: center;
+        justify-content: center;
     }
 
     /* COMPARACION */
@@ -379,6 +714,13 @@
     /* Indicador visual en móvil para saber que se puede hacer scroll */
     .table-container {
         box-shadow: inset -15px 0 15px -15px rgba(0,0,0,0.1);
+    }
+
+    /* APP */
+
+    .app-mockup{
+        height: 250px;
+        object-fit: cover;
     }
 
     /* INSTITUCIONES */
@@ -475,12 +817,122 @@
         display: none; /* Ocultamos los puntitos separadores en celular */
     }
 
-   /* WHATSAPP*/
+    /* WHATSAPP*/
     .whatsapp-float {
         bottom: 1.5rem; /* Un poco más pegado al borde en celular para no robar tanta pantalla */
         right: 1.5rem;
         width: 55px; /* Un poco más pequeño */
         height: 55px;
         font-size: 1.8rem;
-    } 
+    }
+
+    /*===================================
+              SERVICIOS
+    ===================================*/
+
+    /* 24/7 */
+
+    .especializados-bento {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* DUDAS */
+
+    .cta-dudas-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .cta-dudas-botones {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    /* En celulares, los botones ocupan todo el ancho y quedan uno debajo del otro */
+    .btn-primary-shadow,
+    .btn-outline-shadow {
+        width: 100%;
+        max-width: 350px; 
+    }
+
+
+    /* ========================================================
+                        BLOG
+   ======================================================== */
+
+    .blog-main-grid {
+        grid-template-columns: 1fr; /* 1 columna en celulares */
+    }
+    
+    .newsletter-card {
+        text-align: center;
+    }
+
+
+    /* ========================================================
+                FAQ
+   ======================================================== */
+
+    .faq-page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Centramos el título de cada categoría (Ícono + Texto) */
+    .faq-category-title {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    /* Reducimos el padding de las tarjetas en celular */
+    .faq-card summary {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .faq-a-text {
+        padding: 0 1.5rem 1.2rem 1.5rem;
+    }
+
+    .faq-cta-box {
+        padding: 3rem 1.5rem;
+    }
+    
+    .faq-cta-box h2 {
+        font-size: 1.8rem;
+    }
+
+    /* ========================================================
+        LEGALES
+   ======================================================== */
+
+   .legal-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .legal-document {
+        padding: 2.5rem 1.5rem; /* Menos padding en celulares para aprovechar el espacio */
+    }
+
+    .legal-block h2 {
+        font-size: 1.25rem;
+    }
+
+    .legal-alert-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+        border-left: none;
+        border-top: 4px solid #fbbf24;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    /* En celulares forzamos que las listas de contacto se centren si todo lo demás está centrado */
+    .legal-contact-list li {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
 }

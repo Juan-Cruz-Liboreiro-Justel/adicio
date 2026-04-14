@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidado Integral</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobil-style.css">
+</head>
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <div class="nav-container">
+            
+            <div class="mobile-spacer"></div>
+
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="img/logo azul horizontal reducido.png" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">INICIO</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link dropdown-toggle">
+                            SERVICIOS <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="plan-basico.html">Plan Básico</a></li>
+                            <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                            <li><a href="plan-premium.html">Plan Premium</a></li>
+                            <li class="separator"></li>
+                            <li><a href="plan-duo-basico.html">Plan Dúo Básico</a></li>
+                            <li><a href="plan-duo-intermedio.html">Plan Dúo Intermedio</a></li>
+                            <li><a href="plan-duo-premium.html">Plan Dúo Premium</a></li>
+                            <li class="separator"></li>
+                            <li><a href="cuidadora-fija.html">Cuidadora Fija por Hora</a></li>
+                            <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                            <li><a href="adaptacion.html">Adaptación de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html" class="nav-link">BLOG</a></li>
+                    <li><a href="quienes.html" class="nav-link">QUIÉNES SOMOS</a></li>
+                    <li><a href="faq.html" class="nav-link">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="app.html" class="nav-link">APP</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="btn-contacto desktop-btn" target="_blank">
+                <p><i class="fa-brands fa-whatsapp"></i> CONTACTANOS</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+            
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="img/logo azul horizontal reducido.png" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>SERVICIOS</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="plan-basico.html">Plan Básico</a></li>
+                        <li><a href="plan-intermedio.html">Plan Intermedio</a></li>
+                        <li><a href="plan-premium.html">Plan Premium</a></li>
+                        <li class="separator"></li>
+                        <li><a href="plan-duo-basico.html">Plan Dúo Básico</a></li>
+                        <li><a href="plan-duo-intermedio.html">Plan Dúo Intermedio</a></li>
+                        <li><a href="plan-duo-premium.html">Plan Dúo Premium</a></li>
+                        <li class="separator"></li>
+                        <li><a href="cuidadora-fija.html">Cuidadora Fija por Hora</a></li>
+                        <li><a href="servicio-juridico.html">Servicio Jurídico</a></li>
+                        <li><a href="adaptacion.html">Adaptación de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+                <li><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="app.html">APP</a></li>
+                
+                <li class="mobile-btn-container">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="btn-contacto" target="_blank">
+                        <p class="btn-contacto-mobile"><i class="fa-brands fa-whatsapp"></i> CONTACTANOS</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+       <!-- HERO -->
+        <section class="hero-servicios-section">
+        
+        <div class="hero-servicios-bg"></div>
+
+        <div class="hero-servicios-container">
+            
+            <div class="hero-servicios-content">
+                <span class="tag-soluciones">SOLUCIONES INTEGRALES</span>
+                
+                <h1>Nuestros <br>Servicios de <br><span class="text-primary">Cuidado Integral</span></h1>
+                
+                <p>Diseñamos planes adaptados a cada necesidad, combinando calidez humana con tecnología de vanguardia para asegurar el bienestar y la dignidad de tus seres queridos.</p>
+                
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="btn-primary" target="_blank">
+                    CONSULTAR POR WHATSAPP <i class="fa-solid fa-comment-dots"></i>
+                </a>
+            </div>
+
+            <div class="hero-servicios-image-wrapper">
+                
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuzRZ_IOsslmxO2P51mFUgdVBS9e4Y-fZ74-hvbKbhVlVD-nG8sJIkV2AM_R3QTzR9Ayo1PQiCL658qgZdUT2EV93luuiZ681Q8-_NJ1HELjt5DMCDJciPWeIOereUtg3MWgLFRc_8QiW-r0N5RjpuX08VoZ8PKxLQdjZAQqTvmPvkMJFHgSLaedNIGFCagzRtbIHnVtdZeWGpPGPiP3i5Vivedz6UHk_bHUz--DfZBNw4TIeFYYYcZKBQwJRlnzCRMzmGrf-Id9s" alt="Adulto mayor sonriendo con una taza" class="servicios-main-img">
+                
+                <div class="floating-badge">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="badge-text">
+                        <h4>Atención 24/7 Garantizada</h4>
+                        <p>Profesionales certificados y supervisión constante.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PLANES INDIVIDUALES -->
+     <section class="planes-individuales-section">
+        <div class="planes-header">
+            <h2>Planes Individuales</h2>
+            <p>Nuestra oferta principal diseñada para cubrir desde asistencia básica hasta cuidados de alta complejidad.</p>
+        </div>
+
+        <div class="planes-grid">
+            
+            <div class="plan-card plan-white">
+                <div class="plan-content">
+                    <h3 class="plan-title">Plan Básico</h3>
+                    <p class="plan-desc">Ideal para autonomía asistida.</p>
+                    
+                    <div class="plan-price">X<span>/mes</span></div>
+
+                    <ul class="plan-features">
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Visitas semanales de enfermería</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Gestión de turnos médicos</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Monitoreo remoto básico</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <a href="#" class="btn-plan-outline">SABER MÁS</a>
+                </div>
+            </div>
+
+            <div class="plan-card plan-blue plan-highlight">
+                <div class="plan-badge-corner">MÁS POPULAR</div>
+                <div class="plan-content">
+                    <h3 class="plan-title">Plan Intermedio</h3>
+                    <p class="plan-desc">Cuidado proactivo y preventivo.</p>
+                    
+                    <div class="plan-price">X<span>/mes</span></div>
+
+                    <ul class="plan-features">
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Todo lo del Plan Básico</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Asistente terapéutico 12hs/semana</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Control de medicación digital</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Botón de pánico incluido</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <a href="#" class="btn-plan-white">SABER MÁS</a>
+                </div>
+            </div>
+
+            <div class="plan-card plan-white">
+                <div class="plan-content">
+                    <h3 class="plan-title">Plan Premium</h3>
+                    <p class="plan-desc">Cobertura total personalizada.</p>
+                    
+                    <div class="plan-price">X<span>/mes</span></div>
+
+                    <ul class="plan-features">
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Todo lo del Plan Intermedio</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Cuidado 24/7 presencial</li>
+                        <li><i class="fa-regular fa-circle-check feature-icon"></i> Kinesiología a domicilio</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <a href="#" class="btn-plan-outline">SABER MÁS</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- PLANES DUO -->
+    <section class="planes-duo-section">
+        <div class="planes-duo-container">
+            
+            <div class="planes-duo-header-wrapper">
+                <div class="planes-duo-header">
+                    <h2>Planes Dúo</h2>
+                    <p>Pensados para dos familiares que conviven en el mismo hogar, optimizando recursos sin comprometer la calidad.</p>
+                </div>
+                <a href="#" class="link-beneficios">Ver beneficios de convivencia <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="planes-duo-grid">
+                
+                <div class="duo-card">
+                    <div class="duo-card-header">
+                        <h3>Dúo Básico</h3>
+                        <span class="duo-badge">-15% Ahorro</span>
+                    </div>
+                    <p class="duo-desc">Asistencia compartida para tareas diarias y supervisión de salud.</p>
+                    <div class="duo-price">X<span>/mes</span></div>
+                    <a href="#" class="duo-action">ME INTERESA <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+
+                <div class="duo-card">
+                    <div class="duo-card-header">
+                        <h3>Dúo Intermedio</h3>
+                        <span class="duo-badge">-20% Ahorro</span>
+                    </div>
+                    <p class="duo-desc">Incluye asistente terapéutico para ambos y monitoreo digital avanzado.</p>
+                    <div class="duo-price">X<span>/mes</span></div>
+                    <a href="#" class="duo-action">ME INTERESA <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+
+                <div class="duo-card">
+                    <div class="duo-card-header">
+                        <h3>Dúo Premium</h3>
+                        <span class="duo-badge">-25% Ahorro</span>
+                    </div>
+                    <p class="duo-desc">Cuidado intensivo y exclusivo para la pareja o familiares.</p>
+                    <div class="duo-price">X<span>/mes</span></div>
+                    <a href="#" class="duo-action">ME INTERESA <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 24/7 -->
+    <section class="servicios-especializados-section">
+        <div class="servicios-especializados-container">
+
+            <div class="especializados-content">
+                <h2>Servicios <br><span class="text-primary">Especializados</span></h2>
+
+                <div class="especializados-lista">
+                    <div class="especializado-item">
+                        <div class="especializado-icon">
+                            <i class="fa-solid fa-house-medical"></i>
+                        </div>
+                        <div class="especializado-text">
+                            <h3>Cuidadores Permanentes (24/7)</h3>
+                            <p>Personal altamente capacitado para residir en el hogar o rotar turnos, asegurando vigilancia total sin perder la comodidad del entorno familiar.</p>
+                        </div>
+                    </div>
+
+                    <div class="especializado-item">
+                        <div class="especializado-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div class="especializado-text">
+                            <h3>Adaptación del Hogar</h3>
+                            <p>Evaluamos y modificamos la infraestructura de la casa: colocación de barrales, superficies antideslizantes y eliminación de barreras arquitectónicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="especializado-item">
+                        <div class="especializado-icon">
+                            <i class="fa-solid fa-file-medical"></i>
+                        </div>
+                        <div class="especializado-text">
+                            <h3>Gestión Administrativa Integrada</h3>
+                            <p>Nos ocupamos de la logística con su obra social: solicitud de turnos, autorizaciones de recetas y retiro de medicamentos en farmacia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="especializados-bento">
+                
+                <div class="bento-columna bento-col-1">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600&auto=format&fit=crop" alt="Enfermera sonriendo con paciente" class="bento-img">
+                    
+                    <div class="bento-card-blue">
+                        <span class="bento-number">98%</span>
+                        <span class="bento-label">SATISFACCIÓN DEL CLIENTE</span>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=600&auto=format&fit=crop" alt="Profesional tomando la presión" class="bento-img">
+                </div>
+
+                <div class="bento-columna bento-col-2">
+                    <div class="bento-card-gray">
+                        <p>Innovación y Calidez en un solo lugar</p>
+                    </div>
+                    
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" alt="Dispositivo de monitoreo de salud" class="bento-img">
+                    
+                    <div class="bento-card-blue">
+                        <span class="bento-number">+20</span>
+                        <span class="bento-label">AÑOS DE EXPERIENCIA</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMPARACION SERVICIOS -->
+     <section class="tabla-planes-section">
+        <div class="tabla-planes-header">
+            <h2>Compara nuestros planes</h2>
+            <p>Detalle técnico de cada nivel de cobertura.</p>
+        </div>
+
+        <div class="tabla-container-wrapper">
+            <table class="tabla-servicios">
+                <thead>
+                    <tr>
+                        <th class="col-caracteristica">Características</th>
+                        <th>Básico</th>
+                        <th class="col-destacada">Intermedio</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-caracteristica">Frecuencia Enfermería</td>
+                        <td>Semanal</td>
+                        <td class="td-destacado">2 veces por semana</td>
+                        <td>A demanda</td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">Asistente Terapéutico</td>
+                        <td><i class="fa-solid fa-xmark icon-cross"></i></td>
+                        <td>12hs semanales</td>
+                        <td class="td-bold">Tiempo Completo</td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">App de Monitoreo</td>
+                        <td>Básica</td>
+                        <td class="td-destacado">Premium c/ alertas</td>
+                        <td>Full + Historial Médico</td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">Botón de Pánico</td>
+                        <td><i class="fa-solid fa-xmark icon-cross"></i></td>
+                        <td><i class="fa-solid fa-check icon-check"></i></td>
+                        <td><i class="fa-solid fa-check icon-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="col-caracteristica">Kinesiología</td>
+                        <td><i class="fa-solid fa-xmark icon-cross"></i></td>
+                        <td>Opcional con descuento</td>
+                        <td><i class="fa-solid fa-check icon-check"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- DUDAS -->
+    <section class="cta-dudas-section">
+        <div class="cta-dudas-container">
+            <h2>¿No estás seguro de cuál es el plan ideal?</h2>
+            <p>Nuestros asesores especialistas pueden realizar una evaluación gratuita a domicilio para recomendarte la mejor opción para tu familia.</p>
+            
+            <div class="cta-dudas-botones">
+                <a href="https://wa.me/5491148703219?text=Hola,%20quisiera%20asesoramiento%20para%20elegir%20el%20plan%20ideal." class="btn-primary-shadow" target="_blank">
+                    <i class="fa-solid fa-phone"></i> CONTACTAR AHORA
+                </a>
+                
+                <a href="#" class="btn-outline-shadow">
+                    <i class="fa-regular fa-calendar-days"></i> AGENDAR UNA REUNIÓN
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <!-- WP-->
+     <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER-->
+    <footer class="footer-section">
+        <div class="footer-container">
+            
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                     <img src="img/logo horizontal blanco reduzido .png" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog Profesionales</a></li>
+                    <li><a href="blog.html">Blog Familias</a></li>
+                    <li><a href="app.html">Descargar App</a></li>
+                    <li><a href="quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="servicios.html">Plan Básico</a></li>
+                    <li><a href="servicios.html">Plan Intermedio</a></li>
+                    <li><a href="servicios.html">Plan Premium</a></li>
+                    <li><a href="servicios.html">Cuidadoras Fijas (24/7)</a></li>
+                    <li><a href="servicios.html">Adaptación Domiciliaria</a></li>
+                    <li><a href="servicios.html">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Nicaragua 4817, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+541148703219">+54 11 4870-3219</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@adicio.com.ar" target="_blank">info@adicio.com.ar</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO." target="_blank" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="legales.html" target="_blank"><i class="fa-solid fa-shield-halved"></i> Políticas de Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="legales.html" target="_blank">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> CABA, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
