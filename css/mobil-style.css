@@ -17,7 +17,7 @@
     .hamburger-btn {
         display: block;
         width: 32px;
-        color: var(--color-text-dark);
+        color: var(--color-primary);
         font-size: 2rem;
     }
 
@@ -31,17 +31,14 @@
         width: 100vw;
         height: 100vh;
         height: 100dvh;
-        /* dvh asegura que cubra bien en celulares con barra de navegación */
-        background-color: transparent;
+        background-color: rgba(0, 94, 184, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         z-index: 99999;
-        /* Por encima de todo */
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
         overflow-y: auto;
-        /* Permite scroll solo si la pantalla es muy pequeña */
     }
 
     .mobile-menu-overlay.active {
@@ -86,6 +83,7 @@
     .close-btn span {
         font-size: 2rem;
     }
+
 
     /* Lista centrada */
     .mobile-nav-list {
@@ -225,6 +223,11 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    /* KIT BIENESTAR */
+    .tech-kit-header h2 {
+        font-size: 2.8rem;
     }
 
     /* PLANES */
@@ -534,65 +537,54 @@
         justify-content: center;
     }
 
-    /* 24/7  */
+    /* KIT BIENESTAR / 24HS/ JURIDICO / ADAPTACION DE SERVICIOS  */
 
-    .servicios-especializados-container {
-        flex-direction: column;
-        gap: 5rem;
+    /* Kit Bienestar */
+    .srv-kit-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .kit-devices-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
     }
 
-    /* Centrar columna izquierda (Textos) */
-    .especializados-content {
+    /* Secciones Alternadas */
+    .srv-feature-row, .srv-feature-row.srv-reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .srv-feature-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .srv-feature-text h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Listas internas centradas */
+    .srv-check-list {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+        justify-content: center;
+    }
+    
+    .srv-check-list li {
+        justify-content: center;
+    }
+
+    .srv-list-card, .srv-icon-item {
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
-    .especializados-content h2 {
-        font-size: 2.8rem;
-    }
-
-    .especializado-item {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .especializado-text p {
-        max-width: 90%;
+    
+    .srv-list-card i, .icon-box-light {
         margin: 0 auto;
     }
-
-    /* Ajustar el mosaico Bento para celulares */
-    .especializados-bento {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    /* En celulares o tablets chicas, anulamos el desfase (margin-top: 3rem)
-       para que quede un cuadrado perfecto y no se deforme */
-    .bento-col-2 {
-        margin-top: 0;
-    }
-
-    /* COMPARACION SERVICIOS */
-
-    .tabla-planes-header h2 {
-        font-size: 2.5rem;
-    }
-
-    /* Centramos el texto de las celdas en móvil para mantener tu estética, 
-       excepto la primera columna para que se lea bien la característica */
-    .tabla-servicios th:not(.col-caracteristica),
-    .tabla-servicios td:not(.col-caracteristica) {
-        text-align: center;
-    }
-
-    /* Sombra interior para indicar que se puede hacer scroll horizontal */
-    .tabla-container-wrapper {
-        box-shadow: inset -15px 0 15px -15px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.05);
-    }
-
 
     /* ========================================================
                         BLOG
@@ -660,8 +652,10 @@
     }
 
     .historia-estadisticas {
-        /* Centramos la grilla de estadísticas */
-        justify-content: center;
+        gap: 1rem;
+    }
+    .stat-number {
+        font-size: 2.8rem;
     }
 
     .stat-box {
@@ -770,9 +764,96 @@
         flex-direction: column;
         gap: 1rem;
     }
+
+    /* ========================================================
+              PLAN ESTAR
+   ======================================================== */
+    .plan-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .plan-hero-text p {
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .floating-badge {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2rem;
+        width: max-content;
+    }
+
+    /* Kit en tablet: 3 arriba, 2 abajo */
+    .plan-kit-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .plan-kit-card:nth-child(4) { grid-column: 1 / 2; }
+    .plan-kit-card:nth-child(5) { grid-column: 2 / 4; }
+
+    /* Includes en tablet */
+    .plan-includes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Dúo apilado */
+    .duo-wrapper-box {
+        flex-direction: column;
+    }
+    .duo-image-side {
+        height: 300px;
+    }
+
+    /* ========================================================
+            ESTAR PLUS
+   ======================================================== */
+
+    /* Bento Grid: 2 columnas en tablet */
+    .inter-bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .bento-large {
+        grid-column: 1 / 3; /* Ocupa las 2 columnas */
+    }
+    
+    .bento-tall {
+        grid-column: 1 / 3; /* En tablet la ponemos a lo ancho */
+    }
+
+    /* Dúo */
+    .inter-duo-wrapper {
+        flex-direction: column;
+        padding: 3rem 2rem;
+    }
+
+    /* ========================================================
+       PLAN ESTAR PRO
+   ======================================================== */
+
+   .premium-bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .bento-col-2 { grid-column: 1 / 3; }
+    .bento-tall { grid-column: 1 / 3; }
+    
+    .premium-kit-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .premium-kit-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .kit-banner-badge {
+        white-space: normal;
+        justify-content: center;
+    }
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     /* BIENESTAR */
     .value-grid {
@@ -790,6 +871,26 @@
         /* Hacemos que el botón ocupe de lado a lado en el celular */
         text-align: center;
         justify-content: center;
+    }
+
+    /* KIT BIENESTAR INDEX */
+    .tech-kit-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .tech-devices-grid {
+        gap: 1rem;
+    }
+
+    .device-card {
+        flex: 1 1 100%; /* En celulares cada tarjeta ocupa el 100% del ancho */
+        max-width: 350px;
+    }
+
+    .tech-bonus-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 1.5rem;
     }
 
     /* COMPARACION */
@@ -926,12 +1027,6 @@
               SERVICIOS
     ===================================*/
 
-    /* 24/7 */
-
-    .especializados-bento {
-        grid-template-columns: 1fr;
-    }
-
 
     /* DUDAS */
 
@@ -965,6 +1060,17 @@
         text-align: center;
     }
 
+
+    /* ========================================================
+                QUIENES SOMOS
+   ======================================================== */
+
+   .historia-estadisticas{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+        gap: 1rem; /* Espacio vertical y horizontal */
+        justify-items: center; /* Centra la cajita dentro de su mitad de pantalla */
+    }
 
     /* ========================================================
                 FAQ
@@ -1032,5 +1138,184 @@
         text-align: center;
         gap: 0.5rem;
     }
+
+    /* ========================================================
+                PLAN ESTAR
+   ======================================================== */
+
+   .plan-hero-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .plan-section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .plan-kit-grid {
+        grid-template-columns: 1fr; /* 1 columnas en móvil */
+    }
+    .plan-kit-card:nth-child(4), .plan-kit-card:nth-child(5) { 
+        grid-column: auto; /* Resetea el span de tablet */
+    }
+
+    .plan-includes-grid {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+
+    .duo-content-side {
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+    
+    .duo-benefits-list li {
+        justify-content: center;
+        text-align: left; /* Mantiene el texto alineado si ocupa más de una línea */
+    }
+
+    .duo-content-side .btn-white-solid {
+        align-self: center;
+    }
+
+    .include-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el ícono y el contenido horizontalmente */
+        text-align: center;  /* Centra los textos */
+    }
+
+    .include-icon {
+        margin: 0 auto 1.5rem auto; /* Asegura que el cuadradito del ícono quede perfectamente al medio */
+    }
+
+    /* ========================================================
+            ESTAR PLUS
+   ======================================================== */
+
+   /* Bento Grid: 1 columna en celular */
+    .inter-bento-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bento-large, .bento-tall {
+        grid-column: 1 / 2;
+    }
+
+    .bento-header {
+        text-align: center;
+    }
+
+    /* Dúo */
+    .inter-duo-badge {
+        bottom: -1rem;
+        right: 50%;
+        transform: translateX(50%); /* Centra el badge en celular */
+    }
+
+    /* Centrar las tarjetas del Bento Grid */
+    .bento-card {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Centrar la sección del Dúo Intermedio */
+    .inter-duo-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Centrar la lista de tildes del Dúo */
+    .inter-duo-list li {
+        justify-content: center;
+        text-align: left; /* Mantiene el texto prolijo si ocupa dos renglones, pero centrado en la pantalla */
+    }
+
+    /* Asegurar que el botón negro se centre perfectamente */
+    .inter-duo-content .btn-dark-solid {
+        align-self: center;
+        margin-top: 0.5rem;
+    }
+
+    /* ========================================================
+       PLAN ESTAR PRO
+   ======================================================== */
+
+   /* 1. Centrar el Hero en móvil */
+    .plan-hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .plan-hero-text .btn-auto {
+        margin: 0 auto;
+    }
+
+    .badge-premium {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    /* 2. Centrar Bento Grid (Propuesta de Valor) */
+    .premium-bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .bento-col-2, .bento-tall {
+        grid-column: 1 / 2;
+    }
+    
+    .bento-card {
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Adaptar tarjeta horizontal */
+    .bento-horizontal {
+        flex-direction: column;
+    }
+    .bento-side-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* 3. Centrar Kit Premium */
+    .premium-kit-grid {
+        grid-template-columns: 1fr;
+    }
+    .premium-kit-grid .inter-kit-card {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 4. Centrar Dúo Premium */
+    .inter-duo-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .inter-duo-list li {
+        justify-content: center;
+        text-align: left; 
+    }
+    .inter-duo-content .btn-auto {
+        align-self: center;
+        margin-top: 1rem;
+    }
+
+    /* Centrar el título de Propuesta de Valor en móvil */
+    .premium-section-title {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 3rem auto;
+        text-align: center;
+    }
+
 
 }
