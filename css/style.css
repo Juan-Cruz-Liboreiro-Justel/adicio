@@ -1167,6 +1167,60 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 /* ========================================================
+   SECCIÓN: AVAL INSTITUCIONAL (AGE)
+   ======================================================== */
+.trust-badge-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff; /* Fondo blanco para que la tarjeta destaque */
+    width: 100%;
+}
+
+.trust-container {
+    max-width: 1000px; /* Un poco más angosto para que la lectura sea cómoda */
+    margin: 0 auto;
+}
+
+.trust-badge-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    background: var(--color-gradient); /* Gris súper clarito y elegante */
+    padding: 3rem 4rem;
+    border-radius: 1.5rem;
+}
+
+.trust-text {
+    flex: 1.5; /* Ocupa un poco más de espacio que la imagen */
+}
+
+.trust-text h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0;
+}
+
+.trust-text h2 span{
+    font-size: 2.3rem;
+}
+
+.trust-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-logo img {
+    max-width: 220px; /* Evita que el logo se vea gigante */
+    width: 100%;
+    height: auto;
+}
+
+
+/* ========================================================
    SECCIÓN: BLOG
    ======================================================== */
 .blog-snippet-section {
@@ -4785,10 +4839,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .intermedio-kit-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Fuerza 5 columnas idénticas */
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 .inter-kit-card {
@@ -4824,6 +4877,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     font-size: 0.85rem;
     font-weight: 800;
     color: var(--color-text-dark);
+    text-align: center;
+}
+
+.inter-kit-card p {
+    font-size: 0.85rem;
+    color: #475569; /* Un gris intermedio para que no compita con el título */
+    line-height: 1.5;
+    margin: 0;
     text-align: center;
 }
 
@@ -5008,7 +5069,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .grayscale-img {
     width: 100%;
     border-radius: 1.5rem;
-    filter: grayscale(100%); /* Efecto blanco y negro del diseño */
+    /* filter: grayscale(100%);  Efecto blanco y negro del diseño */
 }
 
 .inter-duo-badge {

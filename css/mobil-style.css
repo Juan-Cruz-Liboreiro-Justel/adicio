@@ -926,6 +926,22 @@
         /* Achicamos un poco la letra en móvil */
     }
 
+    /* AGE */
+    .trust-badge-card {
+        flex-direction: column-reverse; /* Pone el logo arriba y el texto abajo en celulares */
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .trust-text h2 {
+        font-size: 1.35rem;
+    }
+
+    .trust-logo img {
+        max-width: 180px; /* Achica un poco el logo en móviles */
+    }
+
     /*  FAQ */
 
     .faq-snippet-header h2 {
@@ -1190,6 +1206,10 @@
     /* ========================================================
             ESTAR PLUS
    ======================================================== */
+
+   .intermedio-kit-grid{
+    grid-template-columns:  1fr; /* Fuerza 5 columnas idénticas */
+   }
 
    /* Bento Grid: 1 columna en celular */
     .inter-bento-grid {
