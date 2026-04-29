@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidamos con Sentido</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobil-style.css">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <div class="nav-container">
+
+            <div class="mobile-spacer"></div>
+
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="img/ISOTIPO AZUL.png" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link dropdown-toggle">
+                            Servicios <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="estar.html">Plan Estar</a></li>
+                            <li><a href="estar-plus.html">Plan Estar Plus</a></li>
+                            <li><a href="estar-pro.html">Plan Estar Pro</a></li>
+                            <li class="separator"></li>
+                            <li><a href="estar.html#estar-duo">Plan Estar Duo</a></li>
+                            <li><a href="estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                            <li><a href="estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                            <li><a href="servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                            <li><a href="servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html" class="view-all"><span class="gradient">Ver todos los
+                                        servicios</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="quienes.html" class="nav-link">Quienes Somos</a></li>
+                    <li><a href="faq.html" class="nav-link">Preguntas Frecuentes</a></li>
+                    <li><a href="kit-bienestar.html" class="nav-link">Kit Bienestar</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                class="btn-contacto desktop-btn" target="_blank">
+                <p><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="img/ISOTIPO AZUL.png" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>Servicios</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="estar.html">Plan Estar</a></li>
+                        <li><a href="estar-plus.html">Plan Estar Plus</a></li>
+                        <li><a href="estar-pro.html">Plan Estar Pro</a></li>
+                        <li class="separator"></li>
+                        <li><a href="estar.html#estar-duo">Plan Estar Duo</a></li>
+                        <li><a href="estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                        <li><a href="estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                        <li><a href="servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                        <li><a href="servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="quienes.html">Quienes somos</a></li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="kit-bienestar.html">Kit Bienestar</a></li>
+
+                <li class="mobile-btn-container">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        class="btn-contacto" target="_blank">
+                        <p class="btn-contacto-mobile"><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="kit-page-main">
+
+        <!-- HERO -->
+        <section class="kit-hero-section">
+            <div class="plan-container kit-hero-grid">
+
+                <div class="kit-hero-text">
+                    <span class="tag-light-gray">TECNOLOGÍA PROACTIVA</span>
+                    <h1>Kit Bienestar <br><span class="text-italic-light gradient">Tu Hogar Inteligente de Cuidado.
+                        </span></h1>
+                    <p>Un ecosistema completo de dispositivos conectados, diseñados para garantizar un monitoreo
+                        constante, precisión y tranquilidad absoluta para usted y su familia.</p>
+
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        class="btn-primary-solid btn-auto">
+                        Solicitar Presupuesto
+                    </a>
+                </div>
+
+                <div class="kit-hero-image-wrapper">
+                    <div class="hero-image-bg-shape-kit"></div>
+                    <img src="img/KIT-BIENESTAR.jpg" alt="Mano de adulto mayor con smartwatch inteligente"
+                        class="plan-main-img">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KIT BIENESTAR -->
+        <section class="kit-products-section">
+            <div class="kit-titulo-inlu">
+                <h2 class="kit-intro-title">¿Qué incluye tu Kit?</h2>
+            </div>
+            <div class="plan-container">
+                <div class="kit-products-grid">
+
+                    <div class="product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>Reloj Inteligente</h3>
+                        <p>Detección de caídas automática y botón de pánico integrado 24/7 con GPS.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3>Tensiómetro Digital</h3>
+                        <p>Control digital de presión arterial.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-lungs"></i>
+                        </div>
+                        <h3>Oxímetro de Pulso</h3>
+                        <p>Nivel de oxígeno en sangre.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-temperature-half"></i>
+                        </div>
+                        <h3>Termómetro Digital</h3>
+                        <p>Medición precisa de temperatura corporal.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-weight-scale"></i>
+                        </div>
+                        <h3>Balanza</h3>
+                        <p>Control de peso y composición corporal.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>App Familiar</h3>
+                        <p>Visualice métricas de salud en tiempo real y reciba alertas en su smartphone.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SMARTWACH -->
+        <section class="device-detail-section">
+            <div class="plan-container">
+                <div class="device-row">
+
+                    <div class="device-image-col">
+                        <img src="img/SMARTWATCH.jpg" alt="Smartwatch ADICIO" class="device-img">
+                    </div>
+
+                    <div class="device-text-col">
+                        <h2>Smartwatch de Asistencia</h2>
+                        <p class="device-intro">Más que un reloj, es un guardián silencioso en su muñeca. Tecnología
+                            avanzada diseñada para la seguridad total.</p>
+
+                        <div class="device-features-list">
+
+                            <div class="device-feature-item">
+                                <div class="df-icon"><i class="fa-solid fa-person-falling gradient"></i></div>
+                                <div class="df-text">
+                                    <h4>Detección de Caídas</h4>
+                                    <p>Sensores inteligentes que detectan impactos bruscos y envían alertas automáticas.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="device-feature-item">
+                                <div class="df-icon"><i class="fa-regular fa-heart gradient"></i></div>
+                                <div class="df-text">
+                                    <h4>Ritmo Cardíaco 24/7</h4>
+                                    <p>Monitoreo continuo de pulsaciones con reportes históricos detallados.</p>
+                                </div>
+                            </div>
+
+                            <div class="device-feature-item">
+                                <div class="df-icon sos-icon"><i class="fa-solid fa-asterisk"></i></div>
+                                <div class="df-text">
+                                    <h4>Botón SOS</h4>
+                                    <p>Alerta inmediata con solo presionar un botón.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="btn-kit-bienestar">
+                            <a href="#" class="btn-secondary">
+                                <p class="gradient">Aprende todas las funciones</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OXIMETRO -->
+        <section class="oximetro-section">
+            <div class="plan-container">
+                <div class="oximetro-row">
+
+                    <div class="oximetro-text-col">
+                        <h2>Oxímetro de Pulso</h2>
+                        <p class="oximetro-intro">Vital para el monitoreo de la salud respiratoria, midiendo la
+                            saturación de oxígeno en sangre al instante.</p>
+
+                        <div class="device-stats-grid">
+                            <div class="stat-card">
+                                <h4 class="gradient">SpO2</h4>
+                                <span>Nivel de Oxígeno</span>
+                            </div>
+                            <div class="stat-card">
+                                <h4 class="gradient">PR bpm</h4>
+                                <span>Frecuencia Pulso</span>
+                            </div>
+                        </div>
+
+                        <p class="oximetro-footer-text">Lecturas rápidas y precisas que se integran en su perfil de
+                            salud digital para una visión 360 de su bienestar.</p>
+
+                        <a href="#" class="btn-primary">Como usar</a>
+
+                    </div>
+
+                    <div class="oximetro-image-col">
+                        <div class="product-showcase-card">
+                            <img src="img/OXIMETRO.jpg" alt="Oxímetro de Pulso ADICIO" class="device-img-transparent">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TENSIOMETRO -->
+        <section class="tensiometro-section">
+            <div class="plan-container">
+                <div class="tensiometro-row">
+
+                    <div class="tensiometro-image-col">
+                        <img src="img/TENSIOMETRO.jpg" alt="Tensiómetro Digital ADICIO" class="tensiometro-img">
+                    </div>
+
+                    <div class="tensiometro-text-col">
+                        <h2 class="tensiometro-title">Tensiómetro Digital</h2>
+
+                        <div class="tensiometro-quote-box">
+                            <p class="tensiometro-quote-text">"Precisión y simplicidad para el hogar."
+                            </p>
+                        </div>
+
+                        <ul class="tensiometro-feature-list">
+
+                            <li class="tensiometro-feature-item">
+                                <i class="fa-regular fa-circle-check tensiometro-icon gradient"></i>
+                                <span class="tensiometro-text">Mide la presión arterial y la frecuencia cardíaca</span>
+                            </li>
+
+                            <li class="tensiometro-feature-item">
+                                <i class="fa-regular fa-circle-check tensiometro-icon gradient"></i>
+                                <span class="tensiometro-text">Diseño optimizado con botones grandes para un mejor uso</span>
+                            </li>
+
+                            <li class="tensiometro-feature-item">
+                                <i class="fa-regular fa-circle-check tensiometro-icon gradient"></i>
+                                <span class="tensiometro-text">Detección de arritmias y promedios inteligentes</span>
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="btn-primary">Como usar</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BASICOS -->
+        <section class="basic-devices-section">
+            <div class="plan-container">
+
+
+                <div class="basic-devices-header text-center">
+                    <h2>Complementos del Kit</h2>
+                    <p>Precisión y control diario para completar el ecosistema de bienestar en el hogar.</p>
+                </div>
+
+                <div class="basic-devices-grid">
+
+                    <!-- TERMOMETRO -->
+                    <div class="basic-device-card">
+                        <div class="bd-image-wrapper termometro-bg">
+                            <img src="img/termometro.jpg" alt="Termómetro Infrarrojo ADICIO" class="bd-img">
+                        </div>
+
+                        <div class="bd-content">
+                        <h3>Termómetro Digital</h3>
+                        
+                        <ul class="bd-feature-list">
+                            <li>
+                                <i class="fa-solid fa-temperature-half bd-icon"></i>
+                                <div>
+                                    <strong>Precisión Confiable</strong>
+                                    <p>Medición corporal exacta y segura para el seguimiento de la salud en el hogar.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-eye bd-icon"></i>
+                                <div>
+                                    <strong>Fácil Lectura</strong>
+                                    <p>Pantalla digital de alta claridad que permite visualizar los resultados sin esfuerzo.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-bell bd-icon alert-rojo"></i>
+                                <div>
+                                    <strong>Alarma Sonora</strong>
+                                    <p>Aviso auditivo automático que indica de forma clara cuándo finalizó la medición.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- BALANZA -->
+                    <div class="basic-device-card">
+                        <div class="bd-image-wrapper balanza-bg">
+                            <img src="img/BALANZA.jpg" alt="Balanza Inteligente ADICIO" class="bd-img">
+                        </div>
+
+                        <div class="bd-content">
+                        <h3>Balanza Digital</h3>
+                        <p class="bd-intro">Control de peso diario con precisión clínica, diseñado para brindar estabilidad y lectura rápida en el hogar.</p>
+                        
+                        <div class="bd-pills-grid">
+                            <div class="bd-pill">
+                                <span class="bd-pill-icon"><i class="fa-solid fa-weight-scale gradient"></i></span>
+                                <span class="bd-pill-text">Alta Precisión</span>
+                            </div>
+                            <div class="bd-pill">
+                                <span class="bd-pill-icon"><i class="fa-solid fa-expand gradient"></i></span>
+                                <span class="bd-pill-text">Pantalla Amplia</span>
+                            </div>
+                            <div class="bd-pill">
+                                <span class="bd-pill-icon"><i class="fa-solid fa-shield-halved gradient"></i></span>
+                                <span class="bd-pill-text">Base Antideslizante</span>
+                            </div>
+                            <div class="bd-pill">
+                                <span class="bd-pill-icon"><i class="fa-solid fa-power-off gradient"></i></span>
+                                <span class="bd-pill-text">Encendido Auto</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DUDAS -->
+        <section class="cta-dudas-section">
+            <div class="cta-dudas-container">
+                <h2>¿Queres saber más del kit Bienestar y como ayudar a tu ser querido?</h2>
+                <p>Contactate con un especializta o agenda una reuinión y te contamos todo sobre Adicio.</p>
+
+                <div class="cta-dudas-botones">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20quisiera%20asesoramiento%20para%20elegir%20el%20plan%20ideal."
+                        class="btn-primary-shadow" target="_blank">
+                        <i class="fa-solid fa-phone"></i> CONTACTAR AHORA
+                    </a>
+
+                    <a href="https://calendar.app.google/kc7jdJRTjGGfitCVA" class="btn-outline-shadow" target="_blank">
+                        <i class="fa-regular fa-calendar-days gradient"></i><span class="gradient"> AGENDAR UNA
+                            REUNIÓN</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- WP-->
+    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+        class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER-->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <img src="img/logo horizontal blanco reduzido .png" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y
+                    comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61579267363911" aria-label="Facebook"
+                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/adicio.ar/" aria-label="Instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@adiciosalud" aria-label="TikTok" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/adiciosalud/" aria-label="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="app.html">Descargar App</a></li>
+                    <li><a href="quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="estar.html">Plan Estar</a></li>
+                    <li><a href="estar-plus.html">Plan Estar Plus</a></li>
+                    <li><a href="estar-pro.html">Plan Estar Pro</a></li>
+                    <li><a href="servicios.html#srv-cuidadora">Cuidadoras por Hora</a></li>
+                    <li><a href="servicios.html#srv-adaptaciones">Adaptación Domiciliaria</a></li>
+                    <li><a href="servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Nicaragua 4817, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+541148703219">+54 11 4870-3219</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@adicio.com.ar" target="_blank">info@adicio.com.ar</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                    target="_blank" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="legales.html" target="_blank"><i class="fa-solid fa-shield-halved"></i> Políticas de
+                    Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="legales.html" target="_blank">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> CABA, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
