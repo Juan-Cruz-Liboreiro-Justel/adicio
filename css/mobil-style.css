@@ -544,13 +544,15 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .kit-devices-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en móvil */
     }
 
     /* Secciones Alternadas */
-    .srv-feature-row, .srv-feature-row.srv-reverse {
+    .srv-feature-row,
+    .srv-feature-row.srv-reverse {
         flex-direction: column;
         text-align: center;
         gap: 3rem;
@@ -568,21 +570,24 @@
 
     /* Listas internas centradas */
     .srv-check-list {
-        grid-template-columns: 1fr; /* 1 columna en móvil */
+        grid-template-columns: 1fr;
+        /* 1 columna en móvil */
         justify-content: center;
     }
-    
+
     .srv-check-list li {
         justify-content: center;
     }
 
-    .srv-list-card, .srv-icon-item {
+    .srv-list-card,
+    .srv-icon-item {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
-    .srv-list-card i, .icon-box-light {
+
+    .srv-list-card i,
+    .icon-box-light {
         margin: 0 auto;
     }
 
@@ -654,6 +659,7 @@
     .historia-estadisticas {
         gap: 1rem;
     }
+
     .stat-number {
         font-size: 2.8rem;
     }
@@ -789,8 +795,14 @@
     .plan-kit-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .plan-kit-card:nth-child(4) { grid-column: 1 / 2; }
-    .plan-kit-card:nth-child(5) { grid-column: 2 / 4; }
+
+    .plan-kit-card:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+
+    .plan-kit-card:nth-child(5) {
+        grid-column: 2 / 4;
+    }
 
     /* Includes en tablet */
     .plan-includes-grid {
@@ -801,6 +813,7 @@
     .duo-wrapper-box {
         flex-direction: column;
     }
+
     .duo-image-side {
         height: 300px;
     }
@@ -813,13 +826,15 @@
     .inter-bento-grid {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .bento-large {
-        grid-column: 1 / 3; /* Ocupa las 2 columnas */
+        grid-column: 1 / 3;
+        /* Ocupa las 2 columnas */
     }
-    
+
     .bento-tall {
-        grid-column: 1 / 3; /* En tablet la ponemos a lo ancho */
+        grid-column: 1 / 3;
+        /* En tablet la ponemos a lo ancho */
     }
 
     /* Dúo */
@@ -832,26 +847,109 @@
        PLAN ESTAR PRO
    ======================================================== */
 
-   .premium-bento-grid {
+    .premium-bento-grid {
         grid-template-columns: 1fr 1fr;
     }
-    .bento-col-2 { grid-column: 1 / 3; }
-    .bento-tall { grid-column: 1 / 3; }
-    
+
+    .bento-col-2 {
+        grid-column: 1 / 3;
+    }
+
+    .bento-tall {
+        grid-column: 1 / 3;
+    }
+
     .premium-kit-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .premium-kit-banner {
         flex-direction: column;
         text-align: center;
     }
+
     .kit-banner-badge {
         white-space: normal;
         justify-content: center;
     }
 
+
+    /* ========================================================
+    PAG KIT BIENESTAR
+   ======================================================== */
+    .kit-products-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columnas en tablet */
+    }
+
+    .kit-process-grid {
+        gap: 2rem;
+    }
+
+
+    /* ========================================================
+    SMARTWATCH
+   ======================================================== */
+    .device-row {
+        grid-template-columns: 1fr;
+        /* Pasa a 1 columna */
+        gap: 3rem;
+    }
+
+    /* Obliga a la imagen a ir siempre arriba en el celular */
+    .device-image-col {
+        order: -1;
+    }
+
+    .device-text-col h2 {
+        font-size: 2rem;
+    }
+
+    /* ========================================================
+   MEDIA QUERIES - MÓVIL (Oxímetro)
+   ======================================================== */
+
+    .oximetro-row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* En tablet/celular, mandamos la imagen arriba del texto */
+    .oximetro-image-col {
+        order: -1;
+    }
+
+    .oximetro-text-col h2 {
+        font-size: 2rem;
+    }
+
+    /* ========================================================
+            Tensiómetro
+   ======================================================== */
+    .tensiometro-row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* En pantallas chicas, aseguramos que la imagen quede arriba */
+    .tensiometro-image-col {
+        order: -1;
+    }
+
+    .tensiometro-title {
+        font-size: 2rem;
+    }
+
+    /* ========================================================
+         Dispositivos Básicos
+   ======================================================== */
+    .basic-devices-grid {
+        grid-template-columns: 1fr;
+        /* Pasa a 1 columna apilada */
+        gap: 2.5rem;
+    }
 }
+
 
 @media (max-width: 768px) {
 
@@ -883,7 +981,8 @@
     }
 
     .device-card {
-        flex: 1 1 100%; /* En celulares cada tarjeta ocupa el 100% del ancho */
+        flex: 1 1 100%;
+        /* En celulares cada tarjeta ocupa el 100% del ancho */
         max-width: 350px;
     }
 
@@ -928,7 +1027,8 @@
 
     /* AGE */
     .trust-badge-card {
-        flex-direction: column-reverse; /* Pone el logo arriba y el texto abajo en celulares */
+        flex-direction: column-reverse;
+        /* Pone el logo arriba y el texto abajo en celulares */
         text-align: center;
         padding: 2.5rem 1.5rem;
         gap: 2rem;
@@ -939,7 +1039,8 @@
     }
 
     .trust-logo img {
-        max-width: 180px; /* Achica un poco el logo en móviles */
+        max-width: 180px;
+        /* Achica un poco el logo en móviles */
     }
 
     /*  FAQ */
@@ -1081,11 +1182,14 @@
                 QUIENES SOMOS
    ======================================================== */
 
-   .historia-estadisticas{
+    .historia-estadisticas {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-        gap: 1rem; /* Espacio vertical y horizontal */
-        justify-items: center; /* Centra la cajita dentro de su mitad de pantalla */
+        grid-template-columns: 1fr 1fr;
+        /* Dos columnas iguales */
+        gap: 1rem;
+        /* Espacio vertical y horizontal */
+        justify-items: center;
+        /* Centra la cajita dentro de su mitad de pantalla */
     }
 
     /* ========================================================
@@ -1159,33 +1263,39 @@
                 PLAN ESTAR
    ======================================================== */
 
-   .plan-hero-text h1 {
+    .plan-hero-text h1 {
         font-size: 2.8rem;
     }
-    
+
     .plan-section-header h2 {
         font-size: 2.2rem;
     }
 
     .plan-kit-grid {
-        grid-template-columns: 1fr; /* 1 columnas en móvil */
+        grid-template-columns: 1fr;
+        /* 1 columnas en móvil */
     }
-    .plan-kit-card:nth-child(4), .plan-kit-card:nth-child(5) { 
-        grid-column: auto; /* Resetea el span de tablet */
+
+    .plan-kit-card:nth-child(4),
+    .plan-kit-card:nth-child(5) {
+        grid-column: auto;
+        /* Resetea el span de tablet */
     }
 
     .plan-includes-grid {
-        grid-template-columns: 1fr; /* 1 columna en móvil */
+        grid-template-columns: 1fr;
+        /* 1 columna en móvil */
     }
 
     .duo-content-side {
         padding: 3rem 1.5rem;
         text-align: center;
     }
-    
+
     .duo-benefits-list li {
         justify-content: center;
-        text-align: left; /* Mantiene el texto alineado si ocupa más de una línea */
+        text-align: left;
+        /* Mantiene el texto alineado si ocupa más de una línea */
     }
 
     .duo-content-side .btn-white-solid {
@@ -1195,28 +1305,33 @@
     .include-card {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra el ícono y el contenido horizontalmente */
-        text-align: center;  /* Centra los textos */
+        align-items: center;
+        /* Centra el ícono y el contenido horizontalmente */
+        text-align: center;
+        /* Centra los textos */
     }
 
     .include-icon {
-        margin: 0 auto 1.5rem auto; /* Asegura que el cuadradito del ícono quede perfectamente al medio */
+        margin: 0 auto 1.5rem auto;
+        /* Asegura que el cuadradito del ícono quede perfectamente al medio */
     }
 
     /* ========================================================
             ESTAR PLUS
    ======================================================== */
 
-   .intermedio-kit-grid{
-    grid-template-columns:  1fr; /* Fuerza 5 columnas idénticas */
-   }
+    .intermedio-kit-grid {
+        grid-template-columns: 1fr;
+        /* Fuerza 5 columnas idénticas */
+    }
 
-   /* Bento Grid: 1 columna en celular */
+    /* Bento Grid: 1 columna en celular */
     .inter-bento-grid {
         grid-template-columns: 1fr;
     }
-    
-    .bento-large, .bento-tall {
+
+    .bento-large,
+    .bento-tall {
         grid-column: 1 / 2;
     }
 
@@ -1228,7 +1343,8 @@
     .inter-duo-badge {
         bottom: -1rem;
         right: 50%;
-        transform: translateX(50%); /* Centra el badge en celular */
+        transform: translateX(50%);
+        /* Centra el badge en celular */
     }
 
     /* Centrar las tarjetas del Bento Grid */
@@ -1248,7 +1364,8 @@
     /* Centrar la lista de tildes del Dúo */
     .inter-duo-list li {
         justify-content: center;
-        text-align: left; /* Mantiene el texto prolijo si ocupa dos renglones, pero centrado en la pantalla */
+        text-align: left;
+        /* Mantiene el texto prolijo si ocupa dos renglones, pero centrado en la pantalla */
     }
 
     /* Asegurar que el botón negro se centre perfectamente */
@@ -1261,13 +1378,14 @@
        PLAN ESTAR PRO
    ======================================================== */
 
-   /* 1. Centrar el Hero en móvil */
+    /* 1. Centrar el Hero en móvil */
     .plan-hero-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .plan-hero-text .btn-auto {
         margin: 0 auto;
     }
@@ -1286,19 +1404,22 @@
     .premium-bento-grid {
         grid-template-columns: 1fr;
     }
-    .bento-col-2, .bento-tall {
+
+    .bento-col-2,
+    .bento-tall {
         grid-column: 1 / 2;
     }
-    
+
     .bento-card {
         align-items: center;
         text-align: center;
     }
-    
+
     /* Adaptar tarjeta horizontal */
     .bento-horizontal {
         flex-direction: column;
     }
+
     .bento-side-img {
         width: 100%;
         height: 200px;
@@ -1308,6 +1429,7 @@
     .premium-kit-grid {
         grid-template-columns: 1fr;
     }
+
     .premium-kit-grid .inter-kit-card {
         align-items: center;
         text-align: center;
@@ -1320,10 +1442,12 @@
         align-items: center;
         text-align: center;
     }
+
     .inter-duo-list li {
         justify-content: center;
-        text-align: left; 
+        text-align: left;
     }
+
     .inter-duo-content .btn-auto {
         align-self: center;
         margin-top: 1rem;
@@ -1337,5 +1461,157 @@
         text-align: center;
     }
 
+    /* ========================================================
+    PAG KIT BIENESTAR
+   ======================================================== */
 
+    /* Centrado general en móvil */
+    .kit-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .kit-hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kit-hero-text p {
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .hero-image-bg-shape-kit {
+        right: 0;
+        width: 100%;
+    }
+
+    /* Grid de productos en 1 columna en móvil */
+    .kit-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Pasos en 1 columna en móvil */
+    .kit-process-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .kit-intro-title,
+    .kit-section-header h2,
+    .text-white h2 {
+        font-size: 2rem;
+    }
+
+    /* ========================================================
+    SMARTWATCH
+   ======================================================== */
+    .device-feature-item {
+        flex-direction: column;
+        /* Apila el icono y el texto */
+        align-items: center;
+        text-align: center;
+    }
+
+    .device-text-col h2,
+    .device-intro {
+        text-align: center;
+    }
+
+    .btn-kit-bienestar {
+        text-align: center;
+        align-items: center;
+
+    }
+
+    /* ========================================================
+    (Oxímetro)
+   ======================================================== */
+
+    .oximetro-text-col h2,
+    .oximetro-intro,
+    .oximetro-footer-text {
+        text-align: center;
+    }
+
+    .stat-card h4,
+    .stat-card span {
+        text-align: center;
+    }
+
+    .device-stats-grid {
+        grid-template-columns: 1fr;
+        /* Apila las tarjetitas en celulares chicos */
+        gap: 1rem;
+    }
+
+    .product-showcase-card {
+        padding: 2rem;
+    }
+
+    .oximetro-text-col .btn-primary,
+    .tensiometro-text-col .btn-primary {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 2rem auto;
+    }
+
+    /* ========================================================
+        Tensiómetro
+   ======================================================== */
+    .tensiometro-title,
+    .tensiometro-quote-box {
+        text-align: center;
+    }
+
+    .tensiometro-quote-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content; /* Hace que la caja siga abrazando al texto sin estirarse de más */
+        display: block; /* Permite que los márgenes automáticos la centren */
+        text-align: center;
+    }
+   
+
+    .tensiometro-feature-list{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    /* BASICOS*/
+
+   
+
+    .bd-image-wrapper {
+        height: 220px;
+        /* Achica un poco las imágenes en celular */
+    }
+
+    
+    .bd-content {
+        text-align: center;
+        align-items: center;
+        padding: 2rem 1.5rem;
+    }
+
+    /* Termómetro: Apilar icono y texto, y centrarlos */
+    .bd-feature-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem; /* Achicamos un poco el espacio entre icono y texto */
+    }
+
+    /* Balanza: Forzar 1 sola columna y centrar su contenido */
+    .bd-pills-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .bd-pill {
+        justify-content: center; /* Esto centra el circulito y el texto */
+    }
 }

@@ -26,9 +26,21 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
-button { background: none; border: none; cursor: pointer; font-family: inherit; }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
 
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -54,38 +66,104 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 1rem ;
+    padding: 1rem;
 }
 
 .logo {
     display: flex;
-    align-items: center; /* Centra la imagen verticalmente */
+    align-items: center;
+    /* Centra la imagen verticalmente */
     justify-content: center;
     text-decoration: none;
 }
 
 .logo-img {
     display: block;
-    max-height: 40px; /* Ajusta este valor al tamaño que desees para tu navbar */
-    width: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Evita que la imagen se deforme */
+    max-height: 40px;
+    /* Ajusta este valor al tamaño que desees para tu navbar */
+    width: auto;
+    /* Mantiene la proporción de la imagen */
+    object-fit: contain;
+    /* Evita que la imagen se deforme */
 }
 
 /* --- NAVEGACIÓN DESKTOP --- */
-.desktop-nav { display: flex; align-items: center; }
-.nav-list { display: flex; gap: 2rem; align-items: center; }
-.nav-link { font-size: 1.125rem; font-weight: 500; color: var(--color-text-muted); transition: color 0.3s ease; display: flex; align-items: center; gap: 0.2rem; }
-.nav-link:hover { color: var(--color-primary); }
-.icon-small { font-size: 1.2rem; }
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.icon-small {
+    font-size: 1.2rem;
+}
 
 /* --- DROPDOWN DESKTOP --- */
-.dropdown { position: relative; padding-bottom: 1rem; margin-bottom: -1rem; }
-.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: #ffffff; box-shadow: var(--shadow-dropdown); border-radius: 0.5rem; min-width: 250px; padding: 1rem 0; flex-direction: column; }
-.dropdown:hover .dropdown-menu { display: flex; }
-.dropdown-menu a { display: block; padding: 0.5rem 1.5rem; font-size: 0.95rem; color: var(--color-text-muted); transition: background-color 0.2s, color 0.2s; }
-.dropdown-menu a:hover { background-color: #f1f5f9; color: var(--color-primary); }
-.dropdown-menu .separator { height: 1px; background-color: #e2e8f0; margin: 0.5rem 0; }
-.dropdown-menu .view-all { font-weight: 700; color: var(--color-primary); }
+.dropdown {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: -1rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: var(--shadow-dropdown);
+    border-radius: 0.5rem;
+    min-width: 250px;
+    padding: 1rem 0;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f5f9;
+    color: var(--color-primary);
+}
+
+.dropdown-menu .separator {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 0.5rem 0;
+}
+
+.dropdown-menu .view-all {
+    font-weight: 700;
+    color: var(--color-primary);
+}
 
 /* --- BOTÓN CONTACTO --- */
 .btn-contacto {
@@ -98,11 +176,21 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     box-shadow: 0 4px 6px -1px rgba(0, 63, 135, 0.2);
     display: inline-block;
 }
-.btn-contacto:hover { transform: scale(1.05); }
-.btn-contacto:active { transform: scale(0.95); }
+
+.btn-contacto:hover {
+    transform: scale(1.05);
+}
+
+.btn-contacto:active {
+    transform: scale(0.95);
+}
 
 /* --- ELEMENTOS MÓVILES OCULTOS EN DESKTOP --- */
-.mobile-spacer, .hamburger-btn, .mobile-menu-overlay { display: none; }
+.mobile-spacer,
+.hamburger-btn,
+.mobile-menu-overlay {
+    display: none;
+}
 
 /* ========================================================
    HERO CAROUSEL (Banner Principal)
@@ -110,10 +198,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .hero-carousel {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
-    height: 100dvh; /* Soporte para móviles modernos */
+    height: 100vh;
+    /* Ocupa el 100% del alto de la pantalla */
+    height: 100dvh;
+    /* Soporte para móviles modernos */
     overflow: hidden;
-    background-color: var(--color-primary); /* Fondo de respaldo */
+    background-color: var(--color-primary);
+    /* Fondo de respaldo */
 }
 
 /* --- SLIDES --- */
@@ -151,7 +242,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .slide.active .slide-img {
-    transform: scale(1); /* Efecto Ken Burns muy sutil */
+    transform: scale(1);
+    /* Efecto Ken Burns muy sutil */
 }
 
 /* Capa de color sobre la imagen (Gradiente azul como en tu foto) */
@@ -178,7 +270,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .slide.active .slide-content {
-    transform: translateY(0); /* Sube suavemente al aparecer */
+    transform: translateY(0);
+    /* Sube suavemente al aparecer */
 }
 
 .slide-subtitle {
@@ -197,7 +290,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 2.5rem;
-    text-wrap: balance; /* Equilibra el texto para que no queden palabras sueltas */
+    text-wrap: balance;
+    /* Equilibra el texto para que no queden palabras sueltas */
 }
 
 /* --- BOTONES DEL BANNER --- */
@@ -205,7 +299,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: flex;
     gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap; /* En móviles se pondrán uno abajo del otro si no hay espacio */
+    flex-wrap: wrap;
+    /* En móviles se pondrán uno abajo del otro si no hay espacio */
 }
 
 .btn-primary {
@@ -268,8 +363,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background: rgba(255, 255, 255, 0.3);
 }
 
-.prev-btn { left: 2rem; }
-.next-btn { right: 2rem; }
+.prev-btn {
+    left: 2rem;
+}
+
+.next-btn {
+    right: 2rem;
+}
 
 .carousel-dots {
     position: absolute;
@@ -292,7 +392,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .dot.active {
     background: #ffffff;
-    width: 30px; /* Se estira para indicar la activa */
+    width: 30px;
+    /* Se estira para indicar la activa */
     border-radius: 10px;
 }
 
@@ -301,7 +402,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: BIENESTAR (Obra Social & Tarjetas)
    ======================================================== */
 .value-section {
-    background-color: #f8f9fa; /* Fondo gris muy clarito */
+    background-color: #f8f9fa;
+    /* Fondo gris muy clarito */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -311,22 +413,27 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 4rem; /* Espacio entre las tarjetas y el texto derecho */
+    gap: 4rem;
+    /* Espacio entre las tarjetas y el texto derecho */
 }
 
 /* --- GRID DE TARJETAS (Izquierda) --- */
 .value-grid {
-    flex: 1; /* Ocupa la mitad del espacio */
+    flex: 1;
+    /* Ocupa la mitad del espacio */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
     gap: 1.5rem;
 }
 
 .value-card {
     background-color: #ffffff;
     padding: 2rem;
-    border-radius: 1.5rem; /* Bordes bien redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Sombra súper suave */
+    border-radius: 1.5rem;
+    /* Bordes bien redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    /* Sombra súper suave */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -337,7 +444,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .value-card i {
     font-size: 1.8rem;
-    color: var(--color-primary); /* Azul de ADICIO */
+    color: var(--color-primary);
+    /* Azul de ADICIO */
     margin-bottom: 1rem;
 }
 
@@ -356,7 +464,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- CONTENIDO DE TEXTO (Derecha) --- */
 .value-content {
-    flex: 1; /* Ocupa la otra mitad del espacio */
+    flex: 1;
+    /* Ocupa la otra mitad del espacio */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -382,7 +491,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: #f1f5f9; /* Gris azulado muy suave */
+    background-color: #f1f5f9;
+    /* Gris azulado muy suave */
     padding: 1.2rem 1.5rem;
     border-radius: 1rem;
     margin-bottom: 0.5rem;
@@ -405,16 +515,20 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .hero-botones-row {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Separación entre los botones */
-    margin-top: 2rem; /* Espacio hacia arriba, ajústalo según necesites */
-    flex-wrap: wrap; /* Permite que si la pantalla es muy chica, el segundo botón baje solo */
+    gap: 1.5rem;
+    /* Separación entre los botones */
+    margin-top: 2rem;
+    /* Espacio hacia arriba, ajústalo según necesites */
+    flex-wrap: wrap;
+    /* Permite que si la pantalla es muy chica, el segundo botón baje solo */
 }
 
 /* ========================================================
    SECCIÓN: KIT DE BIENESTAR TECNOLÓGICO (Index)
    ======================================================== */
 .tech-kit-section {
-    background-image: var(--color-gradient); /* Azul oscuro corporativo */
+    background-image: var(--color-gradient);
+    /* Azul oscuro corporativo */
     color: #ffffff;
     padding: 7rem 2rem;
     width: 100%;
@@ -432,7 +546,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .tech-tag {
-    background-color: rgba(255, 255, 255, 0.15); /* Blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Blanco semi-transparente */
     color: #ffffff;
     font-size: 0.75rem;
     font-weight: 800;
@@ -454,7 +569,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .tech-kit-header p {
     font-size: 1.15rem;
-    opacity: 0.9; /* Un poco de transparencia para no saturar */
+    opacity: 0.9;
+    /* Un poco de transparencia para no saturar */
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
@@ -463,19 +579,25 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* --- Grilla de Dispositivos (Flexbox para las 5) --- */
 .tech-devices-grid {
     display: flex;
-    flex-wrap: wrap; /* Permite que pasen a la línea de abajo si no hay lugar */
-    justify-content: center; /* Centra las tarjetas siempre */
+    flex-wrap: wrap;
+    /* Permite que pasen a la línea de abajo si no hay lugar */
+    justify-content: center;
+    /* Centra las tarjetas siempre */
     gap: 1.5rem;
     margin-bottom: 4rem;
 }
 
 .device-card {
-    background-color: #ffffff; /* Tarjeta blanca */
-    color: var(--color-text-dark); /* Texto oscuro para contrastar */
+    background-color: #ffffff;
+    /* Tarjeta blanca */
+    color: var(--color-text-dark);
+    /* Texto oscuro para contrastar */
     border-radius: 1.5rem;
     padding: 2.5rem 1.5rem;
-    flex: 1 1 200px; /* Crecen y se achican, base 200px */
-    max-width: 250px; /* Ancho máximo para que no se estiren de más */
+    flex: 1 1 200px;
+    /* Crecen y se achican, base 200px */
+    max-width: 250px;
+    /* Ancho máximo para que no se estiren de más */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,8 +612,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .device-icon {
     width: 60px;
     height: 60px;
-    background-color: #f1f5f9; /* Gris muy clarito */
-    color: var(--color-primary); /* Azul */
+    background-color: #f1f5f9;
+    /* Gris muy clarito */
+    color: var(--color-primary);
+    /* Azul */
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -538,7 +662,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: PLANES DE SERVICIO
    ======================================================== */
 .planes-section {
-    background-color: #f8f9fa; /* Continuamos con el fondo gris claro */
+    background-color: #f8f9fa;
+    /* Continuamos con el fondo gris claro */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -562,7 +687,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: var(--color-text-muted);
 }
 
-.planes-btn{
+.planes-btn {
     text-align: center;
     margin: 4rem auto 0 auto;
     font-size: 1.2rem;
@@ -576,7 +701,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    align-items: stretch; /* Asegura que todas las tarjetas midan lo mismo de alto */
+    align-items: stretch;
+    /* Asegura que todas las tarjetas midan lo mismo de alto */
 }
 
 /* --- TARJETA BASE --- */
@@ -587,7 +713,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Empuja los botones hacia abajo */
+    justify-content: space-between;
+    /* Empuja los botones hacia abajo */
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -598,14 +725,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- TARJETA DESTACADA (Intermedio) --- */
 .plan-highlight {
-    border: 3px solid transparent; 
-    background-image: linear-gradient(#ffffff, #ffffff), var(--color-gradient); 
+    border: 3px solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), var(--color-gradient);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 15px 35px rgba(0, 63, 135, 0.15);
     z-index: 10;
-    border-radius: 1.5rem; 
+    border-radius: 1.5rem;
 }
 
 .plan-highlight:hover {
@@ -673,7 +800,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .feature-icon {
-    color: #10b981; /* Verde esmeralda para los tildes */
+    color: #10b981;
+    /* Verde esmeralda para los tildes */
     font-size: 1.2rem;
     margin-top: 0.1rem;
 }
@@ -695,13 +823,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     border-radius: 9999px;
     transition: all 0.3s ease;
     text-decoration: none;
-    
+
     /* 1. Color del texto */
     color: var(--color-primary);
-    
+
     /* 2. Borde transparente para hacerle lugar al gradiente */
     border: 2px solid transparent;
-    
+
     /* 3. El truco: Fondo blanco adrentro, Gradiente en el borde */
     /* Reemplaza #00c6ff por el cyan que estés usando si es necesario */
     background-image: linear-gradient(#ffffff, #ffffff), var(--color-gradient);
@@ -714,7 +842,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: #ffffff;
     /* Al poner el mismo gradiente en ambas capas, el botón se "pinta" entero */
     background-image: var(--color-gradient), var(--color-gradient);
-    transform: translateY(-2px); /* Un pequeño saltito para darle vida */
+    transform: translateY(-2px);
+    /* Un pequeño saltito para darle vida */
     box-shadow: 0 8px 20px rgba(0, 63, 135, 0.2);
 }
 
@@ -758,7 +887,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* STORYTELLING */
 
 .experience-section {
-    background: var(--color-gradient); 
+    background: var(--color-gradient);
     color: #ffffff;
     padding: 6rem 2rem;
     width: 100%;
@@ -791,7 +920,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .experience-desc {
     font-size: 1.1rem;
-    color: #ffffff; /* Un azul clarito para el texto descriptivo */
+    color: #ffffff;
+    /* Un azul clarito para el texto descriptivo */
     line-height: 1.6;
     margin-bottom: 2.5rem;
 }
@@ -816,7 +946,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     width: 48px;
     height: 48px;
     min-width: 48px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo semi-transparente */
     border-radius: 0.75rem;
     display: flex;
     align-items: center;
@@ -863,7 +994,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     flex: 1;
     border-radius: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra oscura para darle profundidad */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Sombra oscura para darle profundidad */
 }
 
 .img-fluid {
@@ -878,7 +1010,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: COMPARACION
    ======================================================== */
 .comparativa-section {
-    background-color: #f8f9fa; /* Fondo gris muy clarito */
+    background-color: #f8f9fa;
+    /* Fondo gris muy clarito */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -908,15 +1041,18 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     margin: 0 auto;
     background: #ffffff;
     border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* Sombra suave */
-    overflow-x: auto; /* Permite scroll horizontal en móviles */
-    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    /* Sombra suave */
+    overflow-x: auto;
+    /* Permite scroll horizontal en móviles */
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* --- ESTILOS DE LA TABLA --- */
 .comparativa-table {
     width: 100%;
-    min-width: 700px; /* Asegura que la tabla no se aplaste en celulares */
+    min-width: 700px;
+    /* Asegura que la tabla no se aplaste en celulares */
     border-collapse: collapse;
     text-align: left;
 }
@@ -925,7 +1061,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .comparativa-table th,
 .comparativa-table td {
     padding: 1.5rem 2rem;
-    border-bottom: 1px solid #f1f5f9; /* Línea separadora sutil */
+    border-bottom: 1px solid #f1f5f9;
+    /* Línea separadora sutil */
 }
 
 /* Quitar la línea inferior a la última fila */
@@ -935,7 +1072,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* Cabecera (Header) */
 .comparativa-table thead {
-    background-color: #f1f5f9; /* Fondo gris claro para los títulos */
+    background-color: #f1f5f9;
+    /* Fondo gris claro para los títulos */
 }
 
 .comparativa-table th {
@@ -962,7 +1100,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .col-adicio {
     font-weight: 700;
     color: var(--color-text-dark);
-    background-color: rgba(0, 63, 135, 0.02); /* Fondo apenas tintado de azul */
+    background-color: rgba(0, 63, 135, 0.02);
+    /* Fondo apenas tintado de azul */
     width: 40%;
 }
 
@@ -970,7 +1109,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN:  APP
    ======================================================== */
 .app-section {
-    background-color: #ffffff; /* Gris sutilmente diferente para separar secciones */
+    background-color: #ffffff;
+    /* Gris sutilmente diferente para separar secciones */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -992,10 +1132,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .app-mockup {
     max-width: 100%;
-    width: 320px; /* Ancho típico de un mockup de teléfono */
+    width: 320px;
+    /* Ancho típico de un mockup de teléfono */
     height: auto;
-    border-radius: 2.5rem; /* Bordes muy redondeados si usas una foto cuadrada */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Sombra para que el teléfono "flote" */
+    border-radius: 2.5rem;
+    /* Bordes muy redondeados si usas una foto cuadrada */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    /* Sombra para que el teléfono "flote" */
 }
 
 /* --- CONTENIDO (Derecha) --- */
@@ -1065,7 +1208,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background: var(--color-gradient);
     color: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 9999px; /* Bordes un poco más cuadrados como en la imagen */
+    border-radius: 9999px;
+    /* Bordes un poco más cuadrados como en la imagen */
     font-weight: 700;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -1082,7 +1226,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: INSTITUCIONES
    ======================================================== */
 .partners-section {
-    background-color: #ffffff; /* Gris muy sutil, como en tu imagen */
+    background-color: #ffffff;
+    /* Gris muy sutil, como en tu imagen */
     padding: 4rem 0;
     overflow: hidden;
     width: 100%;
@@ -1147,7 +1292,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px; /* Ancho en escritorio (entran 4 o 5 en pantalla) */
+    width: 250px;
+    /* Ancho en escritorio (entran 4 o 5 en pantalla) */
     flex-shrink: 0;
     font-size: 1.5rem;
     color: var(--color-text-dark);
@@ -1162,8 +1308,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* Animación (Mueve la pista exactamente a la mitad, y como está duplicada, no se nota el salto) */
 @keyframes scroll-marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* ========================================================
@@ -1171,12 +1322,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    ======================================================== */
 .trust-badge-section {
     padding: 4rem 2rem;
-    background-color: #ffffff; /* Fondo blanco para que la tarjeta destaque */
+    background-color: #ffffff;
+    /* Fondo blanco para que la tarjeta destaque */
     width: 100%;
 }
 
 .trust-container {
-    max-width: 1000px; /* Un poco más angosto para que la lectura sea cómoda */
+    max-width: 1000px;
+    /* Un poco más angosto para que la lectura sea cómoda */
     margin: 0 auto;
 }
 
@@ -1185,13 +1338,15 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    background: var(--color-gradient); /* Gris súper clarito y elegante */
+    background: var(--color-gradient);
+    /* Gris súper clarito y elegante */
     padding: 3rem 4rem;
     border-radius: 1.5rem;
 }
 
 .trust-text {
-    flex: 1.5; /* Ocupa un poco más de espacio que la imagen */
+    flex: 1.5;
+    /* Ocupa un poco más de espacio que la imagen */
 }
 
 .trust-text h2 {
@@ -1202,7 +1357,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     margin: 0;
 }
 
-.trust-text h2 span{
+.trust-text h2 span {
     font-size: 2.3rem;
 }
 
@@ -1214,7 +1369,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .trust-logo img {
-    max-width: 220px; /* Evita que el logo se vea gigante */
+    max-width: 220px;
+    /* Evita que el logo se vea gigante */
     width: 100%;
     height: auto;
 }
@@ -1224,7 +1380,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: BLOG
    ======================================================== */
 .blog-snippet-section {
-    background-color: #ffffff; /* Fondo blanco para limpiar la vista tras el carrusel gris */
+    background-color: #ffffff;
+    /* Fondo blanco para limpiar la vista tras el carrusel gris */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -1238,7 +1395,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .blog-snippet-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* Alinea los elementos por debajo */
+    align-items: flex-end;
+    /* Alinea los elementos por debajo */
     margin-bottom: 3rem;
     gap: 2rem;
 }
@@ -1273,7 +1431,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     gap: 0.5rem;
     transition: transform 0.3s ease;
-    white-space: nowrap; /* Evita que el texto se parta en 2 líneas */
+    white-space: nowrap;
+    /* Evita que el texto se parta en 2 líneas */
     padding-bottom: 0.5rem;
 }
 
@@ -1298,7 +1457,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     flex-direction: column;
     justify-content: flex-end;
     padding: 3.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .blog-card-img {
@@ -1313,7 +1472,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .blog-card:hover .blog-card-img {
-    transform: scale(1.05); /* Efecto de zoom sutil al pasar el mouse */
+    transform: scale(1.05);
+    /* Efecto de zoom sutil al pasar el mouse */
 }
 
 .blog-overlay {
@@ -1341,7 +1501,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .blog-tag {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.15); /* Pastilla semi-transparente */
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Pastilla semi-transparente */
     backdrop-filter: blur(5px);
     padding: 0.4rem 1rem;
     border-radius: 9999px;
@@ -1363,7 +1524,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .blog-card-content p {
     font-size: 1rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.85); /* Blanco apenas transparente */
+    color: rgba(255, 255, 255, 0.85);
+    /* Blanco apenas transparente */
     margin-bottom: 2.5rem;
     max-width: 90%;
 }
@@ -1371,8 +1533,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* --- BOTONES --- */
 .btn-blog-profesionales {
     display: inline-flex;
-    justify-content: center; /* <--- Fuerza el texto al centro horizontal */
-    align-items: center;     /* <--- Fuerza el texto al centro vertical */
+    justify-content: center;
+    /* <--- Fuerza el texto al centro horizontal */
+    align-items: center;
+    /* <--- Fuerza el texto al centro vertical */
     text-align: center;
     background-color: #ffffff;
     color: var(--color-primary);
@@ -1389,8 +1553,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .btn-blog-familias {
     display: inline-flex;
-    justify-content: center; /* <--- Fuerza el texto al centro horizontal */
-    align-items: center;     /* <--- Fuerza el texto al centro vertical */
+    justify-content: center;
+    /* <--- Fuerza el texto al centro horizontal */
+    align-items: center;
+    /* <--- Fuerza el texto al centro vertical */
     text-align: center;
     background: var(--color-gradient);
     color: #ffffff;
@@ -1410,7 +1576,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: CONTACTO
    ======================================================== */
 .contacto-zonas-section {
-    background-color: #f8f9fa; /* Fondo general de la página */
+    background-color: #f8f9fa;
+    /* Fondo general de la página */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -1434,7 +1601,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .contacto-info h2 {
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--color-primary); /* Azul oscuro de ADICIO */
+    color: var(--color-primary);
+    /* Azul oscuro de ADICIO */
     margin-bottom: 1rem;
     letter-spacing: -0.03em;
 }
@@ -1463,7 +1631,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .contacto-icon-wrapper {
     width: 45px;
     height: 45px;
-    background-color: #e2e8f0; /* Circulito gris/celeste suave */
+    background-color: #e2e8f0;
+    /* Circulito gris/celeste suave */
     color: var(--color-primary);
     border-radius: 50%;
     display: flex;
@@ -1516,12 +1685,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     height: 45px;
     background-color: #ffffff;
     color: var(--color-text-dark);
-    border-radius: 12px; /* Forma de app/squircle */
+    border-radius: 12px;
+    /* Forma de app/squircle */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
 }
 
@@ -1534,7 +1704,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- COLUMNA DERECHA: ZONAS DE COBERTURA --- */
 .zonas-card {
-    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); /* Efecto tarjeta gris sutil */
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    /* Efecto tarjeta gris sutil */
     border-radius: 2rem;
     padding: 3rem;
     display: flex;
@@ -1544,7 +1715,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .zonas-title {
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--color-text-dark); /* Color casi negro para el título derecho */
+    color: var(--color-text-dark);
+    /* Color casi negro para el título derecho */
     margin-bottom: 1rem;
     letter-spacing: -0.03em;
 }
@@ -1570,19 +1742,20 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .zona-item:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .zona-icon {
     width: 50px;
     height: 50px;
-    background: var(--color-gradient); /* Cuadrados azules */
+    background: var(--color-gradient);
+    /* Cuadrados azules */
     color: #ffffff;
     border-radius: 12px;
     display: flex;
@@ -1624,13 +1797,15 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: FAQ
    ======================================================== */
 .faq-snippet-section {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
+    /* Fondo blanco */
     padding: 6rem 2rem;
     width: 100%;
 }
 
 .faq-snippet-container {
-    max-width: 800px; /* Contenedor angosto para que el texto sea fácil de leer */
+    max-width: 800px;
+    /* Contenedor angosto para que el texto sea fácil de leer */
     margin: 0 auto;
 }
 
@@ -1644,7 +1819,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.1em;
-    color: var(--color-primary); /* Azul corporativo */
+    color: var(--color-primary);
+    /* Azul corporativo */
     text-transform: uppercase;
     margin-bottom: 1rem;
     display: block;
@@ -1673,14 +1849,16 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .faq-item {
-    background-color: #f8f9fa; /* Fondo gris súper claro */
+    background-color: #f8f9fa;
+    /* Fondo gris súper claro */
     border-radius: 1rem;
     overflow: hidden;
     transition: background-color 0.3s ease;
 }
 
 .faq-item[open] {
-    background-color: #f1f5f9; /* Se oscurece un poquito al abrirse */
+    background-color: #f1f5f9;
+    /* Se oscurece un poquito al abrirse */
 }
 
 /* El summary es la franja a la que le haces clic */
@@ -1690,7 +1868,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     padding: 1.5rem 2rem;
     cursor: pointer;
-    list-style: none; /* Quita el triangulito feo que viene por defecto en HTML */
+    list-style: none;
+    /* Quita el triangulito feo que viene por defecto en HTML */
 }
 
 /* Quita el triangulito en navegadores viejos de Chrome/Safari */
@@ -1706,7 +1885,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .faq-icon {
     color: var(--color-primary);
-    transition: transform 0.3s ease; /* Transición suave de la flechita */
+    transition: transform 0.3s ease;
+    /* Transición suave de la flechita */
 }
 
 /* Gira la flecha cuando el acordeón está abierto */
@@ -1716,7 +1896,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* El texto de la respuesta */
 .faq-answer {
-    padding: 0 2rem 1.5rem 2rem; /* El padding top es 0 porque ya tiene espacio del summary */
+    padding: 0 2rem 1.5rem 2rem;
+    /* El padding top es 0 porque ya tiene espacio del summary */
     color: var(--color-text-muted);
     line-height: 1.6;
     font-size: 1rem;
@@ -1744,7 +1925,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .btn-outline-primary:hover {
     color: #ffffff;
     background-image: var(--color-gradient), var(--color-gradient);
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 63, 135, 0.2);
 }
 
@@ -1759,8 +1940,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    FOOTER 
    ======================================================== */
 .footer-section {
-    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-green) 100%); /* Azul oscuro corporativo */
-    color: #ffffff; /* Gris muy clarito para el texto, no blanco puro para que no canse la vista */
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-green) 100%);
+    /* Azul oscuro corporativo */
+    color: #ffffff;
+    /* Gris muy clarito para el texto, no blanco puro para que no canse la vista */
     padding: 5rem 2rem 0 2rem;
     width: 100%;
     font-size: 0.95rem;
@@ -1770,10 +1953,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr; /* Proporciones de las columnas */
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    /* Proporciones de las columnas */
     gap: 4rem;
     padding-bottom: 4rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea separadora tenue */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Línea separadora tenue */
 }
 
 /* --- COLUMNA 1: MARCA --- */
@@ -1788,7 +1973,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .footer-logo i {
-    color: #ffffff; /* Toque celeste en el ícono */
+    color: #ffffff;
+    /* Toque celeste en el ícono */
 }
 
 .footer-desc {
@@ -1846,7 +2032,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .footer-links-col a:hover {
     color: #ffffff;
-    padding-left: 5px; /* Pequeño efecto de movimiento al pasar el mouse */
+    padding-left: 5px;
+    /* Pequeño efecto de movimiento al pasar el mouse */
 }
 
 /* --- COLUMNA 4: CONTACTO --- */
@@ -1883,7 +2070,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .btn-footer-contact:hover {
-    background-color: #25D366; /* Verde WhatsApp */
+    background-color: #25D366;
+    /* Verde WhatsApp */
     border-color: #25D366;
 }
 
@@ -1927,26 +2115,33 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    ======================================================== */
 .whatsapp-float {
     position: fixed;
-    bottom: 2.5rem; /* Separación desde abajo */
-    right: 2.5rem;  /* Separación desde la derecha */
+    bottom: 2.5rem;
+    /* Separación desde abajo */
+    right: 2.5rem;
+    /* Separación desde la derecha */
     width: 60px;
     height: 60px;
-    background-color: #25d366; /* Verde oficial de WhatsApp */
+    background-color: #25d366;
+    /* Verde oficial de WhatsApp */
     color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem; /* Tamaño del icono */
+    font-size: 2rem;
+    /* Tamaño del icono */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 1000; /* Z-index altísimo para que siempre flote sobre el resto del contenido */
+    z-index: 1000;
+    /* Z-index altísimo para que siempre flote sobre el resto del contenido */
     transition: transform 0.3s ease, background-color 0.3s ease;
-    animation: pulse-whatsapp 2s infinite; /* Aplica la animación de latido */
+    animation: pulse-whatsapp 2s infinite;
+    /* Aplica la animación de latido */
 }
 
 /* Efecto al pasar el mouse por encima (Desktop) */
 .whatsapp-float:hover {
-    background-color: #1ebe5d; /* Un verde apenas más oscuro */
+    background-color: #1ebe5d;
+    /* Un verde apenas más oscuro */
     transform: scale(1.1);
 }
 
@@ -1955,9 +2150,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     0% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
     }
+
     70% {
-        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); /* La sombra se expande y se hace transparente */
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        /* La sombra se expande y se hace transparente */
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
@@ -1969,9 +2167,11 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .hero-servicios-section {
     position: relative;
     width: 100%;
-    padding: 10rem 2rem 6rem 2rem; /* Mucho padding top para evitar que el navbar fijo lo tape */
+    padding: 10rem 2rem 6rem 2rem;
+    /* Mucho padding top para evitar que el navbar fijo lo tape */
     background-color: #ffffff;
-    overflow: hidden; /* Evita que el fondo inclinado rompa el ancho de la página */
+    overflow: hidden;
+    /* Evita que el fondo inclinado rompa el ancho de la página */
 }
 
 /* Franja gris inclinada de fondo */
@@ -2006,7 +2206,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .tag-soluciones {
-    background: var(--color-gradient); 
+    background: var(--color-gradient);
     color: #ffffff;
     font-size: 0.75rem;
     font-weight: 800;
@@ -2071,15 +2271,17 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     width: 100%;
     max-width: 500px;
     height: auto;
-    aspect-ratio: 4/5; /* Mantiene la proporción rectangular alta */
+    aspect-ratio: 4/5;
+    /* Mantiene la proporción rectangular alta */
     object-fit: cover;
-    border-radius: 2.5rem; /* Bordes bien redondeados como en la imagen */
+    border-radius: 2.5rem;
+    /* Bordes bien redondeados como en la imagen */
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
     transform: rotate(3deg);
     transition: transform 0.5s ease;
 }
 
-.servicios-main-img:hover{
+.servicios-main-img:hover {
     transform: rotate(-0deg);
 }
 
@@ -2087,7 +2289,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .floating-badge {
     position: absolute;
     bottom: 2rem;
-    left: -2rem; /* Sobresale hacia la izquierda de la imagen */
+    left: -2rem;
+    /* Sobresale hacia la izquierda de la imagen */
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 1.2rem;
@@ -2104,7 +2307,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     height: 45px;
     background: var(--color-gradient);
     color: #ffffff;
-    border-radius: 50%; /* Un cuadradito redondeado */
+    border-radius: 50%;
+    /* Un cuadradito redondeado */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2129,7 +2333,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: PLANES INDIVIDUALES
    ======================================================== */
 .planes-individuales-section {
-    background-color: #ffffff; /* Fondo blanco puro para resaltar las tarjetas */
+    background-color: #ffffff;
+    /* Fondo blanco puro para resaltar las tarjetas */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -2141,7 +2346,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: var(--color-primary);
     margin-bottom: 2.5rem;
     display: flex;
-    align-items: baseline; /* Alinea la X grande con el /mes pequeño en la base */
+    align-items: baseline;
+    /* Alinea la X grande con el /mes pequeño en la base */
     gap: 0.2rem;
     line-height: 1;
 }
@@ -2204,12 +2410,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: #ffffff;
 }
 
-.plan-white{
+.plan-white {
     box-shadow: 5px 5px 5px 5px #eaeaea;
 }
 
 
-.planes-ahorro{
+.planes-ahorro {
     text-align: center;
     margin: 4rem auto 0 auto;
     font-size: 1.5rem;
@@ -2220,7 +2426,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: PLANES DÚO 
    ======================================================== */
 .planes-duo-section {
-    background-color: #f8f9fa; /* Fondo gris claro para separar de la sección anterior */
+    background-color: #f8f9fa;
+    /* Fondo gris claro para separar de la sección anterior */
     padding: 0rem 2rem 4rem 2rem;
     width: 100%;
 }
@@ -2262,7 +2469,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     gap: 0.5rem;
     transition: transform 0.3s ease;
     white-space: nowrap;
-    padding-bottom: 0.5rem; /* Alinea visualmente mejor con el texto de la izquierda */
+    padding-bottom: 0.5rem;
+    /* Alinea visualmente mejor con el texto de la izquierda */
 }
 
 .link-beneficios:hover {
@@ -2285,7 +2493,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .duo-card:hover {
@@ -2309,8 +2517,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* Pastilla de descuento */
 .duo-badge {
-    background-color: #e0e7ff; /* Celeste súper suave */
-    color: var(--color-primary); /* Azul fuerte */
+    background-color: #e0e7ff;
+    /* Celeste súper suave */
+    color: var(--color-primary);
+    /* Azul fuerte */
     font-size: 0.75rem;
     font-weight: 800;
     padding: 0.4rem 0.8rem;
@@ -2322,7 +2532,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: var(--color-text-muted);
     line-height: 1.6;
     margin-bottom: 2.5rem;
-    flex-grow: 1; /* Empuja el precio y el botón hacia el fondo de la tarjeta */
+    flex-grow: 1;
+    /* Empuja el precio y el botón hacia el fondo de la tarjeta */
 }
 
 /* Precio */
@@ -2352,11 +2563,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     gap: 0.4rem;
     text-transform: uppercase;
-    transition: gap 0.3s ease; /* Transición para el hover */
+    transition: gap 0.3s ease;
+    /* Transición para el hover */
 }
 
 .duo-action:hover {
-    gap: 0.8rem; /* La flechita se separa un poco al pasar el mouse */
+    gap: 0.8rem;
+    /* La flechita se separa un poco al pasar el mouse */
 }
 
 /* ========================================================
@@ -2369,9 +2582,17 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 /* Colores de Fondo Comunes */
-.bg-white { background-color: #ffffff; }
-.bg-light-gray { background-color: #f1f5f9; }
-.bg-gradient{ background: var(--color-gradient);}
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-light-gray {
+    background-color: #f1f5f9;
+}
+
+.bg-gradient {
+    background: var(--color-gradient);
+}
 
 /* Etiquetas (Tags) Superiores */
 .tag-light-blue {
@@ -2397,7 +2618,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- 1. SECCIÓN KIT BIENESTAR (Azul Oscuro) --- */
 .srv-kit-section {
-    background: var(--color-gradient); 
+    background: var(--color-gradient);
     padding: 6rem 0;
     color: #ffffff;
 }
@@ -2482,7 +2703,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .srv-reverse {
-    flex-direction: row-reverse; /* Pone la imagen a la izquierda */
+    flex-direction: row-reverse;
+    /* Pone la imagen a la izquierda */
 }
 
 .srv-feature-text {
@@ -2543,7 +2765,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .srv-list-card i {
@@ -2609,28 +2831,30 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .shadow-lg {
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* Formas asimétricas para las fotos de cuidadoras */
 .img-rounded-blob {
     width: 100%;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .img-rounded-blob-reverse {
     width: 100%;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* ========================================================
    AJUSTE DE BOTONES (Secciones de Servicios)
    ======================================================== */
 .srv-feature-text .btn-primary {
-    width: fit-content; /* Hace que el botón solo mida lo que miden sus palabras */
-    margin-top: 1rem;   /* Le damos un poquito de aire extra arriba por las dudas */
+    width: fit-content;
+    /* Hace que el botón solo mida lo que miden sus palabras */
+    margin-top: 1rem;
+    /* Le damos un poquito de aire extra arriba por las dudas */
     color: #ffffff;
     background: var(--color-gradient);
 }
@@ -2640,7 +2864,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: COMPARACION SERVICIOS
    ======================================================== */
 .tabla-planes-section {
-    background-color: #f8f9fa; /* Fondo gris claro */
+    background-color: #f8f9fa;
+    /* Fondo gris claro */
     padding: 6rem 2rem;
     width: 100%;
 }
@@ -2670,21 +2895,24 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background: #ffffff;
     border-radius: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    overflow-x: auto; /* Permite scroll horizontal en celulares */
-    border: 1px solid rgba(0,0,0,0.05);
+    overflow-x: auto;
+    /* Permite scroll horizontal en celulares */
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* --- ESTILOS DE LA TABLA --- */
 .tabla-servicios {
     width: 100%;
-    min-width: 800px; /* Ancho mínimo para que no se apriete en móvil */
+    min-width: 800px;
+    /* Ancho mínimo para que no se apriete en móvil */
     border-collapse: collapse;
     text-align: left;
 }
 
 /* Cabecera (Títulos) */
 .tabla-servicios thead {
-    background-color: #f1f5f9; /* Fondo un poco más gris para el header */
+    background-color: #f1f5f9;
+    /* Fondo un poco más gris para el header */
     border-bottom: 2px solid #e2e8f0;
 }
 
@@ -2728,12 +2956,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* Íconos */
 .icon-cross {
-    color: #e11d48; /* Rojo */
+    color: #e11d48;
+    /* Rojo */
     font-size: 1.2rem;
 }
 
 .icon-check {
-    color: var(--color-primary); /* Azul */
+    color: var(--color-primary);
+    /* Azul */
     font-size: 1.2rem;
 }
 
@@ -2741,7 +2971,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    SECCIÓN: DUDAS
    ======================================================== */
 .cta-dudas-section {
-    background: linear-gradient(135deg, #fdfdfd 0%, #f0f4f8 100%); /* Fondo suavemente iluminado */
+    background: #f8f9fa;
     padding: 8rem 2rem;
     width: 100%;
     text-align: center;
@@ -2775,7 +3005,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    flex-wrap: wrap; /* Permite que los botones bajen si no hay espacio */
+    flex-wrap: wrap;
+    /* Permite que los botones bajen si no hay espacio */
 }
 
 /* --- Botón Principal (Azul Sólido) --- */
@@ -2784,13 +3015,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-    background: var(--color-gradient); 
+    background: var(--color-gradient);
     color: #ffffff;
     padding: 1rem 2.5rem;
     border-radius: 9999px;
     font-weight: 800;
     font-size: 0.95rem;
-    box-shadow: 0 8px 25px rgba(0, 63, 135, 0.25); /* Sombra azulada */
+    box-shadow: 0 8px 25px rgba(0, 63, 135, 0.25);
+    /* Sombra azulada */
     transition: all 0.3s ease;
 }
 
@@ -2801,49 +3033,28 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 /* --- Botón Secundario (Borde Azul) --- */
-/*
-.btn-outline-shadow {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    background-color: #ffffff;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    padding: 0.9rem 2.5rem; 
-    border-radius: 9999px;
-    font-weight: 800;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-} 
-
-.btn-outline-shadow:hover {
-    background-color: #f8f9fa; 
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05); 
-} */
 
 .btn-outline-shadow {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-    padding: 0.9rem 2.5rem; 
+    padding: 0.9rem 2.5rem;
     font-weight: 800;
     font-size: 0.95rem;
     border-radius: 9999px;
     transition: all 0.3s ease;
     text-decoration: none;
-    
+
     /* 1. Color del texto */
     color: var(--color-primary);
-    
+
     /* 2. Borde transparente para hacerle lugar al gradiente */
     border: 2px solid transparent;
-    
+
     /* 3. El truco: Fondo blanco adrentro, Gradiente en el borde */
     /* Reemplaza #00c6ff por el cyan que estés usando si es necesario */
-    background-image: linear-gradient(#ffffff, #ffffff), var(--color-gradient);
+    background-image: linear-gradient(#f8f9fa, #f8f9fa), var(--color-gradient);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
@@ -2853,7 +3064,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: #ffffff;
     /* Al poner el mismo gradiente en ambas capas, el botón se "pinta" entero */
     background-image: var(--color-gradient), var(--color-gradient);
-    transform: translateY(-2px); /* Un pequeño saltito para darle vida */
+    transform: translateY(-2px);
+    /* Un pequeño saltito para darle vida */
     box-shadow: 0 8px 20px rgba(0, 63, 135, 0.2);
 }
 
@@ -2862,14 +3074,15 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .btn-outline-shadow.gradient:hover,
 .btn-outline-shadow:hover .gradient {
     -webkit-text-fill-color: #ffffff;
-  }
+}
 
 
 /* ========================================================
    BLOG
    ======================================================== */
 .blog-page-section {
-    background-color: #fafafa; /* Fondo gris súper clarito para toda la página */
+    background-color: #fafafa;
+    /* Fondo gris súper clarito para toda la página */
     padding: 8rem 2rem 6rem 2rem;
     width: 100%;
 }
@@ -2974,14 +3187,16 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .filter-btn.active {
-    background: var(--color-gradient); /* Azul oscuro */
+    background: var(--color-gradient);
+    /* Azul oscuro */
     color: #ffffff;
 }
 
 /* --- 3. BLOQUE DESTACADO (HERO GRID) --- */
 .blog-hero-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Columna izquierda más grande */
+    grid-template-columns: 2fr 1fr;
+    /* Columna izquierda más grande */
     gap: 2rem;
     margin-bottom: 4rem;
 }
@@ -2991,7 +3206,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background-color: #ffffff;
     border-radius: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
 }
@@ -3020,8 +3235,15 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     letter-spacing: 0.05em;
 }
 
-.tag-dark { background: var(--color-gradient); color: #ffffff; }
-.tag-light { background-color: #f1f5f9; color: var(--color-text-dark); }
+.tag-dark {
+    background: var(--color-gradient);
+    color: #ffffff;
+}
+
+.tag-light {
+    background-color: #f1f5f9;
+    color: var(--color-text-dark);
+}
 
 .post-info {
     display: flex;
@@ -3032,7 +3254,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     font-weight: 600;
 }
 
-.post-info i { margin-right: 0.3rem; }
+.post-info i {
+    margin-right: 0.3rem;
+}
 
 .hero-post-content h2 {
     font-size: 2.2rem;
@@ -3058,7 +3282,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     transition: gap 0.3s ease;
 }
 
-.post-link:hover { gap: 0.8rem; }
+.post-link:hover {
+    gap: 0.8rem;
+}
 
 /* Sidebar (Derecha) */
 .hero-post-sidebar {
@@ -3071,7 +3297,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background-color: #ffffff;
     border-radius: 1.5rem;
     padding: 2.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     flex: 1;
 }
 
@@ -3157,7 +3383,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background-color: #ffffff;
     border-radius: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
@@ -3216,12 +3442,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: var(--color-text-muted);
     line-height: 1.5;
     margin-bottom: 1.5rem;
-    flex-grow: 1; /* Empuja el botón hacia abajo */
+    flex-grow: 1;
+    /* Empuja el botón hacia abajo */
 }
 
 /* Tarjeta Newsletter */
 .newsletter-card {
-    background: var(--color-gradient); /* Azul oscuro */
+    background: var(--color-gradient);
+    /* Azul oscuro */
     border-radius: 1.5rem;
     padding: 2.5rem;
     color: #ffffff;
@@ -3261,13 +3489,15 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     width: 100%;
     padding: 1rem;
     border-radius: 9999px;
-    border: 1px solid rgba(255,255,255,0.2);
-    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     outline: none;
 }
 
-.newsletter-form input::placeholder { color: rgba(255,255,255,0.7); }
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
 
 .newsletter-form button {
     width: 100%;
@@ -3281,7 +3511,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     transition: background-color 0.3s ease;
 }
 
-.newsletter-form button:hover { background-color: #f1f5f9; }
+.newsletter-form button:hover {
+    background-color: #f1f5f9;
+}
 
 .newsletter-disclaimer {
     font-size: 0.7rem;
@@ -3296,7 +3528,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     bottom: -2rem;
     right: -2rem;
     font-size: 12rem;
-    color: rgba(255,255,255,0.05);
+    color: rgba(255, 255, 255, 0.05);
     z-index: 1;
 }
 
@@ -3308,7 +3540,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     gap: 0.5rem;
 }
 
-.page-num, .page-arrow {
+.page-num,
+.page-arrow {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -3323,9 +3556,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     transition: all 0.3s ease;
 }
 
-.page-arrow { border: 1px solid #e2e8f0; }
+.page-arrow {
+    border: 1px solid #e2e8f0;
+}
 
-.page-num:hover, .page-arrow:hover:not([disabled]) {
+.page-num:hover,
+.page-arrow:hover:not([disabled]) {
     background-color: #e2e8f0;
 }
 
@@ -3398,7 +3634,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .quienes-hero-image img {
     width: 100%;
     border-radius: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* --- 2. HISTORIA Y ESTADÍSTICAS --- */
@@ -3432,20 +3668,25 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* Cuadrícula de 4 estadísticas */
 .historia-estadisticas {
     display: flex;
-    justify-content: center; /* Centra las 4 cajitas en el medio de la pantalla */
+    justify-content: center;
+    /* Centra las 4 cajitas en el medio de la pantalla */
     align-items: center;
-    gap: 5rem; /* Separación horizontal entre cada estadística en PC */
-    margin-top: 4rem; 
+    gap: 5rem;
+    /* Separación horizontal entre cada estadística en PC */
+    margin-top: 4rem;
     margin-bottom: 4rem;
-    flex-wrap: wrap; /* Por si la pantalla se achica, permite que bajen de línea */
+    flex-wrap: wrap;
+    /* Por si la pantalla se achica, permite que bajen de línea */
 }
 
 /* Diseño de cada cajita con la línea azul */
 .stat-box {
     display: flex;
     flex-direction: column;
-    border-left: 3px solid var(--color-primary); /* La línea azul a la izquierda */
-    padding-left: 1.2rem; /* Espacio entre la línea y el texto */
+    border-left: 3px solid var(--color-primary);
+    /* La línea azul a la izquierda */
+    padding-left: 1.2rem;
+    /* Espacio entre la línea y el texto */
     width: fit-content;
 }
 
@@ -3460,7 +3701,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .stat-label {
     font-size: 0.8rem;
     font-weight: 800;
-    color: #475569; /* Gris oscuro para que lea bien */
+    color: #475569;
+    /* Gris oscuro para que lea bien */
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -3490,7 +3732,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     gap: 2rem;
 }
 
-.pilares-grd-2{
+.pilares-grd-2 {
     margin-top: 2rem;
 }
 
@@ -3498,15 +3740,16 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background-color: #ffffff;
     padding: 3rem 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     text-align: left;
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
 .pilar-icon {
     width: 50px;
     height: 50px;
-    background: var(--color-gradient); /* Celeste suave */
+    background: var(--color-gradient);
+    /* Celeste suave */
     color: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -3545,7 +3788,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .mision-image img {
     width: 100%;
     border-radius: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .mision-texto {
@@ -3569,7 +3812,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- 5. COMPROMISO (Fondo Oscuro) --- */
 .quienes-compromiso-section {
-    background: var(--color-gradient); 
+    background: var(--color-gradient);
     padding: 8rem 0;
     color: #ffffff;
     position: relative;
@@ -3579,7 +3822,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .compromiso-tag {
     font-size: 1.5rem;
     font-weight: 900;
-    color: rgba(255,255,255,0.8); /* Texto gigante difuminado de fondo estilo marca de agua */
+    color: rgba(255, 255, 255, 0.8);
+    /* Texto gigante difuminado de fondo estilo marca de agua */
     letter-spacing: 0.2em;
     position: absolute;
     top: 2rem;
@@ -3659,7 +3903,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .btn-white-outline:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
 }
 
@@ -3667,14 +3911,16 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    PÁGINA: PREGUNTAS FRECUENTES (FAQ)
    ======================================================== */
 .faq-page-section {
-    background-color: #f8fafc; /* Fondo gris extra claro (casi blanco) para toda la página */
+    background-color: #f8fafc;
+    /* Fondo gris extra claro (casi blanco) para toda la página */
     padding: 8rem 2rem 6rem 2rem;
     width: 100%;
     min-height: 100vh;
 }
 
 .faq-page-container {
-    max-width: 900px; /* Contenedor angosto para lectura cómoda */
+    max-width: 900px;
+    /* Contenedor angosto para lectura cómoda */
     margin: 0 auto;
 }
 
@@ -3719,7 +3965,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .cat-icon {
     width: 45px;
     height: 45px;
-    background: var(--color-gradient); /* Fondo azul */
+    background: var(--color-gradient);
+    /* Fondo azul */
     color: #ffffff;
     border-radius: 0.8rem;
     display: flex;
@@ -3744,14 +3991,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .faq-card {
     background-color: #ffffff;
     border-radius: 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .faq-card[open] {
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
     border-color: #e2e8f0;
 }
 
@@ -3762,11 +4009,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     padding: 1.5rem 2rem;
     cursor: pointer;
-    list-style: none; /* Quita el triangulito por defecto */
+    list-style: none;
+    /* Quita el triangulito por defecto */
 }
 
 .faq-card summary::-webkit-details-marker {
-    display: none; /* Para Safari */
+    display: none;
+    /* Para Safari */
 }
 
 .faq-q-text {
@@ -3790,7 +4039,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* Texto de la respuesta */
 .faq-a-text {
-    padding: 0 2rem 1.5rem 2rem; /* El padding superior es 0 porque ya hay espacio en el summary */
+    padding: 0 2rem 1.5rem 2rem;
+    /* El padding superior es 0 porque ya hay espacio en el summary */
 }
 
 .faq-a-text p {
@@ -3852,8 +4102,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- 1. HERO APP --- */
 .app-hero-section {
-    background-color: #f8fafc; /* Gris súper clarito casi blanco */
-    padding: 10rem 0 6rem 0; /* Espacio para el navbar */
+    background-color: #f8fafc;
+    /* Gris súper clarito casi blanco */
+    padding: 10rem 0 6rem 0;
+    /* Espacio para el navbar */
     overflow: hidden;
 }
 
@@ -3918,7 +4170,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     box-shadow: 0 10px 25px rgba(0, 68, 142, 0.3);
 }
 
-.btn-primary-outline{
+.btn-primary-outline {
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
@@ -3971,11 +4223,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .conexion-badge {
     position: absolute;
     top: 10%;
-    left: -2rem; /* Sobresale a la izquierda */
+    left: -2rem;
+    /* Sobresale a la izquierda */
     background-color: #ffffff;
     padding: 0.8rem 1.2rem;
     border-radius: 9999px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -4010,7 +4263,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .security-img {
     width: 100%;
     border-radius: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .app-features-text h2 {
@@ -4092,12 +4345,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .step-card {
-    background:var(--color-gradient);
+    background: var(--color-gradient);
     padding: 2.5rem;
     border-radius: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     position: relative;
-    overflow: hidden; /* Evita que el número gigante se salga de la tarjeta */
+    overflow: hidden;
+    /* Evita que el número gigante se salga de la tarjeta */
 }
 
 /* El número gigante de fondo */
@@ -4107,7 +4361,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     right: -10px;
     font-size: 10rem;
     font-weight: 900;
-    color: rgba(255, 255, 255, 0.1); /* Gris ultra claro */
+    color: rgba(255, 255, 255, 0.1);
+    /* Gris ultra claro */
     z-index: 1;
     line-height: 1;
     user-select: none;
@@ -4115,7 +4370,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .step-content {
     position: relative;
-    z-index: 2; /* Para que el texto quede por encima del número */
+    z-index: 2;
+    /* Para que el texto quede por encima del número */
 }
 
 .step-icon {
@@ -4193,20 +4449,23 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    PÁGINA: LEGALES 
    ======================================================== */
 .legal-page-section {
-    background-color: #f8fafc; /* Fondo gris súper clarito para descansar la vista */
+    background-color: #f8fafc;
+    /* Fondo gris súper clarito para descansar la vista */
     width: 100%;
     padding-bottom: 6rem;
 }
 
 .legal-container {
-    max-width: 900px; /* Ancho optimizado para textos largos */
+    max-width: 900px;
+    /* Ancho optimizado para textos largos */
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 /* --- Hero (Cabecera) --- */
 .legal-hero {
-    padding: 10rem 0 4rem 0; /* Espacio para el navbar fijo */
+    padding: 10rem 0 4rem 0;
+    /* Espacio para el navbar fijo */
     text-align: center;
 }
 
@@ -4240,7 +4499,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .legal-date {
     font-size: 0.85rem;
     font-weight: 700;
-    color: #94a3b8; /* Gris sutil */
+    color: #94a3b8;
+    /* Gris sutil */
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -4266,7 +4526,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .legal-block h2 {
     font-size: 1.4rem;
     font-weight: 800;
-    color: var(--color-primary); /* Títulos en azul corporativo */
+    color: var(--color-primary);
+    /* Títulos en azul corporativo */
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #f1f5f9;
@@ -4274,7 +4535,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .legal-block p {
     font-size: 1rem;
-    color: #334155; /* Gris oscuro para lectura */
+    color: #334155;
+    /* Gris oscuro para lectura */
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -4298,8 +4560,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- Caja de Alerta (Reemplazo de .note) --- */
 .legal-alert-box {
-    background-color: #fffbeb; /* Amarillito muy suave de advertencia */
-    border-left: 4px solid #fbbf24; /* Borde amarillo más fuerte */
+    background-color: #fffbeb;
+    /* Amarillito muy suave de advertencia */
+    border-left: 4px solid #fbbf24;
+    /* Borde amarillo más fuerte */
     padding: 1.5rem;
     border-radius: 0 1rem 1rem 0;
     margin: 2rem 0;
@@ -4316,7 +4580,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .legal-alert-box div {
     font-size: 0.95rem;
-    color: #92400e; /* Texto marrón/naranja oscuro para leer bien sobre amarillo */
+    color: #92400e;
+    /* Texto marrón/naranja oscuro para leer bien sobre amarillo */
     line-height: 1.6;
 }
 
@@ -4346,14 +4611,18 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* ========================================================
    PÁGINA DE ERROR / MANTENIMIENTO DEL BLOG
    ======================================================== */
-   
+
 /* Contenedor principal que ocupa toda la pantalla */
 .error-page-main {
-    min-height: 100vh; /* 100% del alto de la ventana */
+    min-height: 100vh;
+    /* 100% del alto de la ventana */
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    background-color: var(--color-primary, #005ab6); /* Fondo azul corporativo */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    background-color: var(--color-primary, #005ab6);
+    /* Fondo azul corporativo */
     padding: 2rem;
 }
 
@@ -4361,10 +4630,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .blog-error {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos internos en una columna */
+    align-items: center;
+    /* Centra los elementos internos en una columna */
     text-align: center;
     max-width: 600px;
-    color: #ffffff; /* Texto blanco para contrastar con el azul */
+    color: #ffffff;
+    /* Texto blanco para contrastar con el azul */
 }
 
 /* Logo */
@@ -4414,7 +4685,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
-    margin-top: 3.5rem; /* Este margen grande lo empuja bien abajo del resto */
+    margin-top: 3.5rem;
+    /* Este margen grande lo empuja bien abajo del resto */
     opacity: 0.7;
     transition: opacity 0.3s ease;
     display: flex;
@@ -4432,7 +4704,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     .eblog-tittle {
         font-size: 2.5rem;
     }
-    
+
     .eblog-newsletter {
         padding: 1rem 1.5rem;
         font-size: 0.9rem;
@@ -4447,7 +4719,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
    PLAN ESTAR
    ======================================================== */
 .plan-detail-main {
-    background-color: #f8fafc; /* Fondo general gris súper clarito */
+    background-color: #f8fafc;
+    /* Fondo general gris súper clarito */
     width: 100%;
 }
 
@@ -4457,7 +4730,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     padding: 0 2rem;
 }
 
-.text-center { text-align: center; }
+.text-center {
+    text-align: center;
+}
 
 /* Etiquetas Reutilizables */
 .tag-light-gray {
@@ -4474,7 +4749,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .tag-outline-white {
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     color: #ffffff;
     font-size: 0.75rem;
     font-weight: 800;
@@ -4523,17 +4798,18 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .plan-main-img {
     width: 100%;
     border-radius: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .floating-badge {
     position: absolute;
     bottom: -1.5rem;
-    left: -2rem; /* Sobresale hacia la izquierda */
+    left: -2rem;
+    /* Sobresale hacia la izquierda */
     background-color: #ffffff;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -4560,7 +4836,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- 2. KIT BIENESTAR (Fondo Azul) --- */
 .plan-kit-section {
-    background: var(--color-gradient); /* Azul oscuro corporativo */
+    background: var(--color-gradient);
+    /* Azul oscuro corporativo */
     padding: 6rem 0;
     position: relative;
     overflow: hidden;
@@ -4574,7 +4851,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     right: -10%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
     border-radius: 50%;
 }
 
@@ -4598,9 +4875,11 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     line-height: 1.6;
 }
 
-.text-white h2, .text-white p {
+.text-white h2,
+.text-white p {
     color: #ffffff;
 }
+
 .text-white p {
     opacity: 0.9;
 }
@@ -4615,11 +4894,13 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- Tarjetas Blancas del Kit Bienestar --- */
 .plan-kit-card {
-    background-color: #ffffff; /* Tarjeta completamente blanca */
+    background-color: #ffffff;
+    /* Tarjeta completamente blanca */
     padding: 2rem 1.5rem;
     border-radius: 1.2rem;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombrita para que resalte sobre el azul */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Sombrita para que resalte sobre el azul */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -4645,12 +4926,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     font-size: 1.1rem;
     font-weight: 900;
     margin-bottom: 0.5rem;
-    color: var(--color-primary); /* Títulos en azul para mantener el estilo */
+    color: var(--color-primary);
+    /* Títulos en azul para mantener el estilo */
 }
 
 .plan-kit-card p {
     font-size: 0.85rem;
-    color: #334155; /* Letras grises oscuras (no negras) para leer mejor */
+    color: #334155;
+    /* Letras grises oscuras (no negras) para leer mejor */
     line-height: 1.5;
 }
 
@@ -4677,7 +4960,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     background-color: #ffffff;
     padding: 3rem 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     border: 1px solid #f1f5f9;
 }
 
@@ -4691,7 +4974,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
 }
 
 .include-card h3 {
@@ -4699,12 +4982,19 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     font-weight: 800;
     color: var(--color-text-dark);
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .include-card p {
     font-size: 0.95rem;
     color: var(--color-text-muted);
     line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* --- 4. OPCIÓN DÚO --- */
@@ -4715,8 +5005,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 .duo-wrapper-box {
     display: flex;
     border-radius: 2rem;
-    overflow: hidden; /* Esto es clave para que la imagen y el bloque no se salgan de las esquinas redondas */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    overflow: hidden;
+    /* Esto es clave para que la imagen y el bloque no se salgan de las esquinas redondas */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .duo-image-side {
@@ -4731,7 +5022,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .duo-content-side {
     flex: 1;
-    background: var(--color-gradient); /* Azul un tono distinto para diferenciar */
+    background: var(--color-gradient);
+    /* Azul un tono distinto para diferenciar */
     color: #ffffff;
     padding: 4rem 3rem;
     display: flex;
@@ -4776,8 +5068,10 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* --- Ajuste del Botón en la sección Dúo --- */
 .duo-content-side .btn-white-solid {
-    width: max-content; /* Se adapta al largo de la palabra */
-    align-self: flex-start; /* Lo alinea a la izquierda debajo de la lista */
+    width: max-content;
+    /* Se adapta al largo de la palabra */
+    align-self: flex-start;
+    /* Lo alinea a la izquierda debajo de la lista */
     margin-top: 1rem;
 }
 
@@ -4822,7 +5116,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* --- 2. Kit Bienestar Intermedio (Fondo Claro) --- */
 .intermedio-kit-section {
     padding: 6rem 0;
-    background-color: #ffffff; /* Este bloque es blanco en tu diseño */
+    background-color: #ffffff;
+    /* Este bloque es blanco en tu diseño */
 }
 
 .kit-title {
@@ -4840,7 +5135,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .intermedio-kit-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Fuerza 5 columnas idénticas */
+    grid-template-columns: repeat(5, 1fr);
+    /* Fuerza 5 columnas idénticas */
     gap: 1.5rem;
 }
 
@@ -4871,6 +5167,12 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.inter-kit-card h4 {
+    display: flex;
+    margin: 0 auto;
 }
 
 .inter-kit-card span {
@@ -4882,7 +5184,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 .inter-kit-card p {
     font-size: 0.85rem;
-    color: #475569; /* Un gris intermedio para que no compita con el título */
+    color: #475569;
+    /* Un gris intermedio para que no compita con el título */
     line-height: 1.5;
     margin: 0;
     text-align: center;
@@ -4921,8 +5224,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 /* Tamaños en el Grid */
@@ -4952,7 +5255,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     color: var(--color-text-muted);
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    flex-grow: 1; /* Empuja el contenido hacia abajo */
+    flex-grow: 1;
+    /* Empuja el contenido hacia abajo */
 }
 
 /* Imagen dentro de la tarjeta grande */
@@ -4985,7 +5289,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 .bento-blue p {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .bento-blue i {
@@ -5047,7 +5351,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 
 /* Botón Negro/Oscuro */
 .btn-dark-solid {
-    background: var(--color-gradient); /* Gris casi negro */
+    background: var(--color-gradient);
+    /* Gris casi negro */
     color: #ffffff;
     padding: 1rem 2rem;
     border-radius: 9999px;
@@ -5082,7 +5387,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     font-weight: 900;
     font-size: 0.9rem;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* ========================================================
@@ -5117,6 +5422,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     left: -3rem;
     align-items: flex-start;
 }
+
 .badge-premium span {
     font-size: 0.75rem;
     line-height: 1.4;
@@ -5149,7 +5455,9 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 }
 
 /* Clases específicas para acomodar el grid */
-.bento-col-2 { grid-column: 1 / 3; }
+.bento-col-2 {
+    grid-column: 1 / 3;
+}
 
 /* Tarjeta horizontal (Servicios Concierge) */
 .bento-horizontal {
@@ -5165,14 +5473,14 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     flex: 1;
 }
 
-.bento-card-img{
+.bento-card-img {
     background-color: #ffffff;
     border-radius: 1.5rem;
     padding: 0px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .bento-side-img {
@@ -5185,7 +5493,8 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
 /* --- 3. Kit Bienestar Premium --- */
 .premium-kit-section {
     padding: 6rem 0;
-    background-color: #f1f5f9; /* Gris apenas más oscuro para contrastar */
+    background-color: #f1f5f9;
+    /* Gris apenas más oscuro para contrastar */
 }
 
 .premium-kit-grid {
@@ -5200,6 +5509,7 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     align-items: flex-start;
     text-align: left;
 }
+
 .premium-kit-grid .inter-kit-card p {
     font-size: 0.8rem;
     color: var(--color-text-muted);
@@ -5245,13 +5555,18 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     gap: 0.8rem;
     white-space: nowrap;
 }
-.kit-banner-badge i { color: var(--color-primary); font-size: 1.2rem; }
+
+.kit-banner-badge i {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
 
 /* --- 4. Dúo Premium --- */
 .premium-duo-section {
     padding: 6rem 0;
     background-color: #f8fafc;
 }
+
 .premium-duo-bg {
     background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
 }
@@ -5260,24 +5575,24 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
        texto DEGRADE
    ======================================================== */
 
-   .gradient {
-  /* 1. Define el degradado como fondo */
-  background: var(--color-gradient);
-  
-  /* 2. Recorta el fondo para que solo se vea en el texto */
-  -webkit-background-clip: text;
-  background-clip: text;
-  
-  /* 3. Hace que el texto sea transparente */
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+.gradient {
+    /* 1. Define el degradado como fondo */
+    background: var(--color-gradient);
+
+    /* 2. Recorta el fondo para que solo se vea en el texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* 3. Hace que el texto sea transparente */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
-.white{
+.white {
     color: #ffffff !important;
 }
 
-.btn-gradient{
+.btn-gradient {
     width: 100%;
     padding: 1rem;
     border-radius: 9999px;
@@ -5288,6 +5603,704 @@ button { background: none; border: none; cursor: pointer; font-family: inherit; 
     transition: all 0.3s ease;
 }
 
-.btn-gradient:hover{
+.btn-gradient:hover {
     transform: translateY(-2px);
+}
+
+
+/* ========================================================
+   PÁGINA: KIT BIENESTAR (Estilo ADICIO Premium)
+   ======================================================== */
+.kit-page-main {
+    background-color: #f8fafc;
+    /* Gris ultra claro */
+    width: 100%;
+}
+
+/* Tipografía itálica y fina para subtítulos del hero */
+.text-italic-light {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--color-primary);
+}
+
+/* --- 1. Hero Section --- */
+.kit-hero-section {
+    padding: 5rem 0 6rem 0;
+    background-color: #ffffff;
+    /* Hero blanco nítido */
+}
+
+.kit-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.kit-hero-text h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.kit-hero-text p {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 90%;
+}
+
+/* Fondo decorativo del Hero Kit */
+.kit-hero-image-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- 2 & 3. Introducción y Grid de Productos --- */
+.kit-intro-section {
+    padding: 6rem 0 2rem 0;
+}
+
+.kit-intro-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.kit-intro-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kit-products-section {
+    padding: 6rem 0;
+}
+
+.kit-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas como en la captura */
+    gap: 2rem;
+}
+
+/* Diseño de la Tarjeta de Producto ADICIO */
+.product-card {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    /* Esquinas súper redondeadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Sombra profunda y suave */
+    border: 1px solid #f1f5f9;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del Icono con tu degradado */
+.product-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: var(--color-gradient);
+    /* Usando tu degradado saturado */
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- 4. ¿Cómo funciona? (Sección de pasos) --- */
+.kit-process-section {
+    padding: 8rem 0;
+    background-color: #ffffff;
+    /* Fondo blanco */
+}
+
+.kit-section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.kit-section-header p {
+    color: var(--color-text-muted);
+    margin-bottom: 5rem;
+}
+
+.kit-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.process-step-card {
+    position: relative;
+    background-color: #f8fafc;
+    padding: 4rem 2rem 3rem 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+/* Número del paso flotante */
+.process-number {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    border: 4px solid #ffffff;
+}
+
+.process-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.process-step-card h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+.process-step-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- 5. CTA Final (Sección azul de la captura) --- */
+.kit-final-cta-section {
+    background-color: var(--color-primary);
+    /* Azul oscuro corporativo */
+    padding: 6rem 0;
+}
+
+.text-white h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.text-white p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================================================
+   SECCIÓN DETALLE DE DISPOSITIVO (Ej: Smartwatch)
+   ======================================================== */
+.device-detail-section {
+    padding: 6rem 0;
+    background: var(--color-gradient);
+}
+
+.device-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    /* Buena separación entre imagen y texto */
+    align-items: center;
+}
+
+/* Estilo de la Imagen */
+.device-img {
+    width: 100%;
+    border-radius: 2rem;
+    /* Bordes súper redondeados estilo ADICIO */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    /* Sombra elegante */
+    object-fit: cover;
+}
+
+/* Textos Principales */
+.device-text-col h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.device-intro {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+/* Lista de Características */
+.device-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Separación vertical entre los ítems */
+}
+
+.device-feature-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+/* Iconos */
+.df-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    /* Evita que el icono se aplaste */
+    background-color: #ffffff;
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Icono especial para el SOS (Tono rojo sutil) */
+.sos-icon {
+    color: #e11d48;
+}
+
+/* Textos de las Características */
+.df-text h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+}
+
+.df-text p {
+    font-size: 0.95rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ========================================================
+   SECCIÓN: OXÍMETRO DE PULSO
+   ======================================================== */
+.oximetro-section {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+    /* Fondo blanco para alternar con el gris del smartwatch */
+}
+
+.oximetro-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* Textos Principales del Oxímetro */
+.oximetro-text-col h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.oximetro-intro {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Tarjetas de Métricas (SpO2, PR bpm) */
+.device-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-card h4 {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.02em;
+}
+
+.stat-card span {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-weight: 700;
+}
+
+/* Texto inferior pequeño */
+.oximetro-footer-text {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* Caja de exhibición del producto (Fondo blanco) */
+.product-showcase-card {
+    background-color: #f8fafc;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.device-img-transparent {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+/* ========================================================
+   SECCIÓN: TENSIÓMETRO DIGITAL
+   ======================================================== */
+.tensiometro-section {
+    padding: 6rem 0;
+    background-color: #ffffff;
+    /* Fondo para contrastar con la sección anterior */
+}
+
+.tensiometro-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* --- Columna de Imagen --- */
+.tensiometro-image-col {
+    display: flex;
+    justify-content: center;
+}
+
+.tensiometro-img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* --- Columna de Texto --- */
+.tensiometro-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+/* Caja del Subtítulo / Cita */
+.tensiometro-quote-box {
+    background: var(--color-gradient);
+    /* Gris sutil azulado */
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    /* Hace que la caja se adapte al ancho del texto */
+}
+
+.tensiometro-quote-text {
+    color: #ffffff;
+    /* Texto en tu azul principal */
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Lista de Tildes */
+.tensiometro-feature-list {
+    list-style: none;
+    /* Quitamos las viñetas por defecto */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.tensiometro-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tensiometro-icon {
+    color: var(--color-primary);
+    /* Tilde azul */
+    font-size: 1.2rem;
+    margin-top: 0.15rem;
+    /* Ajuste milimétrico para que el icono se alinee con la primer línea de texto */
+}
+
+.tensiometro-text {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* ========================================================
+   SECCIÓN: DISPOSITIVOS BÁSICOS (Termómetro y Balanza)
+   ======================================================== */
+.basic-devices-section {
+    padding: 6rem 0;
+    background: var(--color-gradient);
+    /* Ajustalo a #f8fafc si la sección anterior es blanca */
+}
+
+.basic-devices-header {
+    margin-bottom: 4rem;
+}
+
+.basic-devices-header h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.basic-devices-header p {
+    color: #ffffff;
+}
+
+.basic-devices-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    /* Espacio entre las dos tarjetas grandes */
+}
+
+/* --- Diseño de la Tarjeta Base --- */
+.basic-device-card {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    /* Para que la imagen respete los bordes curvos arriba */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.basic-device-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Contenedores de Imágenes --- */
+.bd-image-wrapper {
+    width: 100%;
+    height: 280px;
+    /* Altura fija para mantener simetría perfecta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Si tu imagen ya tiene fondo, usamos cover. Si es PNG transparente, usamos contain */
+.bd-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.bd-img-transparent {
+    max-width: 65%;
+    height: auto;
+}
+
+/* --- Contenido Interno de las Tarjetas --- */
+.bd-content {
+    padding: 2.5rem;
+    flex-grow: 1;
+    /* Empuja el contenido para rellenar espacios vacíos */
+    display: flex;
+    flex-direction: column;
+}
+
+.bd-content h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.bd-intro {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* --- Lista del Termómetro --- */
+.bd-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bd-feature-list li {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+.bd-icon {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 0.15rem;
+}
+
+
+.bd-feature-list strong {
+    display: block;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+
+.bd-feature-list p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* --- Píldoras de la Balanza --- */
+.bd-pills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    /* Empuja la grilla hacia abajo si sobra espacio */
+}
+
+/* --- Ajuste de tamaño para las Píldoras de la Balanza --- */
+
+.bd-pill {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; /* Separamos un poco más el circulo del texto */
+}
+
+.bd-pill-icon {
+    width: 48px;  /* Agrandamos el circulo bastante más (antes era 32px) */
+    height: 48px;
+    background-color: #ffffff; /* Fondo blanco de la burbuja */
+    color: var(--color-primary); /* Icono azul */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem; /* Agrandamos el tamaño del icono de FontAwesome */
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Una sombrita suave para que resalte del fondo */
+}
+
+.bd-pill-text {
+    font-size: 1.1rem; /* Agrandamos la letra (antes era 0.85rem) */
+    font-weight: 500;
+    color: #ffffff; /* Letra blanca para que contraste con tu fondo cyan */
+}
+
+
+.kit-titulo-inlu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+    text-align: center;
+}
+
+.btn-kit-bienestar {
+    padding: 2rem 0;
+}
+
+.btn-kit-basico {
+    padding: 2rem 0;
+    text-align: center;
+    align-items: center;
+}
+
+.oximetro-text-col .btn-primary,
+.tensiometro-text-col .btn-primary {
+    width: fit-content;
+    /* Hace que el botón solo mida lo que miden sus palabras */
+    margin-top: 1rem;
+    /* Le damos un poquito de aire extra arriba por las dudas */
+    color: #ffffff;
+    background: var(--color-gradient);
 }
