@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidamos con Sentido</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobil-style.css">
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <div class="nav-container">
+
+            <div class="mobile-spacer"></div>
+
+            <a href="../index.html" class="logo">
+                <img class="logo-img" src="../img/ISOTIPO AZUL.png" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+
+                    <li class="dropdown">
+                        <a href="../servicios.html" class="nav-link dropdown-toggle">
+                            Servicios <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../estar.html">Plan Estar</a></li>
+                            <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                            <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                            <li class="separator"></li>
+                            <li><a href="../estar.html#estar-duo">Plan Estar Duo</a></li>
+                            <li><a href="../estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                            <li><a href="../estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                            <li class="separator"></li>
+                            <li><a href="../servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                            <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                            <li><a href="../servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="../servicios.html" class="view-all"><span class="gradient">Ver todos los
+                                        servicios</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="../quienes.html" class="nav-link">Quienes Somos</a></li>
+                    <li><a href="../faq.html" class="nav-link">Preguntas Frecuentes</a></li>
+                    <li><a href="../kit-bienestar.html" class="nav-link">Kit Bienestar</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                class="btn-contacto desktop-btn" target="_blank">
+                <p><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+
+            <div class="mobile-menu-header">
+                <a href="../index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="../img/ISOTIPO AZUL.png" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>Servicios</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="../estar.html">Plan Estar</a></li>
+                        <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                        <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                        <li class="separator"></li>
+                        <li><a href="../estar.html#estar-duo">Plan Estar Duo</a></li>
+                        <li><a href="../estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                        <li><a href="../estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                        <li class="separator"></li>
+                        <li><a href="../servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                        <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                        <li><a href="../servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="../servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../quienes.html">Quienes somos</a></li>
+                <li><a href="../faq.html">Preguntas frecuentes</a></li>
+                <li><a href="../kit-bienestar.html">Kit Bienestar</a></li>
+
+                <li class="mobile-btn-container">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        class="btn-contacto" target="_blank">
+                        <p class="btn-contacto-mobile"><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="single-post-section">
+
+        <header class="single-post-hero">
+            <div class="single-post-container">
+                <div class="post-hero-content">
+                    <div class="post-breadcrumbs">
+                        <a href="../blog.html"><span class="gradient">Blog</span></a> <i
+                            class="fa-solid fa-chevron-right"></i> <span class="current-cat">Profesionales</span>
+                    </div>
+                    <!-- TITULO -->
+                    <h1>ELA Esclerosis Lateral Amiotrófica</h1>
+                    <div class="post-meta-details">
+                        <span class="author-avatar"><i class="fa-solid fa-house-chimney-medical"></i></span>
+                        <div class="author-info">
+                            <!-- AUTOR Y FECHA -->
+                            <span class="author-name">Lic. Liboreiro Jose Daniel</span>
+                            <span class="post-date">12 Abril, 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="single-post-body">
+            <div class="single-post-container post-layout">
+
+                <article class="post-main-content">
+
+                    <!-- FOTO -->
+                    <img src="assets/ELA-Esclerosis-Lateral-Amiotrófica.webp" alt="Tensiometro Digital"
+                        class="post-featured-image">
+
+                    <div class="post-text">
+
+                        <!-- INTRO -->
+                        <p class="post-intro">Enfermedad del sistema nervioso central, caracterizada por una
+                            degeneración progresiva de las neuronas motoras en la corteza cerebral</p>
+
+                        <!-- SUBTITULO -->
+                        <h2>ELA (Esclerosis Lateral Amiotrófica)</h2>
+                        <!-- TEXTO -->
+                        <p>
+                            <strong>Introducción</strong><br><br>
+
+                            La Esclerosis Lateral Amiotrófica (ELA) es una enfermedad del sistema nervioso central,
+                            caracterizada por una degeneración progresiva de las neuronas motoras en la corteza
+                            cerebral, tronco del encéfalo y médula. Su característica clínica principal es la debilidad
+                            muscular que avanza hasta la parálisis, extendiéndose de unas regiones corporales a otras.
+                            La desaparición de las neuronas motoras tiene como consecuencia neurodegeneración y atrofia
+                            muscular.<br><br>
+
+                            La enfermedad puede aparecer como debilidad muscular, alteraciones en el habla o la
+                            deglución o, con menor frecuencia, como debilidad de los músculos respiratorios. La
+                            progresión de la enfermedad también puede variar en cada paciente.<br><br>
+
+                            Aproximadamente un 10-15% pueden presentar signos de demencia frontotemporal y en más del
+                            35% de los casos se detectan signos de deterioro cognitivo.<br><br>
+
+                            La ELA puede afectar adultos de cualquier edad (se ha descrito de forma excepcional una
+                            forma infantil) pero incide principalmente entre los 50-70 años. La esperanza de vida es
+                            variable, pero se estima en una media de 3 a 5 años. La incidencia de la enfermedad es de
+                            1-2 nuevos casos por 100.000 habitantes/año con una prevalencia de 3,5 casos por cada
+                            100.000 habitantes.<br><br>
+
+                            <strong>Objetivos en la asistencia de salud</strong><br><br>
+
+                            Dado que no se dispone de un tratamiento curativo, el objetivo primordial es conseguir que
+                            el paciente y su entorno dispongan de los cuidados necesarios para mantener una calidad de
+                            vida aceptable<br><br>
+
+                            Para ello debemos afrontar un reto muy importante que es:<br><br>
+
+                            <ol type="A">
+                            <li>Disminuir la demora diagnóstica, imprescindible para proporcionar estos cuidados de forma
+                            precoz y para disminuir el sufrimiento derivado de la incertidumbre.</li>
+
+                            <li>Conseguir que todo paciente diagnosticado de ELA sea tratado por un equipo
+                            multidisciplinar especializado en estrecha colaboración con los recursos asistenciales.</li>
+
+                            <li>Mejorar de forma sustancial la rápida y devastadora evolución porque muchas veces, en
+                            pacientes en edad laboral, hace que los requerimientos de soporte, movilidad, ayudas y
+                            adaptación psicológica-emocional sean insuficientes y tardías. Los profesionales implicados
+                            en esta terrible enfermedad, gestores, administración y la sociedad en su conjunto debemos
+                            unir esfuerzos para un único proyecto, el compromiso de conseguir los medios necesarios y la
+                            mejor forma de organización para el cuidado y tratamiento de los enfermos con ELA.</li>
+                            </ol>
+
+                            <strong>Diagnóstico</strong><br><br>
+
+                            ELA es una enfermedad neurodegenerativa de inicio en el adulto que afecta primariamente a
+                            las neuronas motoras superior (NMS) e inferior (NMI). Sin embargo, los avances más recientes
+                            ponen de relieve que no se limita a la neurona motora sino que tiene importantes
+                            manifestaciones no motoras, como es el deterioro cognitivo y alteraciones conductuales
+                            debidos a la afectación de la corteza fronto-temporal.<br><br>
+
+                            La gran variabilidad clínica y pronóstica entre los pacientes hace difícil pero necesario un
+                            sistema de clasificación, que incluya criterios diagnósticos para su uso clínico y en
+                            investigación, pero también la descripción del fenotipo al inicio de la enfermedad y durante
+                            la evolución.<br><br>
+
+                            Es frecuente usar términos de forma más bien subjetiva y no sistemática, de manera que un
+                            mismo término se emplea unas veces para el diagnóstico y otras para designar un fenotipo
+                            clínico. Por ejemplo, el término ELA se usa para designar la enfermedad en sí, pero también
+                            se habla de ELA bulbar o ELA medular haciendo referencia a un tipo de patrón clínico. Los
+                            términos esclerosis lateral primaria (ELP, afectación exclusiva de la NMS) y atrofia
+                            muscular progresiva (AMP, afectación exclusiva de NMI) se han usado para designar
+                            enfermedades que se consideraban diferentes de la ELA, y en otras ocasiones, sin embargo, se
+                            ha considerado que son manifestaciones fenotípicas de una misma enfermedad, a la que se ha
+                            denominado enfermedad de neurona motora en el Reino Unido y ELA en EEUU.<br><br>
+
+                            No existe una prueba diagnóstica para la ELA y su diagnóstico se basa en la clínica, estudio
+                            neurofisiológico y exclusión de otras enfermedades. Tampoco se dispone de biomarcadores que
+                            diferencien los distintos fenotipos entre sí y así puedan ser usados como factores
+                            pronósticos.<br><br>
+
+                            <strong>Sintomatología (Formas clínicas).</strong><br><br>
+
+                            La descripción fenotípica debe incluir la topografía anatómica inicial (bulbar, monomiélica,
+                            etc), la simetría, la edad de inicio, la velocidad a la que progresa la enfermedad y su
+                            duración, la clínica no motora y el origen familiar o esporádico. o Según distribución de
+                            síntomas al inicio:<br><br>
+
+                            <ol type="A">
+                            <li>Medular (clásica). Es la forma más frecuente (2/3 de los pacientes). Se manifiesta como
+                            debilidad indolora en una extremidad. La exploración muestra signos de NMS y NMI.</li>
+
+                            <li>Bulbar. 20% de los casos. Presentan disartria, disfagia y fasciculaciones linguales. El
+                            inicio puede percibirse como brusco y confundirse con patología cerebrovascular, pero a
+                            diferencia de ésta en la ELA la clínica seguiría progresando. Se asocia a peor pronóstico.</li>
+                            </ol>
+
+                            <strong>Fenotipos son menos frecuentes:</strong><br><br>
+
+                            <ol type="A">
+                            <li>Respiratoria. Ocurre en 3-5% de los pacientes. Presentan disnea u ortopnea. Tiene mal
+                            pronóstico.</li>
+
+                            <li>Hemipléjica. Es poco frecuente. Se conoce como síndrome de Mills. Afecta un hemicuerpo,
+                            respetando cara, con afectación predominante de NMS.</li>
+
+                            <li>Flail Arm. (conocido como forma escapulohumeral, síndrome de Vulpian Bernart, hombre en
+                            barril, o diplejía braquial amiotrófica) Existe una afectación predominante de NMI y en
+                            extremidades superiores. Se asocia a una supervivencia prolongada (mediana 4 años, 17% a los
+                            10 años).</li>
+
+                            <li>Flail Leg. Poco frecuente. Se afectan miembros inferiores de forma asimétrica cuando
+                            existe una afectación distal y bilateral. con afectación de NMI. También se conoce como
+                            forma seudopolineurítica.</li>
+
+                            <li>Head drop. Es una forma infrecuente, con afectación de los extensores del cuello. o Según
+                            tipo de afectación motora. La afectación simultánea de NMS y NMI es un requisito para el
+                            diagnóstico de ELA y así se incluye en los criterios de El Escorial. Sin embargo, en
+                            determinados pacientes puede predominar la afectación de una neurona motora y signos mínimos
+                            o ausentes de la otra. o Según afectación no motora.</li>
+
+                            <li>Trastorno cognitivo-conductual . Es la manifestación no motora más frecuente en la ELA.</li>
+
+                            <li>Afectación multisistémica. Algunos de estos aspectos tienen poca relevancia clínica y se
+                            hacen evidentes solo en fases avanzadas y en pacientes con supervivencia prolongada. Pérdida
+                            ponderal Afectación extrapiramidal Ataxia cerebelosa Afectación sensitiva Trastornos
+                            urinarios Disfunción autonómica Oftalmoparesia</li>
+                            </ol>
+
+                            <strong>sintomatología (Valoración cognitiva).</strong><br><br>
+
+                            Hasta un 50% de los pacientes con ELA presentan afectación cognitiva y conductual en
+                            diferente grado. El espectro clínico es amplio y varía desde un trastorno cognitivo leve a
+                            una demencia fronto-temporal (DFT). Un documento de consenso clasificó a los pacientes en
+                            tres categorías: ELA-DFT, ELA déficit cognitivo y ELA-alteración del comportamiento.<br><br>
+
+                            <strong>Recomendaciones (puntos de buena práctica clínica)</strong><br><br>
+
+                            Valoración neuropsicológica desde el inicio de la enfermedad a todos los pacientes,
+                            independientemente de si se sospecha o no afectación cognitiva. Las evaluaciones sucesivas
+                            se adaptarán a la situación clínica de cada paciente. Todo paciente con ELA será evaluado al
+                            menos en una ocasión por un profesional capacitado en Neuropsicología. No obstante, la
+                            prueba ALS-CBS, de la que existe una versión validada en español puede ser útil en el
+                            despistaje de afectación cognitivo conductual en estos pacientes.<br><br>
+
+                            <strong>Clínica: Signos y síntomas.</strong><br><br>
+
+                            La ELA es una enfermedad de causa desconocida que da lugar al fracaso progresivo del normal
+                            funcionamiento del sistema motor que dirige, regula y mantiene la musculatura esquelética,
+                            responsable de la capacidad para moverse y relacionarse con el entorno (andar, manipular,
+                            escribir, comer, vestirse, hablar,…). En la ELA, las neuronas motoras relacionadas con los
+                            movimientos oculares (oculomotores) y los músculos esfinterianos (relacionados con la
+                            función genital y urinaria) no se alteran. Tampoco se afecta la sensibilidad superficial ni
+                            la profunda, el sistema sensorial, el estado de conciencia ni compromete el funcionamiento
+                            del músculo liso, regulado por el sistema nervioso vegetativo responsable de la inervación
+                            de los órganos internos (corazón, intestinos, sistema vascular, etc.). Las manifestaciones
+                            clínicas de la ELA son debidas al compromiso específico del sistema motor, con preservación
+                            del resto de funciones del sistema nervioso. La característica clínica más notable es la
+                            asociación en un mismo territorio muscular de síntomas y signos, en grado variable, que
+                            reflejan la afectación de la neurona motora superior e inferior. La clínica se inicia
+                            habitualmente de forma localizada en cualquiera de las cuatro extremidades o en la región
+                            cefálica, y puede llegar a producir parálisis progresiva de toda la musculatura esquelética
+                            en un plazo aproximado de 2 a 5 años. De hecho, los problemas respiratorios constituyen la
+                            principal causa de ingreso hospitalario y de mortalidad en los enfermos con ELA.<br><br>
+
+                            <ol type="A">
+                            <li>Debilidad muscular: Es el síntoma más relevante de la ELA y se debe a la muerte
+                            progresiva de neuronas motoras. Se manifiesta cuando se ha perdido el 50% de la población de
+                            neuronas motoras. Inicialmente afecta a un grupo de músculos y se va difundiendo hacia otros
+                            a medida que avanza la enfermedad.</li>
+
+                            <li>Atrofia muscular: Es debida a la pérdida de fibras musculares producida por la
+                            denervación. Aparece concomitante con el grado de debilidad muscular. En fases iniciales es
+                            fácil de observar por simple inspección en las manos, especialmente en la musculatura
+                            intrínseca (eminencia tenar, interóseos), en la lengua y en las piernas.</li>
+
+                            <li>Fasciculaciones: Son contracciones espontáneas de un conjunto de fibras musculares
+                            inervadas por una misma neurona motora (unidad motora), debidas a alteraciones de la
+                            excitabilidad de la membrana de la neurona motora inferior o de su axón.
+
+                            Aunque las fasciculaciones no son un signo patognomónico de la enfermedad, ya que también
+                            pueden observarse en otras patologías que se acompañan de denervación (por ejemplo,
+                            radículopatías, siringomielia, neuropatías periféricas axonales), su presencia constituye
+                            uno de los hallazgos más destacados de la ELA.</li>
+
+                            <li>Calambres musculares: Las rampas o calambres musculares son contracciones dolorosas
+                            involuntarias sostenidas de los músculos que se acompañan de contractura palpable, de 30 a
+                            45 segundos de duración. En la ELA pueden preceder a la aparición de la debilidad muscular,
+                            se desencadenan con mínimas contracciones musculares (por ejemplo, durante la exploración) y
+                            afectan a cualquier músculo (cuello, mandíbula, manos, brazos, abdomen, muslos).</li>
+
+                            <li>Hipotonía y arreflexia: En la ELA, la característica es la presencia de reflejos
+                            exaltados o patológicos en territorios con debilidad muscular.</li>
+
+                            <li>Espasticidad: Como consecuencia de la ausencia de relajación de los músculos
+                            antagonistas, el tono muscular en estos músculos aumenta, dificultando los movimientos en
+                            los que participan grupos musculares antagónicos. G.- Labilidad emocional: El paciente
+                            presenta accesos de risa o lloro de forma incontrolada ante mínimos estímulos emocionales o
+                            incluso sin una causa aparente. Es un hallazgo frecuente en la ELA cuando hay compromiso de
+                            musculatura bulbar.</li>
+                            </ol>
+
+                            <strong>Formas de inicio</strong><br><br>
+
+                            Los primeros síntomas de la enfermedad se manifiestan por la aparición sin causa aparente,
+                            en ocasiones después de un traumatismo, de debilidad y pérdida de fuerza localizadas en un
+                            grupo muscular inervado por uno o más miotomas adyacentes, en cualquiera de las cuatro
+                            extremidades o en la región cefálica (bulbar).<br><br>
+
+                            Los síntomas iniciales más frecuentes que motivan que el paciente consulte son:<br><br>
+
+                            En las extremidades superiores, pérdida de fuerza en la mano, que se manifiesta al inicio
+                            por dificultad para abrir una pinza de tender la ropa, abrocharse los botones de la camisa,
+                            o coger objetos. Con menor frecuencia también puede manifestarse por debilidad a nivel más
+                            proximal que provoca dificultad para levantar pesos o mantener los brazos extendidos.<br><br>
+
+                            En las extremidades inferiores, debilidad en el pie. Los síntomas más precoces son la
+                            imposibilidad para extender el dedo gordo o el pie caído, que puede comportar torceduras
+                            repetidas del tobillo. Esta forma de inicio se denomina clásicamente “pseudopolineurítica”.
+                            Al igual que en las superiores, también puede iniciarse por debilidad a nivel más proximal.<br><br>
+
+                            En cabeza y cuello, la debilidad de los músculos de la lengua y de la faringe da lugar a
+                            disartria y disfonía, con dificultad progresiva para pronunciar palabras, especialmente las
+                            consonantes linguales y palatales. También, aunque menos frecuente en las fases iniciales,
+                            puede ocasionar dificultades para la deglución (disfagia), especialmente de líquidos, lo que
+                            puede provocar episodios de tos por el paso del líquido a la tráquea. La disfagia aislada,
+                            sin disartria, es excepcional y hace sospechar otras causas (por ejemplo, miopatía
+                            inflamatoria).<br><br>
+
+                            Más raramente, la enfermedad se manifiesta ya de entrada de forma más generalizada,
+                            afectando a las cuatro extremidades, con síntomas de fatiga al andar o para levantar pesos.
+                            El paciente puede también notar sensación de rigidez y torpeza de movimientos, que pueden
+                            predominar en un hemicuerpo (forma hemipléjica).<br><br>
+
+                            En un 2% de casos se inicia por síntomas respiratorios, debidos a que la debilidad muscular
+                            afecta precozmente a los músculos respiratorios, especialmente al diafragma. La aparición de
+                            disnea desencadenada por esfuerzos mínimos (por ejemplo, subir las escaleras de su casa) en
+                            un paciente habituado a realizar estos ejercicios sin presentar ningún problema, puede ser
+                            el primer síntoma de la enfermedad.<br><br>
+
+                            Diagnósticos de enfermería (NANDA)<br><br>
+
+                            <strong>Prioridades de Enfermería</strong><br><br>
+
+                            El manejo efectivo de esta enfermedad requiere un enfoque de enfermería priorizado para
+                            abordar los aspectos más críticos del cuidado. Esto incluye la atención a las necesidades
+                            fisiológicas, la gestión del confort y el apoyo a la autogestión del paciente y su familia.<br><br>
+
+                            Estabilización de Parámetros Fisiológicos y Prevención de Complicaciones: Es crucial
+                            monitorizar constantemente las funciones respiratorias y musculares, asegurando una
+                            intervención temprana para evitar crisis y complicaciones severas.<br><br>
+
+                            Valoración y Manejo Exhaustivo de Síntomas: Se debe llevar a cabo una evaluación continua de
+                            los síntomas como la disnea, la fatiga y el dolor, implementando estrategias para mejorar el
+                            confort del paciente y su calidad de vida.<br><br>
+
+                            Fomento de la Autonomía y Apoyo Psicosocial: Implicar al paciente y su familia en el proceso
+                            de toma de decisiones sobre el cuidado, mediante educación y apoyo emocional, es fundamental
+                            para promover la autonomía y el bienestar psicológico.<br><br>
+
+                            Comunicación y Adaptación de Medios de Asistencia: Facilitar y adaptar los medios de
+                            comunicación y asistencias tecnológicas para asegurar la expresión de necesidades y deseos
+                            del paciente, promoviendo su dignidad y autoestima.<br><br>
+
+                            Prevención de Infecciones y Complicaciones Secundarias: Desarrollar un plan de cuidados que
+                            incluya medidas de higiene y cuidados preventivos para minimizar el riesgo de infecciones,
+                            especialmente respiratorias, que son críticas en el curso de la enfermedad.<br><br>
+
+                            <strong>Evaluación Integral del Estado Fisiológico</strong><br><br>
+
+                            Realizar un examen físico completo, enfocándose en la evaluación de la fuerza muscular y la
+                            coordinación motora.<br>
+                            Monitorizar los signos vitales de manera regular, incluyendo frecuencia respiratoria,
+                            saturación de oxígeno y función pulmonar.<br>
+                            Fundamento: La afectación de los músculos respiratorios en la ELA puede resultar en
+                            complicaciones respiratorias. La monitorización frecuente permite detectar cambios tempranos
+                            y tomar decisiones informadas sobre intervenciones necesarias para mantener la oxigenación y
+                            predecir posibles crisis respiratorias.<br>
+                            Evaluar la presencia de disfagia mediante pruebas clínicas y observar características del
+                            acto de tragar.<br>
+                            Fundamento: La disfagia es común en la ELA y puede incrementar el riesgo de neumonía
+                            aspirativa. Esta evaluación permite identificar la necesidad de una dieta modificada y
+                            técnicas de alimentación adaptadas, asegurando la nutrición y minimizando complicaciones.<br><br>
+
+
+                            <strong>Valoración de los Síntomas Asociados a ELA</strong><br><br>
+
+                            Valorar y documentar los cambios en la movilidad y el nivel de actividad del paciente,
+                            anotando cualquier limitación o dificultad.<br>
+                            Fundamento: La incapacidad para realizar actividades diarias afecta la calidad de vida.
+                            Identificar estas limitaciones permite diseñar intervenciones específicas para facilitar la
+                            movilidad y promover la independencia del paciente tanto como sea posible.<br>
+                            Realizar una evaluación del dolor utilizando una escala de dolor adaptada, como la Escala
+                            Numérica de Valoración del Dolor.<br>
+                            Fundamento: Aunque el dolor no es un síntoma típico de la ELA, puede ser causado por
+                            espasmos musculares o cambios en la postura. Una valoración del dolor adecuada es
+                            fundamental para desarrollar<br>
+                            Valoración Psicosocial y Emocional<br>
+                            Evaluar el estado emocional del paciente y su adaptación a la enfermedad mediante
+                            entrevistas y escalas de ansiedad y depresión.<br>
+                            Fundamento: La ELA genera un gran impacto emocional debido a la pérdida de funcionalidad.
+                            Comprender el estado emocional del paciente puede guiar las intervenciones para brindar
+                            apoyo psicológico y social, fundamentales para el bienestar integral.<br>
+                            Observar y documentar las dinámicas familiares y el impacto que la ELA tiene en los
+                            cuidadores.<br>
+                            Fundamento: La carga que el cuidador enfrenta puede afectar tanto su salud física como
+                            emocional. Al evaluar estas dinámicas, se pueden incorporar estrategias de apoyo tanto para
+                            el paciente como para su familia, favoreciendo un ambiente de cuidado más saludable.
+                            Manejo de Síntomas y Promoción del Confort<br>
+                            Implementar y evaluar regularmente medidas de confort no farmacológicas individualizadas,
+                            tales como el posicionamiento terapéutico, la aplicación de calor local y técnicas de
+                            relajación como la respiración diafragmática, según la valoración y preferencia del
+                            paciente.<br>
+                            Fundamento: Estas intervenciones contribuyen a la mejora del bienestar físico y emocional
+                            del paciente, reduciendo la tensión muscular y promoviendo la relajación, lo que puede
+                            aliviar molestias asociadas con la progresión de la enfermedad.<br>
+                            Proporcionar un cuidado meticuloso de la piel a pacientes con riesgo de deterioro,
+                            incluyendo cambios posturales cada 2 horas, uso de superficies de alivio de presión y
+                            aplicación de cremas hidratantes para prevenir la sequedad cutánea.<br>
+                            Fundamento: Dado el riesgo aumentado de lesiones cutáneas en pacientes con movilidad
+                            limitada, esta intervención es fundamental para preservar la integridad de la piel y
+                            prevenir complicaciones como úlceras por presión.
+                            Soporte Farmacológico y Monitorización<br><br>
+
+                            Administrar la medicación prescrita, incluyendo riluzol, y monitorizar la eficacia del
+                            tratamiento mediante la evaluación continua de la función neuromuscular y la aparición de
+                            efectos adversos como náuseas o fatiga.<br>
+                            Fundamento: Un seguimiento riguroso de la medicación permite ajustar los tratamientos según
+                            la respuesta del paciente, optimizando así la eficacia terapéutica y minimizando efectos
+                            secundarios indeseables.<br>
+                            Intervenciones Psicosociales y Educativas<br><br>
+
+                            Facilitar la comunicación abierta, permitiendo a los pacientes y a las familias expresar
+                            ansiedades y preocupaciones. Proporcionar información clara y precisa sobre la ELA y su plan
+                            de tratamiento en términos comprensibles.<br><br>
+
+                            Fundamento: La educación sobre la enfermedad y su manejo ayuda a reducir la incertidumbre,
+                            permitiendo que pacientes y familias se sientan más empoderados y capaces de enfrentar la
+                            progresión de la enfermedad con una mejor comprensión de los pasos a seguir.<br><br>
+
+                            Ofrecer apoyo psicológico a través de sesiones de asesoramiento, donde se aborden las
+                            emociones y cambios que enfrenta el paciente y su familia, promoviendo técnicas de
+                            afrontamiento positivas.<br>
+                            Fundamento: El soporte emocional es crucial en una enfermedad progresiva como la ELA, donde
+                            el miedo y la ansiedad son comunes. Un enfoque psicológico ayuda a mejorar la adaptación y
+                            resiliencia ante la enfermedad.<br><br>
+
+                            <strong>Promoción del Autocuidado y la Seguridad</strong><br><br>
+
+                            Fomentar la independencia del paciente mediante la enseñanza de técnicas de autocuidado
+                            adaptadas a sus capacidades, como el uso de utensilios adaptados para la alimentación y la
+                            higiene personal.<br>
+                            Fundamento: Promover la autonomía del paciente no solo mejora su autoestima, sino que
+                            también contribuye a la preservación de habilidades funcionales, lo que puede retrasar el
+                            deterioro en etapas avanzadas de la enfermedad.<br>
+                            Establecer un entorno seguro en el hogar, evaluando la necesidad de modificaciones como
+                            pasamanos, eliminación de obstáculos y dispositivos de movilidad adecuados.<br>
+                            Fundamento: Un entorno seguro es esencial para prevenir caídas y lesiones en pacientes que
+                            están debilitados por la enfermedad, garantizando su bienestar físico y emocional en su
+                            entorno diario.<br><br>
+
+                            <strong>Estrategias de Cuidado Colaborativo</strong><br><br>
+
+                            Colaborar con un equipo multidisciplinario, incluyendo fisioterapeutas, terapeutas
+                            ocupacionales y nutricionistas, para desarrollar un plan de atención integral y
+                            personalizado que aborde todas las necesidades del paciente.<br>
+                            Fundamento: La colaboración con diversos profesionales de la salud asegura que se aborden
+                            todos los aspectos de la enfermedad, ofreciendo al paciente un enfoque holístico que mejora
+                            su calidad de vida y la eficacia del cuidado.<br>
+                            Coordinar la transición a cuidados paliativos cuando sea necesario, asegurando que la
+                            calidad de vida y el manejo del dolor sean prioridades en las etapas finales de la
+                            enfermedad.<br>
+                            Fundamento: La identificación temprana de la necesidad de cuidados paliativos permite una
+                            mejor gestión del dolor y otros síntomas, asegurando que el paciente reciba una atención más
+                            acorde a sus deseos y necesidades en su etapa final.<br><br>
+
+
+                            <strong>Complicaciones Potenciales de Esclerosis Lateral Amiotrófica (ELA)</strong><br><br>
+
+                            El cuidado proactivo de enfermería para Esclerosis Lateral Amiotrófica (ELA) incluye la
+                            vigilancia de complicaciones potenciales para asegurar una intervención oportuna y la
+                            seguridad óptima del paciente. La naturaleza progresiva de esta enfermedad exige atención
+                            constante para minimizar los riesgos asociados y mejorar la calidad de vida.<br><br>
+
+                            Dificultades Respiratorias: La ELA puede comprometer la función muscular, incluyendo los
+                            músculos respiratorios, lo que lleva a una insuficiencia respiratoria. Las enfermeras deben
+                            monitorizar la frecuencia respiratoria, el patrón de respiración y signos de hipoxemia para
+                            detectar esta complicación de manera oportuna
+                        </p>
+                        <!-- FUENTES 
+                        <h4>Fuentes :</h4>
+                        <ul>
+                            <li>https://www.saha.org.ar/</li>
+                            <li>https://www.saludiario.com/</li>
+                        </ul>-->
+                    </div>
+
+                    <div class="post-tags-container">
+                        <span class="tag-label">Etiquetas:</span>
+                        <a href="#" class="post-bottom-tag">Derecho</a>
+                        <a href="#" class="post-bottom-tag">Dignidad</a>
+                        <a href="#" class="post-bottom-tag">Cuidados</a>
+                    </div>
+                </article>
+
+                <!-- ARTICULOS RECIENTES Y  ASESORAMIENTO -->
+                <aside class="post-sidebar">
+
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Artículos Recientes</h4>
+
+                        <a href="los-derechos-de-las-personas-mayores.html" class="related-post-item">
+                            <img src="assets/Los-derechos-de-las-personas-mayores.jpg" alt="Yoga adultos">
+                            <div class="related-post-text">
+                                <h5>Los derechos de las personas mayores.</h5>
+                                <span>29 Abril, 2026</span>
+                            </div>
+                        </a>
+
+                        <a href="dormir-bien-es-vivir-mejor.html" class="related-post-item">
+                            <img src="assets/Dormir-bien-es-vivir-mejor.jpg" alt="Manos unidas">
+                            <div class="related-post-text">
+                                <h5>Dormir bien es vivir mejor</h5>
+                                <span>20 Abril, 2026</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sidebar-widget widget-cta">
+                        <h4>¿Necesitas asesoramiento personalizado?</h4>
+                        <p>Un especialista puede evaluar el caso de tu familiar.</p>
+                        <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                            class="btn-primary-article">Agendar Consulta</a>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- WP-->
+    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+        class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER-->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <img src="img/logo horizontal blanco reduzido .png" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y
+                    comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61579267363911" aria-label="Facebook"
+                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/adicio.ar/" aria-label="Instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@adiciosalud" aria-label="TikTok" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/adiciosalud/" aria-label="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../feedback.html">Feedback</a></li>
+                    <li><a href="../app.html">Descargar App</a></li>
+                    <li><a href="../quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="../estar.html">Plan Estar</a></li>
+                    <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                    <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                    <li><a href="../servicios.html#srv-cuidadora">Cuidadoras por Hora</a></li>
+                    <li><a href="../servicios.html#srv-adaptaciones">Adaptación Domiciliaria</a></li>
+                    <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Nicaragua 4817, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+541148703219">+54 11 4870-3219</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@adicio.com.ar" target="_blank">info@adicio.com.ar</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                    target="_blank" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="../legales.html" target="_blank"><i class="fa-solid fa-shield-halved"></i> Políticas de
+                    Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="../legales.html" target="_blank">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> CABA, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>

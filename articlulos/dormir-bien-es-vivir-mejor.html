@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidamos con Sentido</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobil-style.css">
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <div class="nav-container">
+
+            <div class="mobile-spacer"></div>
+
+            <a href="../index.html" class="logo">
+                <img class="logo-img" src="../img/ISOTIPO AZUL.png" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+
+                    <li class="dropdown">
+                        <a href="../servicios.html" class="nav-link dropdown-toggle">
+                            Servicios <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../estar.html">Plan Estar</a></li>
+                            <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                            <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                            <li class="separator"></li>
+                            <li><a href="../estar.html#estar-duo">Plan Estar Duo</a></li>
+                            <li><a href="../estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                            <li><a href="../estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                            <li class="separator"></li>
+                            <li><a href="../servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                            <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                            <li><a href="../servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="../servicios.html" class="view-all"><span class="gradient">Ver todos los
+                                        servicios</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="../quienes.html" class="nav-link">Quienes Somos</a></li>
+                    <li><a href="../faq.html" class="nav-link">Preguntas Frecuentes</a></li>
+                    <li><a href="../kit-bienestar.html" class="nav-link">Kit Bienestar</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                class="btn-contacto desktop-btn" target="_blank">
+                <p><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+
+            <div class="mobile-menu-header">
+                <a href="../index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="../img/ISOTIPO AZUL.png" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>Servicios</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="../estar.html">Plan Estar</a></li>
+                        <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                        <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                        <li class="separator"></li>
+                        <li><a href="../estar.html#estar-duo">Plan Estar Duo</a></li>
+                        <li><a href="../estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                        <li><a href="../estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                        <li class="separator"></li>
+                        <li><a href="../servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                        <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                        <li><a href="../servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="../servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../quienes.html">Quienes somos</a></li>
+                <li><a href="../faq.html">Preguntas frecuentes</a></li>
+                <li><a href="../kit-bienestar.html">Kit Bienestar</a></li>
+
+                <li class="mobile-btn-container">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        class="btn-contacto" target="_blank">
+                        <p class="btn-contacto-mobile"><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="single-post-section">
+
+        <header class="single-post-hero">
+            <div class="single-post-container">
+                <div class="post-hero-content">
+                    <div class="post-breadcrumbs">
+                        <a href="../blog.html"><span class="gradient">Blog</span></a> <i
+                            class="fa-solid fa-chevron-right"></i> <span class="current-cat">Familia</span>
+                    </div>
+                    <!-- TITULO -->
+                    <h1>Dormir bien es vivir mejor</h1>
+                    <div class="post-meta-details">
+                        <span class="author-avatar"><i class="fa-solid fa-house-chimney-medical"></i></span>
+                        <div class="author-info">
+                            <!-- AUTOR Y FECHA -->
+                            <span class="author-name">Lic. Liboreiro Jose Daniel</span>
+                            <span class="post-date">20 Abril, 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="single-post-body">
+            <div class="single-post-container post-layout">
+
+                <article class="post-main-content">
+
+                    <!-- FOTO -->
+                    <img src="assets/Dormir-bien-es-vivir-mejor.jpg" alt="Vegetales frescos y saludables"
+                        class="post-featured-image">
+
+                    <div class="post-text">
+
+                        <!-- INTRO -->
+                        <p class="post-intro">Dormir no es simplemente “descansar”: es un proceso biológico complejo y
+                            esencial. Durante el sueño, el cuerpo y el cerebro realizan funciones vitales</p>
+
+                        <!-- SUBTITULO -->
+                        <h2>El sueño como pilar de salud en ADICIO</h2>
+                        <!-- TEXTO -->
+                        <p>
+                            En ADICIO entendemos que acompañar la salud no es solo atender enfermedades, sino también
+                            cuidar los pilares que sostienen el bienestar cotidiano. Uno de esos pilares fundamentales
+                            es el sueño.<br><br>
+
+                            Dormir no es simplemente “descansar”: es un proceso biológico complejo y esencial. Durante
+                            el sueño, el cuerpo y el cerebro realizan funciones vitales como la consolidación de la
+                            memoria, la restauración física y la regulación de procesos metabólicos. Por eso, el sueño
+                            de calidad es una de las claves que promovemos dentro de nuestras recomendaciones para un
+                            estilo de vida saludable.<br><br>
+
+                            Hoy sabemos que evaluar cómo duerme una persona es tan importante como conocer su presión
+                            arterial o sus hábitos alimentarios. Estudios recientes demuestran que los trastornos del
+                            sueño pueden afectar el control glucémico, aumentar el riesgo de obesidad, hipertensión
+                            arterial, enfermedades cardiovasculares, síndrome de apnea obstructiva del sueño y también
+                            impactar negativamente en el estado de ánimo.<br><br>
+
+                            El sueño sigue un patrón circadiano y se compone de dos grandes fases: la fase NREM (sin
+                            movimientos oculares rápidos), que representa el 75 % del tiempo dormido, y la fase REM (con
+                            movimientos oculares rápidos), que ocupa el 25 % restante. Cada ciclo completo dura unos 90
+                            minutos, y lo ideal es que cada persona atraviese entre cuatro y cinco ciclos por
+                            noche.<br><br>
+
+                            Aunque cada cuerpo tiene su propio ritmo, se considera que una duración adecuada del sueño
+                            ronda las 8 horas. Dormir menos de 6 horas por noche de forma habitual se asocia con mayor
+                            riesgo de enfermedades crónicas, mientras que dormir más de 9 o 10 horas también puede ser
+                            señal de un desequilibrio.<br><br>
+
+                            Desde ADICIO, incorporamos tecnología de evaluación del sueño en todos nuestros módulos de
+                            acompañamiento. Esto nos permite detectar factores que pueden estar afectando el descanso de
+                            nuestros pacientes y diseñar planes de cuidado personalizados, con el objetivo de mejorar su
+                            calidad de vida de forma integral.<br><br>
+
+                            Porque dormir bien no es un lujo: es una necesidad biológica. Y en ADICIO, acompañamos cada
+                            paso hacia una vida más saludable, también mientras dormís.
+                        </p>
+                        <!-- FUENTES -->
+                        <h4>Fuentes :</h4>
+                        <ul>
+                            <li>Calidad del sueño e hipertensión incidental – Revista Española de Cardiología</li>
+                            <li>https://diabetespractica.com/</li>
+                            <li>https://www.iis.es/</li>
+                        </ul>
+                    </div>
+
+                    <div class="post-tags-container">
+                        <span class="tag-label">Etiquetas:</span>
+                        <a href="#" class="post-bottom-tag">Derecho</a>
+                        <a href="#" class="post-bottom-tag">Dignidad</a>
+                        <a href="#" class="post-bottom-tag">Cuidados</a>
+                    </div>
+                </article>
+
+                <!-- ARTICULOS RECIENTES Y  ASESORAMIENTO -->
+                <aside class="post-sidebar">
+
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Artículos Recientes</h4>
+
+                        <a href="los-derechos-de-las-personas-mayores.html" class="related-post-item">
+                            <img src="assets/Los-derechos-de-las-personas-mayores.jpg" alt="Yoga adultos">
+                            <div class="related-post-text">
+                                <h5>Los derechos de las personas mayores.</h5>
+                                <span>29 Abril, 2026</span>
+                            </div>
+                        </a>
+
+                        <a href="hipertersion-arterial.html" class="related-post-item">
+                            <img src="assets/Hipertension-arterial.jpg" alt="Manos unidas">
+                            <div class="related-post-text">
+                                <h5>Hipertensión arterial.</h5>
+                                <span>15 Abril, 2026</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sidebar-widget widget-cta">
+                        <h4>¿Necesitas asesoramiento personalizado?</h4>
+                        <p>Un especialista puede evaluar el caso de tu familiar.</p>
+                        <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                            class="btn-primary-article">Agendar Consulta</a>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- WP-->
+    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+        class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER-->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <img src="img/logo horizontal blanco reduzido .png" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y
+                    comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61579267363911" aria-label="Facebook"
+                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/adicio.ar/" aria-label="Instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@adiciosalud" aria-label="TikTok" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/adiciosalud/" aria-label="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../feedback.html">Feedback</a></li>
+                    <li><a href="../app.html">Descargar App</a></li>
+                    <li><a href="../quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="../estar.html">Plan Estar</a></li>
+                    <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                    <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                    <li><a href="../servicios.html#srv-cuidadora">Cuidadoras por Hora</a></li>
+                    <li><a href="../servicios.html#srv-adaptaciones">Adaptación Domiciliaria</a></li>
+                    <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Nicaragua 4817, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+541148703219">+54 11 4870-3219</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@adicio.com.ar" target="_blank">info@adicio.com.ar</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                    target="_blank" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="../legales.html" target="_blank"><i class="fa-solid fa-shield-halved"></i> Políticas de
+                    Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="../legales.html" target="_blank">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> CABA, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
