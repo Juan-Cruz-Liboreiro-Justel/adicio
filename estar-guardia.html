@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIO - Cuidamos con Sentido</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobil-style.css">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <header class="header">
+        <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="topbar-container">
+            
+            <!-- Izquierda: Teléfono -->
+            <div class="topbar-left">
+                <!-- El enlace "tel:" hace que al tocarlo en celular se abra el teclado para llamar -->
+                <a href="tel:+5491148703219" class="topbar-link">
+                    TEL: 11 4870-3219
+                </a>
+            </div>
+
+            <!-- Derecha: Redes Sociales -->
+            <div class="topbar-right">
+                <a href="https://www.instagram.com/adicio.ar/" target="_blank" aria-label="Instagram" class="topbar-social">
+                    <i class="fa-brands fa-instagram gradient"></i>
+                </a>
+                <a href="https://www.facebook.com/adicio.ar" target="_blank" aria-label="Facebook" class="topbar-social">
+                    <i class="fa-brands fa-facebook-f gradient"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/adiciosalud/" target="_blank" aria-label="LinkedIn" class="topbar-social">
+                    <i class="fa-brands fa-linkedin-in gradient"></i>
+                </a>
+                <a href="https://www.tiktok.com/@adiciosalud" target="_blank" aria-label="WhatsApp" class="topbar-social">
+                    <i class="fa-brands fa-tiktok gradient"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+        <div class="nav-container">
+
+            <div class="mobile-spacer"></div>
+
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="img/ISOTIPO AZUL.webp" alt="">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+
+                    <li class="dropdown">
+                        <a href="servicios.html" class="nav-link dropdown-toggle">
+                            Servicios <span class="material-symbols-outlined icon-small">expand_more</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="estar.html">Plan Estar</a></li>
+                            <li><a href="estar-plus.html">Plan Estar Plus</a></li>
+                            <li><a href="estar-pro.html">Plan Estar Pro</a></li>
+                            <li class="separator"></li>
+                            <li><a href="estar.html#estar-duo">Plan Estar Duo</a></li>
+                            <li><a href="estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                            <li><a href="estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                            <li><a href="servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                            <li><a href="servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                            <li class="separator"></li>
+                            <li><a href="servicios.html" class="view-all"><span class="gradient">Ver todos los
+                                        servicios</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="quienes.html" class="nav-link">Quienes Somos</a></li>
+                    <li><a href="faq.html" class="nav-link">Preguntas Frecuentes</a></li>
+                    <li><a href="kit-bienestar.html" class="nav-link">Kit Bienestar</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                class="btn-contacto desktop-btn" target="_blank">
+                <p><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- NAVBAR MOBILE-->
+    <div class="mobile-menu-overlay" id="mobile-overlay">
+        <div class="mobile-menu-content" id="mobile-content">
+
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo mobile-logo">
+                    <img class="logo-img" src="img/ISOTIPO AZUL.webp" alt="">
+                </a>
+                <button class="close-btn" id="close-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-header" id="toggle-mobile-servicios">
+                        <span>Servicios</span>
+                        <span class="material-symbols-outlined icon-transition">expand_more</span>
+                    </div>
+                    <ul class="mobile-dropdown-menu" id="mobile-servicios-menu">
+                        <li><a href="estar.html">Plan Estar</a></li>
+                        <li><a href="estar-plus.html">Plan Estar Plus</a></li>
+                        <li><a href="estar-pro.html">Plan Estar Pro</a></li>
+                        <li class="separator"></li>
+                        <li><a href="estar.html#estar-duo">Plan Estar Duo</a></li>
+                        <li><a href="estar-plus.html#estar-plus-duo">Plan Estar Plus Duo</a></li>
+                        <li><a href="estar-pro.html#estar-pro-duo">Plan Estar Pro Duo</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html#srv-cuidadora">Cuidadora por Hora</a></li>
+                        <li><a href="servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                        <li><a href="servicios.html#srv-adaptaciones">Adaptacion de Domicilio</a></li>
+                        <li class="separator"></li>
+                        <li><a href="servicios.html" class="view-all">Ver todos los servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="quienes.html">Quienes somos</a></li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="kit-bienestar.html">Kit Bienestar</a></li>
+
+                <li class="mobile-btn-container">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        class="btn-contacto" target="_blank">
+                        <p class="btn-contacto-mobile"><i class="fa-brands fa-whatsapp"></i> Contactanos</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="sc-page-main">
+
+        <section class="sc-hero-section">
+            <div class="plan-container sc-hero-grid">
+                <div class="sc-hero-text">
+                    <span class="tag-light-gray">CUIDADO PROFESIONAL ADICIO</span>
+                    <h1>Compañía experta, <br><span class="text-primary gradient">Plan ESTAR GUARDIA</span></h1>
+                    <p>Nuestras cuidadoras profesionales están altamente capacitadas para brindar asistencia integral, asegurando el bienestar físico y emocional de sus seres queridos en la comodidad de su hogar.</p>
+                    
+                    <div class="sc-hero-actions">
+                        <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20el%20Plan%20ESTAR%20GUARDIA." class="btn-primary-solid btn-auto">Solicitar Asesoría</a>
+                    </div>
+                </div>
+                <div class="sc-hero-image-wrapper">
+                    <div class="sc-hero-bg-shape"></div>
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop" alt="Cuidadora ADICIO con paciente" class="sc-main-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="planes" class="sc-planes-section">
+            <div class="plan-container">
+                <div class="sc-section-header text-center">
+                    <h2>Planes adaptados a su necesidad</h2>
+                    <p>Ofrecemos diferentes esquemas horarios para garantizar la cobertura exacta que su familiar requiere, con nuestros diferenciales exclusivos incluidos en todos los planes.</p>
+                </div>
+
+                <div class="sc-planes-grid">
+                    
+                    <div class="sc-plan-card">
+                        <div class="sc-plan-header">
+                            <i class="fa-regular fa-sun sc-plan-icon gradient"></i>
+                            <h3>Plan 8 Horas</h3>
+                            <span>JORNADA DIURNA</span>
+                        </div>
+                        <p class="sc-plan-desc">Ideal para asistencia durante el día. Ayuda con higiene, alimentación y rutinas.</p>
+                        <ul class="sc-plan-features">
+                            <li><i class="fa-solid fa-check gradient"></i> Asistencia en actividades diarias</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Paseos y movilización</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Reporte semanal de estado</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Visita mensual de Auditoría</li>
+                        </ul>
+                        <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20el%20Plan%20ESTAR%20GUARDIA%20de%208hs." class="btn-outline-primary btn-full">Consultar Plan</a>
+                    </div>
+
+                    <div class="sc-plan-card">
+                        <div class="sc-plan-header">
+                            <i class="fa-regular fa-clock sc-plan-icon gradient"></i>
+                            <h3>Plan 12 Horas</h3>
+                            <span>COBERTURA EXTENDIDA</span>
+                        </div>
+                        <p class="sc-plan-desc">Cobertura completa para el día o la noche. Supervisión continua en horas clave.</p>
+                        <ul class="sc-plan-features">
+                            <li><i class="fa-solid fa-check gradient"></i> Todo lo del plan 8 horas</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Control de signos vitales (Kit)</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Reporte semanal de estado</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Visita mensual de Auditoría</li>
+                        </ul>
+                        <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20el%20Plan%20ESTAR%20GUARDIA%20de%2012hs." class="btn-primary-solid btn-full">Consultar Plan</a>
+                    </div>
+
+                    <div class="sc-plan-card">
+                        <div class="sc-plan-header">
+                            <i class="fa-solid fa-user-shield sc-plan-icon gradient"></i>
+                            <h3>Plan 24 Horas</h3>
+                            <span>CUIDADO INTERNO</span>
+                        </div>
+                        <p class="sc-plan-desc">Tranquilidad total. Equipo alternado para presencia ininterrumpida los 7 días.</p>
+                        <ul class="sc-plan-features">
+                            <li><i class="fa-solid fa-check gradient"></i> Asistencia 24/7 continua</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Prevención de caídas nocturnas</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Reporte semanal de estado</li>
+                            <li><i class="fa-solid fa-check gradient"></i> Visita mensual de Auditoría</li>
+                        </ul>
+                        <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20el%20Plan%20ESTAR%20GUARDIA%20de%2024hs." class="btn-outline-primary btn-full">Consultar Plan</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-estandar-section">
+            <div class="plan-container sc-estandar-row">
+                <div class="sc-estandar-img-col">
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800&auto=format&fit=crop" alt="Supervisión ADICIO" class="sc-estandar-img">
+                </div>
+                <div class="sc-estandar-text-col">
+                    <h2>El estándar ADICIO: Selección y Dignidad</h2>
+                    <p class="sc-estandar-intro">No somos una simple agencia de colocación. En ADICIO, cada cuidadora es parte de un equipo profesional respaldado por protocolos estrictos.</p>
+                    
+                    <ul class="sc-estandar-list">
+                        <li>
+                            <div class="sc-list-icon"><i class="fa-solid fa-microscope gradient"></i></div>
+                            <div class="sc-list-text">
+                                <h4>Selección Rigurosa</h4>
+                                <p>Evaluaciones psicológicas y verificación de antecedentes aseguran que solo el mejor personal llegue a su hogar.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sc-list-icon"><i class="fa-solid fa-user-tie gradient"></i></div>
+                            <div class="sc-list-text">
+                                <h4>Supervisión y Auditoría</h4>
+                                <p>Nuestros coordinadores realizan <strong>visitas mensuales presenciales</strong> para garantizar el cumplimiento del plan de cuidados.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sc-list-icon"><i class="fa-solid fa-heart-circle-check gradient"></i></div>
+                            <div class="sc-list-text">
+                                <h4>Enfoque en la Dignidad</h4>
+                                <p>Capacitación especializada en trato humanizado y respeto a la autonomía del paciente geriátrico.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-tech-section">
+            <div class="plan-container text-center">
+                <div class="sc-tech-icon"><i class="fa-solid fa-suitcase-medical gradient"></i></div>
+                <h2>Tecnología al servicio del cuidado humano</h2>
+                <p class="sc-tech-intro">Nuestras cuidadoras trabajan en sinergia con el <strong>Kit Bienestar ADICIO (Incluido en su plan)</strong>. Utilizan dispositivos para optimizar la atención diaria, centralizando la información en <strong>reportes semanales detallados</strong> para la familia.</p>
+                
+                <div class="sc-tech-included-grid">
+                    <div class="sc-tech-item">
+                        <i class="fa-solid fa-heart-pulse gradient"></i>
+                        <span>Tensiómetro Digital</span>
+                    </div>
+                    <div class="sc-tech-item">
+                        <i class="fa-solid fa-lungs gradient"></i>
+                        <span>Oxímetro de Pulso</span>
+                    </div>
+                    <div class="sc-tech-item">
+                        <i class="fa-solid fa-temperature-half gradient"></i>
+                        <span>Termómetro Digital</span>
+                    </div>
+                    <div class="sc-tech-item">
+                        <i class="fa-solid fa-weight-scale gradient"></i>
+                        <span>Balanza Digital</span>
+                    </div>
+                </div>
+
+                <div class="sc-tech-addon">
+                    <i class="fa-solid fa-circle-info gradient"></i>
+                    <p><strong>¿Busca seguridad 24/7?</strong> El <em>Smartwatch de Asistencia ADICIO</em> con detección de caídas y botón SOS se puede adquirir como un complemento adicional a su plan. <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20adquirar%20el%20Smartwatch."><span class="text-primary gradient">Solicitar Smartwatch.</span></a></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sc-cta-section">
+            <div class="plan-container text-center">
+                <h2>¿Listo para brindarle el mejor cuidado?</h2>
+                <p>Contáctenos hoy para una evaluación inicial sin costo. Diseñaremos un plan personalizado que se ajuste a las necesidades específicas de su familiar.</p>
+                <div class="sc-cta-buttons">
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20el%20Plan%20ESTAR%20GUARDIA."
+                        class="btn-primary" target="_blank">
+                        Consultar por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- WP-->
+    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+        class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER-->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <img src="img/logo horizontal blanco reduzido .webp" alt="">
+                </div>
+                <p class="footer-desc">
+                    Modelo pionero de acompañamiento domiciliario. Cuidado profesional con sentido humano, clínico y
+                    comunitario, respetando siempre la autonomía del adulto mayor.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61579267363911" aria-label="Facebook"
+                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/adicio.ar/" aria-label="Instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                        aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@adiciosalud" aria-label="TikTok" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/adiciosalud/" aria-label="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-link"></i> Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../feedback.html">Feedback</a></li>
+                    <li><a href="../faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="../quienes.html">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4><i class="fa-solid fa-hand-holding-medical"></i> Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="../estar.html">Plan Estar</a></li>
+                    <li><a href="../estar-plus.html">Plan Estar Plus</a></li>
+                    <li><a href="../estar-pro.html">Plan Estar Pro</a></li>
+                    <li><a href="../servicios.html#srv-cuidadora">Cuidadoras por Hora</a></li>
+                    <li><a href="../servicios.html#srv-adaptaciones">Adaptación Domiciliaria</a></li>
+                    <li><a href="../servicios.html#srv-juridico">Servicio Jurídico</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4><i class="fa-solid fa-location-dot"></i> Contacto</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Nicaragua 4817, CABA</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+541148703219">+54 11 4870-3219</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@adicio.com.ar" target="_blank">info@adicio.com.ar</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5491148703219?text=Hola,%20me%20interesa%20conocer%20los%20servicios%20de%20ADICIO."
+                    target="_blank" class="btn-footer-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 <strong>ADICIO</strong> - Cuidamos con sentido. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="../legales.html" target="_blank"><i class="fa-solid fa-shield-halved"></i> Políticas de
+                    Privacidad</a>
+                <span class="separator">&bull;</span>
+                <a href="../legales.html" target="_blank">Términos de Uso</a>
+                <span class="separator">&bull;</span>
+                <span><i class="fa-solid fa-location-arrow"></i> CABA, Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
