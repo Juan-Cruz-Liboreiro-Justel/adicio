@@ -299,6 +299,17 @@
         width: 100%;
     }
 
+    /* SERVICIOS CUIDADORAS HOME */
+    .cuidadora-row {
+        grid-template-columns: 1fr; /* Pasa a 1 sola columna */
+        gap: 3rem;
+    }
+
+    /* En celulares/tablets, la imagen sube arriba del texto */
+    .cuidadora-image-col {
+        order: -1; 
+    }
+
     /* APP */
     .app-container {
         flex-direction: column;
@@ -948,6 +959,29 @@
         /* Pasa a 1 columna apilada */
         gap: 2.5rem;
     }
+
+    .sc-planes-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .sc-plan-popular {
+        transform: none; /* Quitamos el scale en móvil para que no se superponga raro */
+    }
+
+    .sc-hero-grid, .sc-estandar-row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .sc-estandar-img-col {
+        order: -1;
+    }
+    .sc-hero-actions {
+        justify-content: center;
+    }
+    .sc-hero-text {
+        text-align: center;
+    }
 }
 
 
@@ -1176,6 +1210,10 @@
 
     .newsletter-card {
         text-align: center;
+    }
+
+    .blog-art-lat{
+        display: none;
     }
 
 
@@ -1614,5 +1652,133 @@
 
     .bd-pill {
         justify-content: center; /* Esto centra el circulito y el texto */
+    }
+
+    /*SERVICIOS CUIDADORAS HOME*/
+
+    .cuidadora-text-col {
+        text-align: center;
+    }
+
+    .cuidadora-text-col h2 {
+        font-size: 2.2rem;
+    }
+
+    .cuidadora-hours-grid {
+        gap: 0.5rem; /* Ajusta los espacios para que entren bien en celu */
+    }
+
+    .hour-card {
+        padding: 1rem 0.2rem; /* Reduce un poco el padding interno */
+    }
+
+    .hour-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .hour-card span {
+        font-size: 0.6rem;
+    }
+
+    /* Los botones pasan de estar lado a lado a apilarse */
+    .cuidadora-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cuidadora-actions a {
+        width: 100%; /* Botones de ancho completo en móvil */
+        justify-content: center;
+        display: flex;
+    }
+
+    .sc-floating-badge {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-top: -2rem;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sc-hero-actions, .sc-cta-buttons {
+        flex-direction: column;
+    }
+    
+    .sc-tech-included-grid {
+        flex-direction: column;
+    }
+    
+    .sc-tech-addon {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 1. HERO SECTION: Forzar centrado del texto y botones */
+    .sc-hero-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sc-hero-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .sc-hero-actions a {
+        width: 100%; 
+        max-width: 320px; /* Evita que el botón sea gigante, pero lo mantiene centrado */
+        justify-content: center;
+        display: flex;
+    }
+
+    /* 2. ESTÁNDAR ADICIO: Centrar títulos y apilar iconos */
+    .sc-estandar-text-col {
+        text-align: center;
+    }
+
+    .sc-estandar-list li {
+        flex-direction: column; /* Pone el icono arriba del texto */
+        align-items: center;    /* Centra el icono en el medio de la pantalla */
+        text-align: center;     /* Centra el párrafo */
+        gap: 1rem;
+    }
+
+    /* 3. TECNOLOGÍA / KIT: Centrar píldoras y caja del smartwatch */
+    .sc-tech-included-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Obliga a todas las píldoras a ir al centro */
+        width: 100%;
+    }
+
+    .sc-tech-item {
+        width: 100%;
+        max-width: 320px; /* Mantiene un ancho prolijo */
+        justify-content: center; /* Centra el icono y el texto DENTRO de la píldora blanca */
+    }
+
+    .sc-tech-addon {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 4. TARJETAS DE PLANES: Centrar la lista de tildes */
+    .sc-plan-desc {
+        text-align: center; /* Aseguramos que la descripción corta también se centre */
+    }
+
+    .sc-plan-features li {
+        justify-content: center; /* Centra el tilde y el texto juntos en el medio */
+        text-align: center;      /* Si el texto es muy largo y baja de línea, lo mantiene centrado */
     }
 }
